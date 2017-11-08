@@ -3,9 +3,13 @@
 # ~~~~
 
 # Controller for Sudoku
-GET		/       					    controllers.MenschController.mensch
+GET		/       					 controllers.MenschController.mensch
 
 #GET     /new                        controllers.MenschController.newTui
+
+#GET     /                           controllers.SudokuController.sudoku
+
+#GET     /new                        controllers.SudokuController.newGrid
 
 # An example controller showing how to use dependency injection
 #GET     /count                      controllers.CountController.count
