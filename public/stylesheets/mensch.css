@@ -1,0 +1,52 @@
+
+.background {
+    border: 3px solid #73AD21;
+    width: 550px;
+    height: 550px;
+    background: grey;
+}
+
+.circle{
+    border: 6px;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+#red1.circle{
+    margin-right: 485px;
+    margin-top: 5px;
+    background: red;
+}
+
+#red2.circle{
+    margin-top: -50px;
+    margin-right: 370px;
+    background: red;
+}
+
+#red3.circle{
+    margin-right: 485px;
+    margin-top: 5px;
+    background: red;
+}
+
+#red4.circle{
+    margin-right: 370px;
+    margin-top: -50px;
+    background: red;
+}
+
+#blue.circle{
+    background: blue;
+}
+
+#green.circle{
+    background: green;
+}
+
+#yellow.circle{
+    background: yellow;
+}

@@ -1,7 +1,26 @@
-@(game: String)
+@(game: de.htwg.se.menschaergerdichnicht.controller.controllerComponent.ControllerInterface)
+  @tui = @{game.tui}
+  @output = @{tui.printingTui()}
 
-@main("Welcome to MeschAergerDichNicht") {
+  @main("Welcome to MeschAergerDichNicht") {
 
-  <code> @Html(game) </code>
+    <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/mensch.css")' />
+    <meta http-equiv="refresh" content="5" >
+      <!--code> @Html(tui.printingTui()) </code-->
+    <div align="center">
+      <div class="background">
 
-}
+        <div id="red1" class="circle"></div>
+        <div id="red2" class="circle"></div>
+        <div id="red3" class="circle"></div>
+        <div id="red4" class="circle"></div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+  }
