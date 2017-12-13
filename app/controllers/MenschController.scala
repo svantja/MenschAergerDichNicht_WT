@@ -16,5 +16,4 @@ class MenschController @Inject() (cc: ControllerComponents) extends AbstractCont
     Ok(views.html.mensch(gameController))
   }
 
-
 }

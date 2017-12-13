@@ -15,7 +15,6 @@
   @player4 = @{players(3)}
   @tokens4 = @{player4.getTokens()}
 
-
   @main("Welcome to MeschAergerDichNicht") {
 
     <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/mensch.css")' />
@@ -168,6 +167,116 @@
                       <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40"/>
                   </div>
               }
+          @if(game.players.getAllPlayer.nonEmpty) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="red2" class="circle">
+          @if(game.players.getAllPlayer.nonEmpty) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="red3" class="circle">
+          @if(game.players.getAllPlayer.nonEmpty) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="red4" class="circle">
+          @if(game.players.getAllPlayer.nonEmpty) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="blue1" class="circle">
+          @if(game.players.getAllPlayer.size > 1) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="blue2" class="circle">
+          @if(game.players.getAllPlayer.size > 1) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="blue3" class="circle">
+          @if(game.players.getAllPlayer.size > 1) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="blue4" class="circle">
+          @if(game.players.getAllPlayer.size > 1) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="green1" class="circle">
+          @if(game.players.getAllPlayer.size > 2) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="green2" class="circle">
+          @if(game.players.getAllPlayer.size > 2) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="green3" class="circle">
+          @if(game.players.getAllPlayer.size > 2) {
+              <div class = "tokens">
+                  @game.players.
+                  <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="green4" class="circle">
+          @if(game.players.getAllPlayer.size > 2) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="yellow1" class="circle">
+          @if(game.players.getAllPlayer.size > 3) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="yellow2" class="circle">
+          @if(game.players.getAllPlayer.size > 3) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="yellow3" class="circle">
+          @if(game.players.getAllPlayer.size > 3) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40" />
+              </div>
+          }
+          </div>
+          <div id="yellow4" class="circle">
+          @if(game.players.getAllPlayer.size > 3) {
+              <div class = "tokens">
+                  <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40" />
+              </div>
           }
           </div>
 
@@ -184,4 +293,4 @@
 
 
 
-  }
+}
