@@ -3,14 +3,43 @@
   @output = @{tui.printingTui()}
   @gui = @{game.gui}
   @players = @{game.players.getAllPlayer}
-  @player1 = @{players(0)}
-  @tokens1 = @{player1.getTokens()}
-  @player2 = @{players(1)}
-  @tokens2 = @{player2.getTokens()}
-  @player3 = @{players(2)}
-  @tokens3 = @{player3.getTokens()}
-  @player4 = @{players(3)}
-  @tokens4 = @{player4.getTokens()}
+
+    @player1 = @{
+        players(0)
+    }
+
+    @tokens1 = @{
+        player1.getTokens()
+    }
+
+
+    @player2 = @{
+        players(1)
+    }
+
+    @tokens2 = @{
+        player2.getTokens()
+    }
+
+
+    @player3 = @{
+        players(2)
+    }
+
+    @tokens3 = @{
+        player3.getTokens()
+    }
+
+
+
+    @player4 = @{
+        players(3)
+    }
+
+    @tokens4 = @{
+        player4.getTokens()
+    }
+
 
 
   @playingfield = @{gui.PLAYING_FIELD}
@@ -42,11 +71,27 @@
       <!--code> @Html(tui.printingTui()) </code-->
 
       <div class="background">
-        @players
         @for(index <- 0 until playingfield.size){
-
-            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; "> </div>
+            @if(index == 0){
+                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkred "> </div>
+            }else{
+                @if(index == 10){
+                    <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkblue "> </div>
+                }else{
+                    @if(index == 20){
+                        <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkgreen "> </div>
+                    }else{
+                        @if(index == 30){
+                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:orange "> </div>
+                        }else{
+                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; "> </div>
+                        }
+                    }
+                }
+            }
         }
+
+        <!--adding tokens, if token.count != 0, token.getPosition>
 
         @for(index <- 0 until home1.size){
             <div id="red" class="circle" style="left:@{getHomeLeft(index)}px; top:@{getHomeTop(index)}px; ">
@@ -62,7 +107,7 @@
 
         @for(index <- 0 until home2.size){
             <div id="blue" class="circle" style="left:@{getHome2Left(index)}px; top:@{getHome2Top(index)}px; ">
-            @if(players.nonEmpty){
+            @if(1 < players.size){
                 @if(tokens2(index).counter == 0) {
                     <div class="tokens">
                         <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40"/>
@@ -74,7 +119,7 @@
 
         @for(index <- 0 until home3.size){
             <div id="green" class="circle" style="left:@{getHome3Left(index)}px; top:@{getHome3Top(index)}px; ">
-            @if(players.nonEmpty){
+            @if(2 < players.size){
                 @if(tokens3(index).counter == 0) {
                     <div class="tokens">
                         <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40"/>
@@ -87,7 +132,7 @@
 
         @for(index <- 0 until home4.size){
             <div id="yellow" class="circle" style="left:@{getHome4Left(index)}px; top:@{getHome4Top(index)}px; ">
-            @if(players.nonEmpty){
+            @if(3 < players.size){
                 @if(tokens4(index).counter == 0) {
                     <div class="tokens">
                         <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40"/>

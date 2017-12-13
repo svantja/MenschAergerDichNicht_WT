@@ -24,33 +24,6 @@
     position: absolute;
 }
 
-#start1.circle{
-     left: 10px;
-     top: 250px;
-     position: absolute;
-     background: darkred;
- }
-
-#start2.circle{
-    left: 380px;
-    top: 10px;
-    position: absolute;
-    background: darkblue;
-}
-
-#start3.circle{
-    left: 620px;
-    top: 380px;
-    position: absolute;
-    background: darkgreen;
-}
-
-#start4.circle{
-    left: 250px;
-    top: 620px;
-    position: absolute;
-    background: darkgoldenrod;
-}
 
 #red.circle{
     position: absolute;
