@@ -1,22 +1,38 @@
 @(game: de.htwg.se.menschaergerdichnicht.controller.controllerComponent.ControllerInterface)
   @tui = @{game.tui}
   @output = @{tui.printingTui()}
+  @gui = @{game.gui}
 
   @main("Welcome to MeschAergerDichNicht") {
 
     <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/mensch.css")' />
     <meta http-equiv="refresh" content="5" >
       <!--code> @Html(tui.printingTui()) </code-->
-    <div align="center">
-      <div class="background">
 
-        <div id="red1" class="circle"></div>
-        <div id="red2" class="circle"></div>
-        <div id="red3" class="circle"></div>
-        <div id="red4" class="circle"></div>
+      <div class="background">
+          <div id="red1" class="circle"></div>
+          <div id="red2" class="circle"></div>
+          <div id="red3" class="circle"></div>
+          <div id="red4" class="circle"></div>
+          <div id="blue1" class="circle"></div>
+          <div id="blue2" class="circle"></div>
+          <div id="blue3" class="circle"></div>
+          <div id="blue4" class="circle"></div>
+          <div id="green1" class="circle"></div>
+          <div id="green2" class="circle"></div>
+          <div id="green3" class="circle"></div>
+          <div id="green4" class="circle"></div>
+          <div id="yellow1" class="circle"></div>
+          <div id="yellow2" class="circle"></div>
+          <div id="yellow3" class="circle"></div>
+          <div id="yellow4" class="circle"></div>
+
+          <div id="start1" class="circle"></div>
+          <div id="start2" class="circle"></div>
+          <div id="start3" class="circle"></div>
+          <div id="start4" class="circle"></div>
 
       </div>
-    </div>
 
 
 
