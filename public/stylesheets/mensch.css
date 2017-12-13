@@ -5,6 +5,11 @@
     background: grey;
 }
 
+.tokens {
+    position: absolute;
+    left:5px;
+}
+
 .circle{
     border: 6px;
     width: 50px;
