@@ -1,8 +1,7 @@
-
 .background {
     border: 3px solid #73AD21;
-    width: 550px;
-    height: 550px;
+    width: 680px;
+    height: 680px;
     background: grey;
 }
 
@@ -15,38 +14,147 @@
     border-radius: 25px;
 }
 
+#playingfiel.circle{
+    background: white;
+}
+
+#start1.circle{
+     left: 10px;
+     top: 250px;
+     position: absolute;
+     background: darkred;
+ }
+
+#start2.circle{
+    left: 380px;
+    top: 10px;
+    position: absolute;
+    background: darkblue;
+}
+
+#start3.circle{
+    left: 620px;
+    top: 380px;
+    position: absolute;
+    background: darkgreen;
+}
+
+#start4.circle{
+    left: 250px;
+    top: 620px;
+    position: absolute;
+    background: darkgoldenrod;
+}
+
 #red1.circle{
-    margin-right: 485px;
-    margin-top: 5px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
     background: red;
 }
 
 #red2.circle{
-    margin-top: -50px;
-    margin-right: 370px;
+    top: 10px;
+    left: 70px;
+    position: absolute;
     background: red;
 }
 
 #red3.circle{
-    margin-right: 485px;
-    margin-top: 5px;
+    left: 10px;
+    top: 70px;
+    position: absolute;
     background: red;
 }
 
 #red4.circle{
-    margin-right: 370px;
-    margin-top: -50px;
+    left: 70px;
+    top: 70px;
+    position: absolute;
     background: red;
 }
 
-#blue.circle{
+#blue1.circle{
+    left: 620px;
+    top: 10px;
+    position: absolute;
     background: blue;
 }
 
-#green.circle{
+#blue2.circle{
+    left: 620px;
+    top: 70px;
+    position: absolute;
+    background: blue;
+}
+
+#blue3.circle{
+    left: 560px;
+    top: 10px;
+    position: absolute;
+    background: blue;
+}
+
+#blue4.circle{
+    left: 560px;
+    top: 70px;
+    position: absolute;
+    background: blue;
+}
+
+#green1.circle{
+    left: 620px;
+    top: 620px;
+    position: absolute;
     background: green;
 }
 
-#yellow.circle{
+#green2.circle{
+    left: 560px;
+    top: 620px;
+    position: absolute;
+    background: green;
+}
+
+#green3.circle{
+    left: 620px;
+    top: 560px;
+    position: absolute;
+    background: green;
+}
+
+#green4.circle{
+    left: 560px;
+    top: 560px;
+    position: absolute;
+    background: green;
+}
+
+
+#yellow1.circle{
+    left: 10px;
+    top: 560px;
+    position: absolute;
+    background: yellow;
+}
+
+#yellow2.circle{
+    left: 10px;
+    top: 620px;
+    position: absolute;
+    background: yellow;
+}
+
+#yellow3.circle{
+    left: 70px;
+    top: 560px;
+    position: absolute;
+    background: yellow;
+}
+
+#yellow4.circle{
+    left: 70px;
+    top: 620px;
+    position: absolute;
     background: yellow;
 }
