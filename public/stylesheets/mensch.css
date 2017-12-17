@@ -1,7 +1,7 @@
 .background {
     border: 3px solid #73AD21;
-    width: 680px;
-    height: 680px;
+    width: 960px;
+    height: 890px;
     background: grey;
 }
 
@@ -21,145 +21,34 @@
 
 #playingfiel.circle{
     background: white;
-}
-
-#start1.circle{
-     left: 10px;
-     top: 250px;
-     position: absolute;
-     background: darkred;
- }
-
-#start2.circle{
-    left: 380px;
-    top: 10px;
     position: absolute;
-    background: darkblue;
 }
 
-#start3.circle{
-    left: 620px;
-    top: 380px;
-    position: absolute;
-    background: darkgreen;
-}
 
-#start4.circle{
-    left: 250px;
-    top: 620px;
-    position: absolute;
-    background: darkgoldenrod;
-}
-
-#red1.circle{
-    left: 10px;
-    top: 10px;
+#red.circle{
     position: absolute;
     background: red;
 }
 
-#red2.circle{
-    top: 10px;
-    left: 70px;
-    position: absolute;
-    background: red;
-}
 
-#red3.circle{
-    left: 10px;
-    top: 70px;
-    position: absolute;
-    background: red;
-}
+#blue.circle{
 
-#red4.circle{
-    left: 70px;
-    top: 70px;
-    position: absolute;
-    background: red;
-}
-
-#blue1.circle{
-    left: 620px;
-    top: 10px;
     position: absolute;
     background: blue;
 }
 
-#blue2.circle{
-    left: 620px;
-    top: 70px;
-    position: absolute;
-    background: blue;
-}
 
-#blue3.circle{
-    left: 560px;
-    top: 10px;
-    position: absolute;
-    background: blue;
-}
-
-#blue4.circle{
-    left: 560px;
-    top: 70px;
-    position: absolute;
-    background: blue;
-}
-
-#green1.circle{
+#green.circle{
     left: 620px;
     top: 620px;
     position: absolute;
     background: green;
 }
 
-#green2.circle{
-    left: 560px;
-    top: 620px;
-    position: absolute;
-    background: green;
-}
 
-#green3.circle{
-    left: 620px;
-    top: 560px;
-    position: absolute;
-    background: green;
-}
-
-#green4.circle{
-    left: 560px;
-    top: 560px;
-    position: absolute;
-    background: green;
-}
-
-
-#yellow1.circle{
+#yellow.circle{
     left: 10px;
     top: 560px;
-    position: absolute;
-    background: yellow;
-}
-
-#yellow2.circle{
-    left: 10px;
-    top: 620px;
-    position: absolute;
-    background: yellow;
-}
-
-#yellow3.circle{
-    left: 70px;
-    top: 560px;
-    position: absolute;
-    background: yellow;
-}
-
-#yellow4.circle{
-    left: 70px;
-    top: 620px;
     position: absolute;
     background: yellow;
 }

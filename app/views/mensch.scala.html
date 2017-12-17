@@ -3,17 +3,66 @@
   @output = @{tui.printingTui()}
   @gui = @{game.gui}
   @players = @{game.players.getAllPlayer}
-  @current = @{game.players.currentPlayer}
-  @currentp = @{game.players.getCurrentPlayer}
-  @currentt = @{currentp.getTokens()}
-  @player1 = @{players(0)}
-  @tokens1 = @{player1.getTokens()}
-  @player2 = @{players(1)}
-  @tokens2 = @{player2.getTokens()}
-  @player3 = @{players(2)}
-  @tokens3 = @{player3.getTokens()}
-  @player4 = @{players(3)}
-  @tokens4 = @{player4.getTokens()}
+
+    @player1 = @{
+        players(0)
+    }
+
+    @tokens1 = @{
+        player1.getTokens()
+    }
+
+
+    @player2 = @{
+        players(1)
+    }
+
+    @tokens2 = @{
+        player2.getTokens()
+    }
+
+
+    @player3 = @{
+        players(2)
+    }
+
+    @tokens3 = @{
+        player3.getTokens()
+    }
+
+
+
+    @player4 = @{
+        players(3)
+    }
+
+    @tokens4 = @{
+        player4.getTokens()
+    }
+
+
+
+  @playingfield = @{gui.PLAYING_FIELD}
+  @home1 = @{gui.HOMEFIELDPLAYERONE}
+  @home2 = @{gui.HOMEFIELDPLAYERTWO}
+  @home3 = @{gui.HOMEFIELDPLAYERTHREE}
+  @home4 = @{gui.HOMEFIELDPLAYERFOUR}
+
+  @getHomeLeft(index:Int) = @{home1(index)._1}
+  @getHomeTop(index:Int) = @{home1(index)._2}
+
+  @getHome2Left(index:Int) = @{home2(index)._1}
+  @getHome2Top(index:Int) = @{home2(index)._2}
+
+  @getHome3Left(index:Int) = @{home3(index)._1}
+  @getHome3Top(index:Int) = @{home3(index)._2}
+
+  @getHome4Left(index:Int) = @{home4(index)._1}
+  @getHome4Top(index:Int) = @{home4(index)._2}
+
+  @getLeft(index:Int) = @{playingfield(index)._1}
+  @getTop(index:Int) = @{playingfield(index)._2}
+
 
   @main("Welcome to MeschAergerDichNicht") {
 
@@ -22,263 +71,77 @@
       <!--code> @Html(tui.printingTui()) </code-->
 
       <div class="background">
-          <div id="red1" class="circle">
-          @if(players.nonEmpty){
-                  @if(tokens1(0).counter == 0) {
-                      <div class="tokens">
-                          <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40"/>
-                      </div>
-                  }
-          }
-          </div>
-          <div id="red2" class="circle">
-          @if(players.nonEmpty){
-                  @if(tokens1(1).counter == 0) {
-                      <div class="tokens">
-                          <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40"/>
-                      </div>
-                  }
-          }
-          </div>
+        @for(index <- 0 until playingfield.size){
+            @if(index == 0){
+                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkred "> </div>
+            }else{
+                @if(index == 10){
+                    <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkblue "> </div>
+                }else{
+                    @if(index == 20){
+                        <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkgreen "> </div>
+                    }else{
+                        @if(index == 30){
+                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:orange "> </div>
+                        }else{
+                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; "> </div>
+                        }
+                    }
+                }
+            }
+        }
 
-          <div id="red3" class="circle">
-          @if(players.nonEmpty){
-                  @if(tokens1(2).counter == 0) {
-                      <div class="tokens">
-                          <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40"/>
-                      </div>
-                  }
-          }
-          </div>
-          <div id="red4" class="circle">
-          @if(players.nonEmpty){
+        <!--adding tokens, if token.count != 0, token.getPosition> </-->
 
-                  @if(tokens1(3).counter == 0) {
-                      <div class="tokens">
-                          <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40"/>
-                      </div>
-                  }
+        @for(index <- 0 until home1.size){
+            <div id="red" class="circle" style="left:@{getHomeLeft(index)}px; top:@{getHomeTop(index)}px; ">
+            @if(players.nonEmpty){
+                @if(tokens1(index).counter == 0) {
+                    <div class="tokens">
+                        <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40"/>
+                    </div>
+                }
+            }
+            </div>
+        }
 
-          }
-          </div>
-          <div id="blue1" class="circle">
-          @if(players.size  > 1){
-              @if(tokens2(0).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="blue2" class="circle">
-          @if(players.size  > 1){
-              @if(tokens2(1).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="blue3" class="circle">
-          @if(players.size  > 1){
-              @if(tokens2(2).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="blue4" class="circle">
-          @if(players.size  > 1){
-              @if(tokens2(3).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="green1" class="circle">
-          @if(players.size  > 2){
-              @if(tokens3(0).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="green2" class="circle">
-          @if(players.size  > 2){
-              @if(tokens3(1).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="green3" class="circle">
-          @if(players.size  > 2){
-              @if(tokens3(2).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="green4" class="circle">
-          @if(players.size  > 2){
-              @if(tokens3(3).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="yellow1" class="circle">
-          @if(players.size  > 3){
-              @if(tokens4(0).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="yellow2" class="circle">
-          @if(players.size  > 3){
-              @if(tokens4(1).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="yellow3" class="circle">
-          @if(players.size  > 3){
-              @if(tokens4(2).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40"/>
-                  </div>
-              }
-          }
-          </div>
-          <div id="yellow4" class="circle">
-          @if(players.size  > 3){
-              @if(tokens4(3).counter == 0) {
-                  <div class="tokens">
-                      <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40"/>
-                  </div>
-              }
-          @if(game.players.getAllPlayer.nonEmpty) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="red2" class="circle">
-          @if(game.players.getAllPlayer.nonEmpty) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="red3" class="circle">
-          @if(game.players.getAllPlayer.nonEmpty) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="red4" class="circle">
-          @if(game.players.getAllPlayer.nonEmpty) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="blue1" class="circle">
-          @if(game.players.getAllPlayer.size > 1) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="blue2" class="circle">
-          @if(game.players.getAllPlayer.size > 1) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="blue3" class="circle">
-          @if(game.players.getAllPlayer.size > 1) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="blue4" class="circle">
-          @if(game.players.getAllPlayer.size > 1) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="green1" class="circle">
-          @if(game.players.getAllPlayer.size > 2) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="green2" class="circle">
-          @if(game.players.getAllPlayer.size > 2) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="green3" class="circle">
-          @if(game.players.getAllPlayer.size > 2) {
-              <div class = "tokens">
-                  @game.players.
-                  <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="green4" class="circle">
-          @if(game.players.getAllPlayer.size > 2) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="yellow1" class="circle">
-          @if(game.players.getAllPlayer.size > 3) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="yellow2" class="circle">
-          @if(game.players.getAllPlayer.size > 3) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="yellow3" class="circle">
-          @if(game.players.getAllPlayer.size > 3) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
-          <div id="yellow4" class="circle">
-          @if(game.players.getAllPlayer.size > 3) {
-              <div class = "tokens">
-                  <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40" />
-              </div>
-          }
-          </div>
+        @for(index <- 0 until home2.size){
+            <div id="blue" class="circle" style="left:@{getHome2Left(index)}px; top:@{getHome2Top(index)}px; ">
+            @if(1 < players.size){
+                @if(tokens2(index).counter == 0) {
+                    <div class="tokens">
+                        <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40"/>
+                    </div>
+                }
+            }
+            </div>
+        }
+
+        @for(index <- 0 until home3.size){
+            <div id="green" class="circle" style="left:@{getHome3Left(index)}px; top:@{getHome3Top(index)}px; ">
+            @if(2 < players.size){
+                @if(tokens3(index).counter == 0) {
+                    <div class="tokens">
+                        <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40"/>
+                    </div>
+                }
+            }
+            </div>
+        }
+
+
+        @for(index <- 0 until home4.size){
+            <div id="yellow" class="circle" style="left:@{getHome4Left(index)}px; top:@{getHome4Top(index)}px; ">
+            @if(3 < players.size){
+                @if(tokens4(index).counter == 0) {
+                    <div class="tokens">
+                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40"/>
+                    </div>
+                }
+            }
+            </div>
+        }
+
 
           <div id="start1" class="circle"></div>
           <div id="start2" class="circle"></div>
@@ -288,9 +151,4 @@
 
       </div>
 
-
-
-
-
-
-}
+  }
