@@ -39,16 +39,12 @@
 
 
 #green.circle{
-    left: 620px;
-    top: 620px;
     position: absolute;
     background: green;
 }
 
 
 #yellow.circle{
-    left: 10px;
-    top: 560px;
     position: absolute;
     background: yellow;
 }

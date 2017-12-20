@@ -4,41 +4,14 @@
   @gui = @{game.gui}
   @players = @{game.players.getAllPlayer}
 
-    @player1 = @{
-        players(0)
-    }
-
-    @tokens1 = @{
-        player1.getTokens()
-    }
-
-
-    @player2 = @{
-        players(1)
-    }
-
-    @tokens2 = @{
-        player2.getTokens()
-    }
-
-
-    @player3 = @{
-        players(2)
-    }
-
-    @tokens3 = @{
-        player3.getTokens()
-    }
-
-
-
-    @player4 = @{
-        players(3)
-    }
-
-    @tokens4 = @{
-        player4.getTokens()
-    }
+  @player1 = @{players(0)}
+  @tokens1 = @{player1.getTokens()}
+  @player2 = @{players(1)}
+  @tokens2 = @{player2.getTokens()}
+  @player3 = @{players(2)}
+  @tokens3 = @{player3.getTokens()}
+  @player4 = @{players(3)}
+  @tokens4 = @{player4.getTokens()}
 
 
 
@@ -47,21 +20,34 @@
   @home2 = @{gui.HOMEFIELDPLAYERTWO}
   @home3 = @{gui.HOMEFIELDPLAYERTHREE}
   @home4 = @{gui.HOMEFIELDPLAYERFOUR}
-
-  @getHomeLeft(index:Int) = @{home1(index)._1}
-  @getHomeTop(index:Int) = @{home1(index)._2}
-
-  @getHome2Left(index:Int) = @{home2(index)._1}
-  @getHome2Top(index:Int) = @{home2(index)._2}
-
-  @getHome3Left(index:Int) = @{home3(index)._1}
-  @getHome3Top(index:Int) = @{home3(index)._2}
-
-  @getHome4Left(index:Int) = @{home4(index)._1}
-  @getHome4Top(index:Int) = @{home4(index)._2}
+  @finish1 = @{gui.FINISH_ONE}
+  @finish2 = @{gui.FINISH_TWO}
+  @finish3 = @{gui.FINISH_THREE}
+  @finish4 = @{gui.FINISH_FOUR}
 
   @getLeft(index:Int) = @{playingfield(index)._1}
   @getTop(index:Int) = @{playingfield(index)._2}
+
+  @getHomeLeft(index:Int) = @{home1(index)._1}
+  @getHomeTop(index:Int) = @{home1(index)._2}
+  @getFinishLeft(index:Int) = @{finish1(index)._1}
+  @getFinishTop(index:Int) = @{finish1(index)._2}
+
+  @getHome2Left(index:Int) = @{home2(index)._1}
+  @getHome2Top(index:Int) = @{home2(index)._2}
+  @getFinishLeft2(index:Int) = @{finish2(index)._1}
+  @getFinishTop2(index:Int) = @{finish2(index)._2}
+
+  @getHome3Left(index:Int) = @{home3(index)._1}
+  @getHome3Top(index:Int) = @{home3(index)._2}
+  @getFinishLeft3(index:Int) = @{finish3(index)._1}
+  @getFinishTop3(index:Int) = @{finish3(index)._2}
+
+  @getHome4Left(index:Int) = @{home4(index)._1}
+  @getHome4Top(index:Int) = @{home4(index)._2}
+  @getFinishLeft4(index:Int) = @{finish4(index)._1}
+  @getFinishTop4(index:Int) = @{finish4(index)._2}
+
 
 
   @main("Welcome to MeschAergerDichNicht") {
