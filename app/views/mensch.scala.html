@@ -25,28 +25,28 @@
   @finish3 = @{gui.FINISH_THREE}
   @finish4 = @{gui.FINISH_FOUR}
 
-  @getLeft(index:Int) = @{playingfield(index)._1}
-  @getTop(index:Int) = @{playingfield(index)._2}
+  @getLeft(index:Int) = @{playingfield(index)._1 * 100 / 660}
+  @getTop(index:Int) = @{playingfield(index)._2 * 100 / 660}
 
-  @getHomeLeft(index:Int) = @{home1(index)._1}
-  @getHomeTop(index:Int) = @{home1(index)._2}
-  @getFinishLeft(index:Int) = @{finish1(index)._1}
-  @getFinishTop(index:Int) = @{finish1(index)._2}
+  @getHomeLeft(index:Int) = @{home1(index)._1 * 100 / 660}
+  @getHomeTop(index:Int) = @{home1(index)._2 * 100 / 660}
+  @getFinishLeft(index:Int) = @{finish1(index)._1 * 100 / 660}
+  @getFinishTop(index:Int) = @{finish1(index)._2 * 100 / 660}
 
-  @getHome2Left(index:Int) = @{home2(index)._1}
-  @getHome2Top(index:Int) = @{home2(index)._2}
-  @getFinishLeft2(index:Int) = @{finish2(index)._1}
-  @getFinishTop2(index:Int) = @{finish2(index)._2}
+  @getHome2Left(index:Int) = @{home2(index)._1 * 100 / 660}
+  @getHome2Top(index:Int) = @{home2(index)._2 * 100 / 660}
+  @getFinishLeft2(index:Int) = @{finish2(index)._1 * 100 / 660}
+  @getFinishTop2(index:Int) = @{finish2(index)._2 * 100 / 660}
 
-  @getHome3Left(index:Int) = @{home3(index)._1}
-  @getHome3Top(index:Int) = @{home3(index)._2}
-  @getFinishLeft3(index:Int) = @{finish3(index)._1}
-  @getFinishTop3(index:Int) = @{finish3(index)._2}
+  @getHome3Left(index:Int) = @{home3(index)._1 * 100 / 660}
+  @getHome3Top(index:Int) = @{home3(index)._2 * 100 / 660}
+  @getFinishLeft3(index:Int) = @{finish3(index)._1 * 100 / 660}
+  @getFinishTop3(index:Int) = @{finish3(index)._2 * 100 / 660}
 
-  @getHome4Left(index:Int) = @{home4(index)._1}
-  @getHome4Top(index:Int) = @{home4(index)._2}
-  @getFinishLeft4(index:Int) = @{finish4(index)._1}
-  @getFinishTop4(index:Int) = @{finish4(index)._2}
+  @getHome4Left(index:Int) = @{home4(index)._1 * 100 / 660}
+  @getHome4Top(index:Int) = @{home4(index)._2 * 100 / 660}
+  @getFinishLeft4(index:Int) = @{finish4(index)._1 * 100 / 660}
+  @getFinishTop4(index:Int) = @{finish4(index)._2 * 100 / 660}
 
 
 
@@ -55,22 +55,25 @@
     <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/mensch.css")' />
     <meta http-equiv="refresh" content="5" >
       <!--code> @Html(tui.printingTui()) </code-->
+    <!--div class="container"-->
 
       <div class="background">
+
         @for(index <- 0 until playingfield.size){
+            @getLeft(index)
             @if(index == 0){
-                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkred "> </div>
+                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkred "> </div>
             }else{
                 @if(index == 10){
-                    <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkblue "> </div>
+                    <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkblue "> </div>
                 }else{
                     @if(index == 20){
-                        <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:darkgreen "> </div>
+                        <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkgreen "> </div>
                     }else{
                         @if(index == 30){
-                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; background:orange "> </div>
+                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:orange "> </div>
                         }else{
-                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}px; top:@{getTop(index)}px; "> </div>
+                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; "> </div>
                         }
                     }
                 }
@@ -78,9 +81,8 @@
         }
 
         <!--adding tokens, if token.count != 0, token.getPosition> </-->
-
         @for(index <- 0 until home1.size){
-            <div id="red" class="circle" style="left:@{getHomeLeft(index)}px; top:@{getHomeTop(index)}px; ">
+            <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; ">
             @if(players.nonEmpty){
                 @if(tokens1(index).counter == 0) {
                     <div class="tokens">
@@ -92,7 +94,7 @@
         }
 
         @for(index <- 0 until home2.size){
-            <div id="blue" class="circle" style="left:@{getHome2Left(index)}px; top:@{getHome2Top(index)}px; ">
+            <div id="blue" class="circle" style="left:@{getHome2Left(index)}%; top:@{getHome2Top(index)}%; ">
             @if(1 < players.size){
                 @if(tokens2(index).counter == 0) {
                     <div class="tokens">
@@ -104,7 +106,7 @@
         }
 
         @for(index <- 0 until home3.size){
-            <div id="green" class="circle" style="left:@{getHome3Left(index)}px; top:@{getHome3Top(index)}px; ">
+            <div id="green" class="circle" style="left:@{getHome3Left(index)}%; top:@{getHome3Top(index)}%; ">
             @if(2 < players.size){
                 @if(tokens3(index).counter == 0) {
                     <div class="tokens">
@@ -117,7 +119,7 @@
 
 
         @for(index <- 0 until home4.size){
-            <div id="yellow" class="circle" style="left:@{getHome4Left(index)}px; top:@{getHome4Top(index)}px; ">
+            <div id="yellow" class="circle" style="left:@{getHome4Left(index)}%; top:@{getHome4Top(index)}%; ">
             @if(3 < players.size){
                 @if(tokens4(index).counter == 0) {
                     <div class="tokens">
@@ -129,12 +131,7 @@
         }
 
 
-          <div id="start1" class="circle"></div>
-          <div id="start2" class="circle"></div>
-          <div id="start3" class="circle"></div>
-          <div id="start4" class="circle"></div>
-
 
       </div>
-
+      <!--/div-->
   }
