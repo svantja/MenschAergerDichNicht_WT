@@ -57,7 +57,7 @@
       <!--code> @Html(tui.printingTui()) </code-->
     <!--div class="container"-->
     <div class="row clearfix">
-        <div class="background left"></div>
+
       <div class="background">
 
 
@@ -200,7 +200,7 @@
             @if(3 < players.size){
                 @if(tokens4(index).counter == 0) {
                     <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")"/>
+                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" />
                     </div>
                 }
             }
@@ -217,10 +217,29 @@
             }</div>
         }
 
+    @if(game.gameState.toString == "ONGOING"){
+        @if(game.players.currentPlayer == 0){
+            <button type="button" class="btn btn-danger btn-lg btn-block">Würfeln</button>
+        }
+        @if(game.players.currentPlayer == 1){
+            <button type="button" class="btn btn-primary btn-lg btn-block">Würfeln</button>
+        }
+        @if(game.players.currentPlayer == 2){
+            <button type="button" class="btn btn-success btn-lg btn-block">Würfeln</button>
+        }
+        @if(game.players.currentPlayer == 3){
+            <button type="button" class="btn btn-warning btn-lg btn-block">Würfeln</button>
+        }
+    }
+    @if(game.gameState.toString == "DICED"){
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Ziehe </button>
+    }
 
 
       </div>
-    <div class="background right"></div>
+
+
     </div>
+
       <!--/div-->
   }

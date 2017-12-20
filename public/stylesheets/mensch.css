@@ -1,7 +1,6 @@
 .background {
     margin: 0 auto;
     position: relative;
-
     float: left;
     width: 50%;
     background: grey;
@@ -28,7 +27,7 @@
 }
 
 .background.left{
-    width:25%;
+    width:20%;
     background: white;
     float: left;
 }
@@ -94,3 +93,5 @@ img {
     position: absolute;
     background: yellow;
 }
+
+
