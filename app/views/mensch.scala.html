@@ -59,10 +59,12 @@
 
       <div class="background">
 
+
         @for(index <- 0 until playingfield.size){
-            @getLeft(index)
             @if(index == 0){
-                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkred "> </div>
+                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkred ">
+
+                </div>
             }else{
                 @if(index == 10){
                     <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkblue "> </div>
@@ -73,24 +75,87 @@
                         @if(index == 30){
                             <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:orange "> </div>
                         }else{
-                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; "> </div>
+                            <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; ">
+
+                            </div>
                         }
                     }
                 }
             }
         }
 
+    @for(player <- players){
+        @for(token <- player.getTokens()){
+            @if(token.counter > 0 && token.counter < 41){
+
+                @if(token.getColor() == "red"){
+                        <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.4}%; top:@{getTop(token.getPosition()._2)+1.4}%;width:5%; height:5%">
+                        <div class="tokens">
+                            <img src="@routes.Assets.versioned("images/tokens/red.png")" />
+                        </div>
+                        </div>
+                }else{
+                    @if(token.getColor() == "blue"){
+                        @{getLeft(token.getPosition()._2)}
+                        @token.getPosition()._2
+                        @{getTop(token.getPosition()._2)}
+                        <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.4}%; top:@{getTop(token.getPosition()._2)+1.4}%;width:5%; height:5%">
+                        <div class="tokens">
+                            <img src="@routes.Assets.versioned("images/tokens/blue.png")" />
+                        </div>
+                        </div>
+
+                    }else{
+                        @if(token.getColor() == "green"){
+                            @{getLeft(token.getPosition()._2)}
+                            @token.getPosition()._2
+                            @{getTop(token.getPosition()._2)}
+                            <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.3}%; top:@{getTop(token.getPosition()._2)+1.3}%;width:5%; height:5%">
+                            <div class="tokens">
+                                <img src="@routes.Assets.versioned("images/tokens/green.png")" />
+                            </div>
+                            </div>
+
+                        }else{
+                            @if(token.getColor() == "yellow"){
+                                @{getLeft(token.getPosition()._2)}
+                                @token.getPosition()._2
+                                @{getTop(token.getPosition()._2)}
+                                <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.3}%; top:@{getTop(token.getPosition()._2)+1.3}%;width:5%; height:5%">
+                                <div class="tokens">
+                                    <img src="@routes.Assets.versioned("images/tokens/yellow.png")" />
+                                </div>
+                                </div>
+
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
         <!--adding tokens, if token.count != 0, token.getPosition> </-->
         @for(index <- 0 until home1.size){
             <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; ">
             @if(players.nonEmpty){
                 @if(tokens1(index).counter == 0) {
                     <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/red.png")" width="40" height="40"/>
+                        <img src="@routes.Assets.versioned("images/tokens/red.png")" />
                     </div>
                 }
             }
             </div>
+        }
+        @for(index <- 0 until finish1.size){
+            <div id="red" class="circle" style="left:@{getFinishLeft(index)}%; top:@{getFinishTop(index)}%; ">
+            @if(players.nonEmpty){
+                @if(tokens1(index).counter == 40) {
+                    <div class="tokens">
+                        <img src="@routes.Assets.versioned("images/tokens/red.png")" />
+                    </div>
+                }
+            }</div>
         }
 
         @for(index <- 0 until home2.size){
@@ -98,36 +163,66 @@
             @if(1 < players.size){
                 @if(tokens2(index).counter == 0) {
                     <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/blue.png")" width="40" height="40"/>
+                        <img src="@routes.Assets.versioned("images/tokens/blue.png")" />
                     </div>
                 }
             }
             </div>
         }
 
+        @for(index <- 0 until finish2.size){
+            <div id="blue" class="circle" style="left:@{getFinishLeft2(index)}%; top:@{getFinishTop2(index)}%; ">
+            @if(1 < players.size){
+                @if(tokens2(index).counter == 40) {
+                    <div class="tokens">
+                        <img src="@routes.Assets.versioned("images/tokens/blue.png")" />
+                    </div>
+                }
+            }</div>
+        }
         @for(index <- 0 until home3.size){
             <div id="green" class="circle" style="left:@{getHome3Left(index)}%; top:@{getHome3Top(index)}%; ">
             @if(2 < players.size){
                 @if(tokens3(index).counter == 0) {
                     <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/green.png")" width="40" height="40"/>
+                        <img src="@routes.Assets.versioned("images/tokens/green.png")" width=8% height=8%/>
                     </div>
                 }
             }
             </div>
         }
 
+        @for(index <- 0 until finish3.size){
+            <div id="green" class="circle" style="left:@{getFinishLeft3(index)}%; top:@{getFinishTop3(index)}%; ">
+            @if(2 < players.size){
+                @if(tokens3(index).counter == 40) {
+                    <div class="tokens">
+                        <img src="@routes.Assets.versioned("images/tokens/green.png")" />
+                    </div>
+                }
+            }</div>
+        }
 
         @for(index <- 0 until home4.size){
             <div id="yellow" class="circle" style="left:@{getHome4Left(index)}%; top:@{getHome4Top(index)}%; ">
             @if(3 < players.size){
                 @if(tokens4(index).counter == 0) {
                     <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width="40" height="40"/>
+                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width=8% height=8%/>
                     </div>
                 }
             }
             </div>
+        }
+        @for(index <- 0 until finish4.size){
+            <div id="yellow" class="circle" style="left:@{getFinishLeft4(index)}%; top:@{getFinishTop4(index)}%; ">
+            @if(3 < players.size){
+                @if(tokens4(index).counter == 40) {
+                    <div class="tokens">
+                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" />
+                    </div>
+                }
+            }</div>
         }
 
 

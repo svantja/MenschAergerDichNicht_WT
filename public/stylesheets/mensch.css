@@ -21,11 +21,6 @@
     padding-top: 100%;
 }
 
-.tokens {
-    position: absolute;
-    left:5px;
-}
-
 
 
 .circle{
@@ -35,6 +30,17 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 70%;
+}
+
+.tokens {
+    position: absolute;
+    left:20%;
+}
+
+
+
+img {
+    max-width: 75%;
 }
 
 #test.circle{
