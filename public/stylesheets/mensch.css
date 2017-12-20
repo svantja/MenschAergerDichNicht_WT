@@ -1,19 +1,12 @@
-.container{
-    margin: 0 auto;
-    position: absolute;
-    border: 3px solid #73AD21;
-    width: 90%;
-    background: grey;
-    padding-top: 90%;
-}
-
 .background {
     margin: 0 auto;
     position: relative;
-    border: 3px solid #73AD21;
+
+    float: left;
     width: 50%;
     background: grey;
 }
+
 
 .background:before{
     content: "";
@@ -21,6 +14,30 @@
     padding-top: 100%;
 }
 
+.background.right{
+    width:10%;
+    background: gray;
+    float: left;
+
+}
+
+.background.right:before{
+    content: "";
+    display: block;
+    padding-top: 500%;
+}
+
+.background.left{
+    width:25%;
+    background: white;
+    float: left;
+}
+
+.background.left:before{
+    content: "";
+    display: block;
+    padding-top: 200%;
+}
 
 
 .circle{

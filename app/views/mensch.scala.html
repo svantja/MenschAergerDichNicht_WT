@@ -56,7 +56,8 @@
     <meta http-equiv="refresh" content="5" >
       <!--code> @Html(tui.printingTui()) </code-->
     <!--div class="container"-->
-
+    <div class="row clearfix">
+        <div class="background left"></div>
       <div class="background">
 
 
@@ -96,9 +97,6 @@
                         </div>
                 }else{
                     @if(token.getColor() == "blue"){
-                        @{getLeft(token.getPosition()._2)}
-                        @token.getPosition()._2
-                        @{getTop(token.getPosition()._2)}
                         <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.4}%; top:@{getTop(token.getPosition()._2)+1.4}%;width:5%; height:5%">
                         <div class="tokens">
                             <img src="@routes.Assets.versioned("images/tokens/blue.png")" />
@@ -107,9 +105,6 @@
 
                     }else{
                         @if(token.getColor() == "green"){
-                            @{getLeft(token.getPosition()._2)}
-                            @token.getPosition()._2
-                            @{getTop(token.getPosition()._2)}
                             <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.3}%; top:@{getTop(token.getPosition()._2)+1.3}%;width:5%; height:5%">
                             <div class="tokens">
                                 <img src="@routes.Assets.versioned("images/tokens/green.png")" />
@@ -118,9 +113,6 @@
 
                         }else{
                             @if(token.getColor() == "yellow"){
-                                @{getLeft(token.getPosition()._2)}
-                                @token.getPosition()._2
-                                @{getTop(token.getPosition()._2)}
                                 <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.3}%; top:@{getTop(token.getPosition()._2)+1.3}%;width:5%; height:5%">
                                 <div class="tokens">
                                     <img src="@routes.Assets.versioned("images/tokens/yellow.png")" />
@@ -185,7 +177,7 @@
             @if(2 < players.size){
                 @if(tokens3(index).counter == 0) {
                     <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/green.png")" width=8% height=8%/>
+                        <img src="@routes.Assets.versioned("images/tokens/green.png")"/>
                     </div>
                 }
             }
@@ -208,7 +200,7 @@
             @if(3 < players.size){
                 @if(tokens4(index).counter == 0) {
                     <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width=8% height=8%/>
+                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")"/>
                     </div>
                 }
             }
@@ -228,5 +220,7 @@
 
 
       </div>
+    <div class="background right"></div>
+    </div>
       <!--/div-->
   }
