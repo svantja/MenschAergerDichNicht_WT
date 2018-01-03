@@ -13,31 +13,6 @@
     padding-top: 100%;
 }
 
-.background.right{
-    width:10%;
-    background: gray;
-    float: left;
-
-}
-
-.background.right:before{
-    content: "";
-    display: block;
-    padding-top: 500%;
-}
-
-.background.left{
-    width:20%;
-    background: white;
-    float: left;
-}
-
-.background.left:before{
-    content: "";
-    display: block;
-    padding-top: 200%;
-}
-
 
 .circle{
     border: 6px;
@@ -46,11 +21,13 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 70%;
+    z-index: 100;
 }
 
 .tokens {
     position: absolute;
     left:20%;
+    z-index: 101;
 }
 
 
