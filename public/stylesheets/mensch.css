@@ -2,8 +2,8 @@
     margin: 0 auto;
     position: relative;
     float: left;
-    width: 50%;
-    background: grey;
+    width: 40%;
+    background: rosybrown;
 }
 
 
@@ -49,26 +49,32 @@ img {
 
 #red.circle{
     position: absolute;
-    background: red;
+    background: palevioletred;
 }
 
 
 #blue.circle{
 
     position: absolute;
-    background: blue;
+    background: darkslateblue;
 }
 
 
 #green.circle{
     position: absolute;
-    background: green;
+    background: seagreen;
 }
 
 
 #yellow.circle{
     position: absolute;
     background: yellow;
+}
+
+.btn-responsive {
+    white-space: normal !important;
+    word-wrap: break-word;
+    font-size: 4vw;
 }
 
 

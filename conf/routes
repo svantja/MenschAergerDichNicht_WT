@@ -13,6 +13,10 @@ GET     /dicing                      controllers.MenschController.dicing
 
 GET     /move/:id                    controllers.MenschController.move(id: Int)
 
+GET     /newgame                     controllers.MenschController.newGame
+
+GET     /about                       controllers.MenschController.about
+
 # An example controller showing how to use dependency injection
 #GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
