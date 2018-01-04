@@ -1,9 +1,31 @@
-@(message: String)
+@()
 
-@main("Welcome to MenschAergerDichNicht") {
+ @main("Welcome to MeschAergerDichNicht") {
 
- @message
+  <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/mensch.css")' />
 
- <a href="/mensch/n"> play Sudoku </a>
+   <!--div class="container"-->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+   <a class="navbar-brand" href="/"><img src="@routes.Assets.versioned("images/tokens/brand.png")" width="140" height="60" class="d-inline-block align-top" alt=""></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+     <li class="nav-item active">
+      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/newgame">Neues Spiel</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link disabled" href="/">Disabled</a>
+     </li>
+    </ul>
+   </div>
+  </nav>
 
 }

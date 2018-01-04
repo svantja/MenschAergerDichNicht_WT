@@ -56,23 +56,41 @@
 
     <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/mensch.css")' />
 
-      <!--code> @Html(tui.printingTui()) </code-->
     <!--div class="container"-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="@routes.Assets.versioned("images/tokens/brand.png")" width="140" height="60" class="d-inline-block align-top" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/newgame">Neues Spiel</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="row clearfix">
 
-      <div class="background">
+        <div class="background">
 
         @for(index <- 0 until playingfield.size){
             @if(index == 0){
-                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkred ">
+                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:indianred ">
 
                 </div>
             }else{
                 @if(index == 10){
-                    <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkblue "> </div>
+                    <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:cadetblue "> </div>
                 }else{
                     @if(index == 20){
-                        <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkgreen "> </div>
+                        <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkolivegreen "> </div>
                     }else{
                         @if(index == 30){
                             <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:orange "> </div>
@@ -103,15 +121,15 @@
 
                     }else{
                         @if(token.getColor() == "green"){
-                                <a href="move/@token.tokenId">
-                                    <img href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/green.png")" style="position:absolute; z-index:101; left:@{getLeft(token.getPosition()._2)+5/100}%; top:@{getTop(token.getPosition()._2)}%;width:6%; height:6% />
-                                </a>
+                            <a href="move/@token.tokenId">
+                                <img href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/green.png")" style="position:absolute; z-index:101; left:@{getLeft(token.getPosition()._2)+5/100}%; top:@{getTop(token.getPosition()._2)}%;width:6%; height:6%" />
+                            </a>
 
                         }else{
                             @if(token.getColor() == "yellow"){
-                                    <a href="move/@token.tokenId">
-                                        <img href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="position:absolute; z-index:101; left:@{getLeft(token.getPosition()._2)+5/100}%; top:@{getTop(token.getPosition()._2)}%;width:6%; height:6%" />
-                                    </a>
+                                <a href="move/@token.tokenId">
+                                    <img href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="position:absolute; z-index:101; left:@{getLeft(token.getPosition()._2)+5/100}%; top:@{getTop(token.getPosition()._2)}%;width:6%; height:6%" />
+                                </a>
 
 
                             }
@@ -246,7 +264,7 @@
 
     @if(gamestate == "ONGOING"){
         @if(game.players.currentPlayer == 0){
-            <a href="/dicing" class="btn btn-danger btn-lg btn-block" style="position: absolute">Würfeln</a>
+            <a href="/dicing" class="btn btn-danger btn-lg btn-block" style="position: absolute;">Würfeln</a>
         }
         @if(game.players.currentPlayer == 1){
             <a href="/dicing" class="btn btn-primary btn-lg btn-block" style="position: absolute;">Würfeln</a>
@@ -259,12 +277,12 @@
         }
     }
     @if(gamestate == "NONE" || gamestate == "PREPARE"){
-        <div align="center" style="position: absolute">
+        <div class="btn-group" role="group" aria-label="bla" style="width: 100%; position: absolute">
+            <a href="/newplayer/@game.players.getAllPlayer.size" class="btn btn-info" id="add" style="background: lightpink;width: 100%;border-radius:0;font-size: 1.5vw;">Spieler hinzugfügen</a>
 
-            <a href="/newplayer/@game.players.getAllPlayer.size" class="btn btn-info btn-lg" id="add" style="width: 40%;" >Spieler hinzugfügen</a>
-
-            <a href="/start" class="btn btn-info btn-lg" id="start" style="width: 40%;">Spiel starten</a>
+            <a href="/start" class="btn btn-info" id="start" style="background: lightpink;width: 100%;border-radius:0;font-size: 1.5vw;">Spiel starten</a>
         </div>
+
     }
 
       </div>
