@@ -142,8 +142,9 @@
     }
         <!--adding tokens, if token.count != 0, token.getPosition> </-->
         @for(index <- 0 until home1.size){
-            <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; ">
+
             @if(players.nonEmpty){
+                <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; " onclick="getPosition(0,0)">
                 @if(tokens1(index).counter == 0) {
                     <a href="/move/@index">
                         <img src="@routes.Assets.versioned("images/tokens/red.png")" style="position:absolute; z-index:101; left:10%;" />
@@ -292,3 +293,4 @@
       <!--/div-->
 
   }
+

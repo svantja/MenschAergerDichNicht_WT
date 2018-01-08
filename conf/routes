@@ -2,7 +2,7 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Controller for Sudoku
+# Controller for MenschAergerDichNicht
 GET		/       					 controllers.MenschController.mensch
 
 GET     /newplayer/:index            controllers.MenschController.newPlayer(index: Int)
@@ -16,6 +16,10 @@ GET     /move/:id                    controllers.MenschController.move(id: Int)
 GET     /newgame                     controllers.MenschController.newGame
 
 GET     /about                       controllers.MenschController.about
+
+GET     /json                       controllers.MenschController.playersToJson
+
+GET     /websocket                  controllers.MenschController.socket
 
 # An example controller showing how to use dependency injection
 #GET     /count                      controllers.CountController.count
