@@ -2,8 +2,19 @@ package controllers
 
 import javax.inject._
 
-import com.sun.media.jfxmedia.events.PlayerStateEvent.PlayerState
+import javax.inject._
 
+import akka.actor.{Actor, ActorRef, ActorSystem, Props}
+import akka.stream.Materializer
+import play.api.mvc._
+import de.htwg.se.menschaergerdichnicht.Game
+import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.GameState._
+import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.PlayersChanged
+import de.htwg.se.menschaergerdichnicht.model.playerComponent.playerBaseImpl.Players
+import de.htwg.se.sudoku.controller.controllerComponent.GridSizeChanged
+import play.api.libs.streams.ActorFlow
+
+import scala.swing.Reactor
 
 
 @Singleton
@@ -55,32 +66,34 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
   def socket = WebSocket.accept[String, String] { request =>
     ActorFlow.actorRef { out =>
       println("Connect received")
-      MenschWebSocketActorFactory.create(out)
+      SudokuWebSocketActorFactory.create(out)
     }
   }
 
-  object MenschWebSocketActorFactory {
+  object SudokuWebSocketActorFactory {
     def create(out: ActorRef) = {
-      Props(new MenschWebSocketActor(out))
+      Props(new SudokuWebSocketActor(out))
     }
   }
 
-  class MenschWebSocketActor(out: ActorRef) extends Actor with Reactor{
+  class SudokuWebSocketActor(out: ActorRef) extends Actor with Reactor{
     listenTo(gameController)
-
     def receive = {
       case msg: String =>
-        out ! (gameConroller.toJson.toString)
-        println("Send Json to Client" + msg)
+        out ! (gameController.players.toJson.toString)
+        println(gameController.players.toJson.toString)
+        println("Sent Json to Client "+ msg)
     }
-
     reactions += {
-      case event: PlayerState => sendJsonToClien
+      case event: PlayersChanged => {
+        println("actiiiiiiion")
+      }
     }
 
-    def sendJsonToClien = {
+    def sendJsonToClient = {
       println("Received event from Controller")
-      out ! (gameController.toJson.toString)
+      println(gameController.players.toJson.toString)
+      out ! (gameController.players.toJson.toString)
     }
   }
 
