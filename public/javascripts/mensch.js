@@ -36,7 +36,6 @@ function getHome(index, id) {
     }else{
         pos = HOMEFIELDPLAYERFOUR[index];
     }
-
     return pos;
 }
 
@@ -50,7 +49,6 @@ function getFinish(index, id) {
     }else{
         pos = FINISH_FOUR[index];
     }
-
     return pos;
 }
 
@@ -63,9 +61,7 @@ function getPosition(counter, position, id){
 
     }else if(counter >= 41){
         pos = getFinish(position, id);
-
     }
-
     return pos;
 }
 
@@ -77,7 +73,7 @@ function loadJson() {
         dataType: "json",
 
         success: function (result) {
-            player = result.player[0];
+            player = result.players[0];
             console.log(player);
         }
     });
@@ -88,20 +84,89 @@ function setPosition(counter, position, id) {
     pos = getPosition(counter, position, id);
     document.getElementById(id).style.left = pos[0]*100/660 + "%";
     document.getElementById(id).style.top = pos[1]*100/660 + "%";
-
-    console.log(id, ": ", pos)
+    document.getElementById(id).style.visibility = "visible"
 }
 
 function updatePage(data) {
     var json = JSON.parse(data)
-    for(i=0; i < json.player.length; i++){
-        for(j=0; j < json.player[i].token.length; j++){
-            setPosition(json.player[i].token[j].count, json.player[i].token[j].position, json.player[i].token[j].tokenId);
+    for(i=0; i < json.players.length; i++){
+        for(j=0; j < json.players[i].token.length; j++){
+            setPosition(json.players[i].token[j].count, json.players[i].token[j].position, json.players[i].token[j].tokenId);
+        }
+    }
+    if(json.state.toString() === "ONGOING"){
+        if(json.current === 0){
+            document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
+        }else if(json.current === 1){
+            document.getElementById("dicing").className = "btn btn-primary btn-lg btn-block"
+        }else if(json.current === 2){
+            document.getElementById("dicing").className = "btn btn-success btn-lg btn-block"
+        }else{
+            document.getElementById("dicing").className = "btn btn-warning btn-lg btn-block"
+        }
+        document.getElementById("dicing").innerHTML = "Würfeln"
+    }
+    if(json.state.toString() === "DICED"){
+
+        if(json.current === 0){
+            document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
+            for(i = 0; i < json.players[0].token.length; i++){
+                if(json.players[1].token[i].count > 0){
+                    count = json.players[0].token[i].count
+                }
+            }
+            if(count > 0){
+                document.getElementById("dicing").innerHTML = "Ziehe " + json.players[0].diced + " Felder";
+            }else{
+                document.getElementById("dicing").innerHTML = "Ziehe zum Start";
+            }
+
+        }else if(json.current === 1){
+            document.getElementById("dicing").className = "btn btn-primary btn-lg btn-block"
+            count = 0
+            for(i = 0; i < json.players[1].token.length; i++){
+                if(json.players[1].token[i].count > 0){
+                    count = json.players[1].token[i].count
+                }
+            }
+            if(count > 0){
+                document.getElementById("dicing").innerHTML = "Ziehe " + json.players[1].diced + " Felder";
+            }else{
+                document.getElementById("dicing").innerHTML = "Ziehe zum Start";
+            }
+
+        }else if(json.current === 2){
+            document.getElementById("dicing").className = "btn btn-success btn-lg btn-block"
+            count = 0
+            for(i = 0; i < json.players[2].token.length; i++){
+                if(json.players[1].token[i].count > 0){
+                    count = json.players[2].token[i].count
+                }
+            }
+            if(count > 0){
+                document.getElementById("dicing").innerHTML = "Ziehe " + json.players[2].diced + " Felder";
+            }else{
+                document.getElementById("dicing").innerHTML = "Ziehe zum Start";
+            }
+
+        }else{
+            document.getElementById("dicing").className = "btn btn-warning btn-lg btn-block"
+            count = 0
+            for(i = 0; i < json.players[3].token.length; i++){
+                if(json.players[1].token[i].count > 0){
+                    count = json.players[3].token[i].count
+                }
+            }
+            if(count > 0){
+                document.getElementById("dicing").innerHTML = "Ziehe " + json.players[3].diced + " Felder";
+            }else{
+                document.getElementById("dicing").innerHTML = "Ziehe zum Start";
+            }
+
         }
     }
     console.log("new positions set")
-    //location.reload()
-    //location.href = "/"
+
 }
 
 function connectWebSocket() {
@@ -135,7 +200,7 @@ function connectWebSocket() {
     }
 
 $( document ).ready(function() {
-    console.log( "Document is ready, filling grid" );
+    console.log( "Document is ready, position Tokens" );
     loadJson();
     connectWebSocket()
 });

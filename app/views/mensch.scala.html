@@ -103,43 +103,55 @@
                 }
             }
         }
+    <a href="move/1">
+        <img id="1" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/2">
+        <img id="2" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/3">
+        <img id="3" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/4">
+        <img id="4" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/5">
+        <img id="5" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/6">
+        <img id="6" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/7">
+        <img id="7" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/8">
+        <img id="8" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/9">
+        <img id="9" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/10">
+        <img id="10" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/11">
+        <img id="11" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/12">
+        <img id="12" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/13">
+        <img id="13" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/14">
+        <img id="14" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/15">
+        <img id="15" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/16">
+        <img id="16" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
 
-    @for(player <- players){
-        @for(token <- player.getTokens()){
-
-
-                @if(token.getColor() == "red"){
-                        <a href="move/@token.tokenId">
-                            <img id="@token.tokenId" src="@routes.Assets.versioned("images/tokens/red.png")" style="position:absolute; z-index:101;width:6%; height:6%" />
-                        </a>
-
-                }else{
-                    @if(token.getColor() == "blue"){
-                        <a href="move/@token.tokenId">
-                                <img id="@token.tokenId" href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/blue.png")" style="position:absolute; z-index:101;width:6%; height:6%" />
-                        </a>
-
-                    }else{
-                        @if(token.getColor() == "green"){
-                            <a href="move/@token.tokenId">
-                                <img id="@token.tokenId" href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/green.png")" style="position:absolute; z-index:101;width:6%; height:6%" />
-                            </a>
-
-                        }else{
-                            @if(token.getColor() == "yellow"){
-                                <a href="move/@token.tokenId">
-                                    <img id="@token.tokenId" href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="position:absolute; z-index:101;width:6%; height:6%" />
-                                </a>
-
-
-                            }
-                        }
-                    }
-                }
-
-
-        }
-    }
         <!--adding tokens, if token.count != 0, token.getPosition> </-->
         @for(index <- 0 until home1.size){
             <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; " ></div>
@@ -170,54 +182,16 @@
             <div id="yellow" class="circle" style="left:@{getFinishLeft4(index)}%; top:@{getFinishTop4(index)}%; "></div>
         }
 
-    @if(gamestate == "DICED"){
-        @if(game.players.currentPlayer == 0){
-            @if(game.players.getCurrentPlayer.house.isFull(game.players.getCurrentPlayer)){
-                <button type="button" class="btn btn-danger btn-lg btn-block" style="position: absolute" disabled>Ziehe zum Start</button>
-                }else{
-                <button type="button" class="btn btn-danger btn-lg btn-block" style="position: absolute" disabled>Ziehe @game.players.getCurrentPlayer.getDiced() Felder</button>
-                }
 
-        }
-        @if(game.players.currentPlayer == 1){
-            @if(game.players.getCurrentPlayer.house.isFull(game.players.getCurrentPlayer)){
-                <button type="button" class="btn btn-primary btn-lg btn-block" style="position: absolute" disabled>Ziehe zum Start</button>
-            }else{
-                <button type="button" class="btn btn-primary btn-lg btn-block" style="position: absolute" disabled>Ziehe @game.players.getCurrentPlayer.getDiced() Felder</button>
-            }
-        }
-        @if(game.players.currentPlayer == 2){
-            @if(game.players.getCurrentPlayer.house.isFull(game.players.getCurrentPlayer)){
-                <button type="button" class="btn btn-success btn-lg btn-block" style="position: absolute" disabled>Ziehe zum Start</button>
-            }else{
-                <button type="button" class="btn btn-success btn-lg btn-block" style="position: absolute" disabled>Ziehe @game.players.getCurrentPlayer.getDiced() Felder</button>
-            }
-        }
-        @if(game.players.currentPlayer == 3){
-            @if(game.players.getCurrentPlayer.house.isFull(game.players.getCurrentPlayer)){
-                <button type="button" class="btn btn-warning btn-lg btn-block" style="position: absolute" disabled>Ziehe zum Start</button>
-            }else{
-                <button type="button" class="btn btn-warning btn-lg btn-block" style="position: absolute" disabled>Ziehe @game.players.getCurrentPlayer.getDiced() Felder</button>
-            }
-        }
+
+    @if(gamestate == "ONGOING" || gamestate == "DICED"){
+
+        <a id="dicing" href="/dicing" class="btn btn-danger btn-lg btn-block" style="position: absolute;border-radius: 0; font-size: 1.5vw;">Würfeln</a>
+
     }
 
-    @if(gamestate == "ONGOING"){
-        @if(game.players.currentPlayer == 0){
-            <a href="/dicing" class="btn btn-danger btn-lg btn-block" style="position: absolute;">Würfeln</a>
-        }
-        @if(game.players.currentPlayer == 1){
-            <a href="/dicing" class="btn btn-primary btn-lg btn-block" style="position: absolute;">Würfeln</a>
-        }
-        @if(game.players.currentPlayer == 2){
-            <a href="/dicing" class="btn btn-success btn-lg btn-block" style="position: absolute;">Würfeln</a>
-        }
-        @if(game.players.currentPlayer == 3){
-            <a href="/dicing" class="btn btn-warning btn-lg btn-block" style="position: absolute;">Würfeln</a>
-        }
-    }
     @if(gamestate == "NONE" || gamestate == "PREPARE"){
-        <div class="btn-group" role="group" aria-label="bla" style="width: 100%; position: absolute">
+        <div id="prepare" class="btn-group" role="group"  style="width: 100%; position: absolute">
             <a href="/newplayer/@game.players.getAllPlayer.size" class="btn btn-info" id="add" style="background: lightpink;width: 100%;border-radius:0;font-size: 1.5vw;">Spieler hinzugfügen</a>
 
             <a href="/start" class="btn btn-info" id="start" style="background: lightpink;width: 100%;border-radius:0;font-size: 1.5vw;">Spiel starten</a>
