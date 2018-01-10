@@ -20,6 +20,7 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
 
   var game = Game
   var gameController = game.controller
+  gameController.gui.visible = false
   def tui = gameController.tui
 
   def mensch = Action {
