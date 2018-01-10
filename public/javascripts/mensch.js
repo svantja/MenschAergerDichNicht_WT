@@ -9,6 +9,7 @@ var playingField = [[30, 230], [80, 230], [130, 230],[180, 230], [230, 230], // 
     [280, 530], [230, 530], // 9.Reihe
     [230, 480], [230, 430], [230, 380], [230, 330],
     [180, 330], [130, 330], [80, 330], [30, 330], [30, 280]];
+var playingFieldTop = [230,230,230,230,230];
 
 var FINISH_ONE =   [[80, 280 ], [130, 280], [180, 280], [230, 280]];
 var FINISH_TWO =   [[280, 80 ], [280, 130], [280,180 ], [280,230 ]];
@@ -20,34 +21,52 @@ var HOMEFIELDPLAYERTWO = [[480, 30], [530, 30], [530, 80], [480, 80]];
 var HOMEFIELDPLAYERTHREE = [[480, 480], [530, 480], [530, 530], [480, 530]];
 var HOMEFIELDPLAYERFOUR = [[30, 480], [80, 480], [30, 530], [80, 530]];
 
-function getLeft(index){
-    left = playingField[index][0] * 100 / 660;
-    return left;
+function getField(index){
+    pos = playingField[index];
+    return pos;
 }
 
-function getRight(index){
-    right = playingField[index][2] * 100 / 660;
-    return right;
+function getHome(index, id) {
+    if(id <= 4){
+        pos = HOMEFIELDPLAYERONE[index];
+    }else if(id > 4 && id <= 8){
+        pos = HOMEFIELDPLAYERTWO[index];
+    } else if(id > 8 && id <= 12){
+        pos = HOMEFIELDPLAYERTHREE[index];
+    }else{
+        pos = HOMEFIELDPLAYERFOUR[index];
+    }
+
+    return pos;
 }
 
-function getPosition(counter, position){
-    var div = document.getElementById("background");
-    var image = document.createElement("IMG");
-    image.setAttribute("src",url("/images/tokens/red1.png"));
-    image.setAttribute("position", "absolute");
-    image.setAttribute("width", "6%");
-    image.setAttribute("height", "6%");
+function getFinish(index, id) {
+    if(id <= 4){
+        pos = FINISH_ONE[index];
+    }else if(id > 4 && id <= 8){
+        pos = FINISH_TWO[index];
+    } else if(id > 8 && id <= 12){
+        pos = FINISH_THREE[index];
+    }else{
+        pos = FINISH_FOUR[index];
+    }
 
+    return pos;
+}
+
+function getPosition(counter, position, id){
     if(counter > 0 && counter < 41){
-        left = getLeft(position);
-        right = getRight(position);
-        image.setAttribute("left", left);
-        image.setAttribute("top", right);
-        div.appendChild(image)
+        pos = getField(position)
+
+    }else if(counter === 0){
+        pos = getHome(position, id);
+
+    }else if(counter >= 41){
+        pos = getFinish(position, id);
 
     }
-    console.log("get position")
 
+    return pos;
 }
 
 function loadJson() {
@@ -58,15 +77,30 @@ function loadJson() {
         dataType: "json",
 
         success: function (result) {
-            player = result.player;
+            player = result.player[0];
             console.log(player);
         }
     });
 
 }
 
-function updatePage() {
-    location.reload()
+function setPosition(counter, position, id) {
+    pos = getPosition(counter, position, id);
+    document.getElementById(id).style.left = pos[0]*100/660 + "%";
+    document.getElementById(id).style.top = pos[1]*100/660 + "%";
+
+    console.log(id, ": ", pos)
+}
+
+function updatePage(data) {
+    var json = JSON.parse(data)
+    for(i=0; i < json.player.length; i++){
+        for(j=0; j < json.player[i].token.length; j++){
+            setPosition(json.player[i].token[j].count, json.player[i].token[j].position, json.player[i].token[j].tokenId);
+        }
+    }
+    console.log("new positions set")
+    //location.reload()
     //location.href = "/"
 }
 
@@ -93,6 +127,7 @@ function connectWebSocket() {
             websocket.onmessage = function (e) {
                 if (typeof e.data === "string") {
                         console.log('String message received: ' + e.data);
+                        updatePage(e.data)
                         //updatePage()
                     }
 

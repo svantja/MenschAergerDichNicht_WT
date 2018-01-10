@@ -84,6 +84,7 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
     }
     reactions += {
       case event: PlayersChanged => {
+        sendJsonToClient
         println("actiiiiiiion")
       }
     }

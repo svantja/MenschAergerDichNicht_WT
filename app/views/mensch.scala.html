@@ -106,29 +106,29 @@
 
     @for(player <- players){
         @for(token <- player.getTokens()){
-            @if(token.counter > 0 && token.counter < 41){
+
 
                 @if(token.getColor() == "red"){
                         <a href="move/@token.tokenId">
-                            <img src="@routes.Assets.versioned("images/tokens/red.png")" style="position:absolute; z-index:101; left:@{getLeft(token.getPosition()._2)+5/100}%; top:@{getTop(token.getPosition()._2)}%;width:6%; height:6%" />
+                            <img id="@token.tokenId" src="@routes.Assets.versioned("images/tokens/red.png")" style="position:absolute; z-index:101;width:6%; height:6%" />
                         </a>
 
                 }else{
                     @if(token.getColor() == "blue"){
                         <a href="move/@token.tokenId">
-                                <img href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/blue.png")" style="position:absolute; z-index:101; left:@{getLeft(token.getPosition()._2)+5/100}%; top:@{getTop(token.getPosition()._2)}%;width:6%; height:6%" />
+                                <img id="@token.tokenId" href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/blue.png")" style="position:absolute; z-index:101;width:6%; height:6%" />
                         </a>
 
                     }else{
                         @if(token.getColor() == "green"){
                             <a href="move/@token.tokenId">
-                                <img href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/green.png")" style="position:absolute; z-index:101; left:@{getLeft(token.getPosition()._2)+5/100}%; top:@{getTop(token.getPosition()._2)}%;width:6%; height:6%" />
+                                <img id="@token.tokenId" href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/green.png")" style="position:absolute; z-index:101;width:6%; height:6%" />
                             </a>
 
                         }else{
                             @if(token.getColor() == "yellow"){
                                 <a href="move/@token.tokenId">
-                                    <img href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="position:absolute; z-index:101; left:@{getLeft(token.getPosition()._2)+5/100}%; top:@{getTop(token.getPosition()._2)}%;width:6%; height:6%" />
+                                    <img id="@token.tokenId" href="move/@token.tokenId" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="position:absolute; z-index:101;width:6%; height:6%" />
                                 </a>
 
 
@@ -137,98 +137,37 @@
                     }
                 }
 
-            }
+
         }
     }
         <!--adding tokens, if token.count != 0, token.getPosition> </-->
         @for(index <- 0 until home1.size){
-
-            @if(players.nonEmpty){
-                <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; " onclick="getPosition(0,0)">
-                @if(tokens1(index).counter == 0) {
-                    <a href="/move/@index">
-                        <img src="@routes.Assets.versioned("images/tokens/red.png")" style="position:absolute; z-index:101; left:10%;" />
-                    </a>
-                }
-            }
-            </div>
+            <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; " ></div>
         }
         @for(index <- 0 until finish1.size){
-            <div id="red" class="circle" style="left:@{getFinishLeft(index)}%; top:@{getFinishTop(index)}%; ">
-            @if(players.nonEmpty){
-                @if(tokens1(index).counter >= 40) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/red.png")" />
-                    </div>
-                }
-            }</div>
+            <div id="red" class="circle" style="left:@{getFinishLeft(index)}%; top:@{getFinishTop(index)}%; "></div>
         }
 
         @for(index <- 0 until home2.size){
-            <div id="blue" class="circle" style="left:@{getHome2Left(index)}%; top:@{getHome2Top(index)}%; ">
-            @if(1 < players.size){
-                @if(tokens2(index).counter == 0) {
-                    <a href="/move/@tokens2(index).tokenId">
-                        <img src="@routes.Assets.versioned("images/tokens/blue.png")" style="position:absolute; z-index:101; left:10%;" />
-                    </a>
-                }
-            }
-            </div>
+            <div id="blue" class="circle" style="left:@{getHome2Left(index)}%; top:@{getHome2Top(index)}%; "></div>
         }
 
         @for(index <- 0 until finish2.size){
-            <div id="blue" class="circle" style="left:@{getFinishLeft2(index)}%; top:@{getFinishTop2(index)}%; ">
-            @if(1 < players.size){
-                @if(tokens2(index).counter >= 40) {
-                    <dic class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/blue.png")" />
-                    </dic>
-                }
-            }</div>
+            <div id="blue" class="circle" style="left:@{getFinishLeft2(index)}%; top:@{getFinishTop2(index)}%; "></div>
         }
         @for(index <- 0 until home3.size){
-            <div id="green" class="circle" style="left:@{getHome3Left(index)}%; top:@{getHome3Top(index)}%; ">
-            @if(2 < players.size){
-                @if(tokens3(index).counter == 0) {
-                    <a href="/move/@tokens3(index).tokenId">
-                        <img src="@routes.Assets.versioned("images/tokens/green.png")" style="position:absolute; z-index:101; left:10%;" />
-                    </a>
-                }
-            }
-            </div>
+            <div id="green" class="circle" style="left:@{getHome3Left(index)}%; top:@{getHome3Top(index)}%; "></div>
         }
 
         @for(index <- 0 until finish3.size){
-            <div id="green" class="circle" style="left:@{getFinishLeft3(index)}%; top:@{getFinishTop3(index)}%; ">
-            @if(2 < players.size){
-                @if(tokens3(index).counter >= 40) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/green.png")" />
-                    </div>
-                }
-            }</div>
+            <div id="green" class="circle" style="left:@{getFinishLeft3(index)}%; top:@{getFinishTop3(index)}%; "></div>
         }
 
         @for(index <- 0 until home4.size){
-            <div id="yellow" class="circle" style="left:@{getHome4Left(index)}%; top:@{getHome4Top(index)}%; ">
-            @if(3 < players.size){
-                @if(tokens4(index).counter == 0) {
-                    <a href="/move/@tokens4(index).tokenId">
-                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" style="position:absolute; z-index:101; left:10%;" />
-                    </a>
-                }
-            }
-            </div>
+            <div id="yellow" class="circle" style="left:@{getHome4Left(index)}%; top:@{getHome4Top(index)}%; "></div>
         }
         @for(index <- 0 until finish4.size){
-            <div id="yellow" class="circle" style="left:@{getFinishLeft4(index)}%; top:@{getFinishTop4(index)}%; ">
-            @if(3 < players.size){
-                @if(tokens4(index).counter >= 40) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" />
-                    </div>
-                }
-            }</div>
+            <div id="yellow" class="circle" style="left:@{getFinishLeft4(index)}%; top:@{getFinishTop4(index)}%; "></div>
         }
 
     @if(gamestate == "DICED"){
