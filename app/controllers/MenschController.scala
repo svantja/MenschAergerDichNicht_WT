@@ -63,17 +63,17 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
   def socket = WebSocket.accept[String, String] { request =>
     ActorFlow.actorRef { out =>
       println("Connect received")
-      SudokuWebSocketActorFactory.create(out)
+      MenschWebSocketActorFactory.create(out)
     }
   }
 
-  object SudokuWebSocketActorFactory {
+  object MenschWebSocketActorFactory {
     def create(out: ActorRef) = {
-      Props(new SudokuWebSocketActor(out))
+      Props(new MenschWebSocketActor(out))
     }
   }
 
-  class SudokuWebSocketActor(out: ActorRef) extends Actor with Reactor{
+  class MenschWebSocketActor(out: ActorRef) extends Actor with Reactor{
     listenTo(gameController)
     def receive = {
       case msg: String =>

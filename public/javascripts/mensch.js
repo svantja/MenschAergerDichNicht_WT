@@ -66,7 +66,6 @@ function getPosition(counter, position, id){
 }
 
 function loadJson() {
-    console.log("test");
     $.ajax({
         method: "GET",
         url: "/json",
