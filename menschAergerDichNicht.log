@@ -1,0 +1,187 @@
+18:54:53.690 [application-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+18:54:53.695 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+18:54:53.699 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+18:54:53.700 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+18:54:53.703 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+18:54:53.704 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+18:54:53.707 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+18:54:53.708 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+18:54:53.708 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+18:54:53.712 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+18:54:53.713 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+18:54:53.713 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+18:54:53.720 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+18:54:53.721 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+18:54:53.723 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+18:54:53.724 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+18:54:53.725 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+18:54:53.726 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+18:54:53.729 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+18:54:53.729 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:54:53.745 [application-akka.actor.default-dispatcher-4] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@107ad4c5'
+18:54:53.745 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:54:53.758 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  application - ApplicationTimer demo: Starting application at 2018-01-11T17:54:53.753Z.
+18:54:53.764 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:54:53.800 [scala-execution-context-global-190] INFO  jobs.AuthTokenCleaner - 
+=================================
+Start to cleanup auth tokens
+=================================
+Total of 0 auth tokens(s) were deleted in 0 seconds
+=================================
+=================================
+
+18:54:54.296 [play-dev-mode-akka.actor.default-dispatcher-24] INFO  play.api.Play - Application started (Dev)
+18:54:54.298 [play-dev-mode-akka.actor.default-dispatcher-29] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:54:54.299 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:54:54.847 [play-dev-mode-akka.actor.default-dispatcher-29] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:54:54.856 [play-dev-mode-akka.actor.default-dispatcher-28] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:54:54.853 [play-dev-mode-akka.actor.default-dispatcher-21] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:54:56.646 [play-dev-mode-akka.actor.default-dispatcher-19] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:02.160 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:02.293 [AsyncHttpClient-3-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0xbf5522bc, L:/141.37.160.132:55035 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/3c34a4a38325d665876eb44ae06dd9ce?d=404'
+18:55:02.294 [AsyncHttpClient-3-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0xbf5522bc, L:/141.37.160.132:55035 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+18:55:02.303 [AsyncHttpClient-3-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /avatar/3c34a4a38325d665876eb44ae06dd9ce?d=404 HTTP/1.1
+Host: secure.gravatar.com
+Accept: */*
+User-Agent: AHC/2.0
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Thu, 11 Jan 2018 17:55:02 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 13
+Connection: keep-alive
+Last-Modified: Wed, 11 Jan 1984 08:00:00 GMT
+Link: <https://www.gravatar.com/avatar/3c34a4a38325d665876eb44ae06dd9ce?d=404>; rel="canonical"
+Access-Control-Allow-Origin: *
+X-nc: HIT fra 3
+Source-Age: 911
+
+18:55:02.304 [AsyncHttpClient-3-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0xbf5522bc, L:/141.37.160.132:55035 - R:secure.gravatar.com/192.0.73.2:443]
+18:55:02.304 [scala-execution-context-global-206] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
+18:55:02.325 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - mock implementation, send email
+18:55:02.325 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - subject: Welcome
+18:55:02.326 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - from: Silhouette <noreply@mohiva.com>
+18:55:02.326 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - bodyText: 
+Hello bb bb,
+
+Please follow the link to confirm and activate your new account: http://localhost:9000/account/activate/be863f55-e20e-453e-a8d6-79cf1f11fd65
+
+18:55:02.326 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - bodyHtml: 
+
+<html>
+    <body>
+        <p>Hello bb bb,</p>
+        <p>Please follow <a href="http://localhost:9000/account/activate/be863f55-e20e-453e-a8d6-79cf1f11fd65">this link</a> to confirm and activate your new account.</p>
+    </body>
+</html>
+
+18:55:02.327 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - to: bb@bb.de
+18:55:02.367 [play-dev-mode-akka.actor.default-dispatcher-28] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:02.369 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:02.376 [play-dev-mode-akka.actor.default-dispatcher-20] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:02.377 [play-dev-mode-akka.actor.default-dispatcher-21] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:02.378 [play-dev-mode-akka.actor.default-dispatcher-23] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:02.381 [play-dev-mode-akka.actor.default-dispatcher-19] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:02.977 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:04.083 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:05.190 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:06.284 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:07.378 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:08.487 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:09.151 [play-dev-mode-akka.actor.default-dispatcher-27] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:09.582 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:10.683 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:11.785 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:12.882 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:13.424 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:13.531 [scala-execution-context-global-215] INFO  d.h.s.m.aview.tui.Tui - 
+oo  OOO  oo
+oo  OoO  oo
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  oo
+oo  OOO  oo
+
+18:55:13.696 [play-dev-mode-akka.actor.default-dispatcher-32] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:13.989 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:15.083 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:15.472 [play-dev-mode-akka.actor.default-dispatcher-29] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:16.184 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:16.790 [play-dev-mode-akka.actor.default-dispatcher-27] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:16.796 [scala-execution-context-global-191] INFO  d.h.s.m.aview.tui.Tui - 
+oo  OOO  oo
+oo  OoO  oo
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  oo
+oo  OOO  oo
+
+18:55:17.283 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:18.383 [play-dev-mode-akka.actor.default-dispatcher-27] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:18.383 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:19.438 [play-dev-mode-akka.actor.default-dispatcher-30] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:19.442 [scala-execution-context-global-205] INFO  d.h.s.m.aview.tui.Tui - 
+oo  OOO  oo
+oo  OoO  oo
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  oo
+oo  OOO  oo
+
+18:55:19.481 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:20.582 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:20.934 [play-dev-mode-akka.actor.default-dispatcher-28] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:21.070 [play-dev-mode-akka.actor.default-dispatcher-23] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:21.682 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:22.503 [play-dev-mode-akka.actor.default-dispatcher-24] DEBUG play.api.http.HttpConfiguration - Generated dev mode secret a33b4d077f2a94d4c541dda45ea29af2 for app at file:/Z:/6.Semester/WebTech/WT_Silhouette/target/scala-2.12/classes/application.conf
+18:55:22.508 [scala-execution-context-global-210] INFO  d.h.s.m.aview.tui.Tui - 
+oo  OOO  oo
+oo  OoO  oo
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  oo
+oo  OOO  oo
+
+18:55:22.788 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:23.398 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:55:23.883 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:24.986 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:26.070 [application-akka.actor.default-dispatcher-8] INFO  akka.actor.CoordinatedShutdown - Starting coordinated shutdown from JVM shutdown hook
+18:55:26.090 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+18:55:26.090 [application-akka.actor.default-dispatcher-7] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application shutting down.
+18:55:26.096 [application-akka.actor.default-dispatcher-7] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application paused.
+18:55:26.098 [application-akka.actor.default-dispatcher-7] DEBUG org.quartz.simpl.SimpleThreadPool - Shutting down threadpool...
+18:55:26.101 [application-akka.actor.default-dispatcher-7] DEBUG org.quartz.simpl.SimpleThreadPool - Shutdown of threadpool complete.
+18:55:26.102 [application-akka.actor.default-dispatcher-7] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application shutdown complete.

@@ -93,7 +93,15 @@ function updatePage(data) {
             setPosition(json.players[i].token[j].count, json.players[i].token[j].position, json.players[i].token[j].tokenId);
         }
     }
+    if(json.state.toString() === "None" || json.state.toString() === "PREPARE"){
+        console.log("preparing")
+        document.getElementById("prepare").style.visibility = "visible"
+        document.getElementById("dicing").style.visibility = "hidden"
+    }
     if(json.state.toString() === "ONGOING"){
+        document.getElementById("prepare").style.visibility = "hidden"
+        console.log("ongoing")
+        document.getElementById("dicing").style.visibility = "visible"
         if(json.current === 0){
             document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
         }else if(json.current === 1){
@@ -106,11 +114,15 @@ function updatePage(data) {
         document.getElementById("dicing").innerHTML = "Würfeln"
     }
     if(json.state.toString() === "DICED"){
-
+        document.getElementById("prepare").style.visibility = "hidden"
+        console.log("diced")
+        document.getElementById("dicing").style.visibility = "visible"
         if(json.current === 0){
             document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
+            document.getElementById("dicing").style.visibility = "visible"
+            count = 0
             for(i = 0; i < json.players[0].token.length; i++){
-                if(json.players[1].token[i].count > 0){
+                if(json.players[0].token[i].count > 0){
                     count = json.players[0].token[i].count
                 }
             }
@@ -138,10 +150,11 @@ function updatePage(data) {
             document.getElementById("dicing").className = "btn btn-success btn-lg btn-block"
             count = 0
             for(i = 0; i < json.players[2].token.length; i++){
-                if(json.players[1].token[i].count > 0){
+                if(json.players[2].token[i].count > 0){
                     count = json.players[2].token[i].count
                 }
             }
+
             if(count > 0){
                 document.getElementById("dicing").innerHTML = "Ziehe " + json.players[2].diced + " Felder";
             }else{
@@ -152,7 +165,7 @@ function updatePage(data) {
             document.getElementById("dicing").className = "btn btn-warning btn-lg btn-block"
             count = 0
             for(i = 0; i < json.players[3].token.length; i++){
-                if(json.players[1].token[i].count > 0){
+                if(json.players[3].token[i].count > 0){
                     count = json.players[3].token[i].count
                 }
             }
