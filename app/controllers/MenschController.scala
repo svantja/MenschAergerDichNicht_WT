@@ -2,7 +2,6 @@ package controllers
 
 import javax.inject._
 
-import javax.inject._
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.stream.Materializer
@@ -50,8 +49,7 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
   }
 
   def newGame = Action {
-    gameController.players = new Players
-    gameController.gameState = PREPARE
+    gameController.newGame("bla")
     Ok(views.html.mensch(gameController))
   }
 
@@ -59,8 +57,10 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
     Ok(views.html.index())
   }
 
-  def playerToJson = Action {
-    Ok(gameController.players.toJson)
+
+  def playersToJson = Action {
+    Ok(gameController.toJson)
+
   }
 
   def socket = WebSocket.accept[String, String] { request =>
@@ -70,29 +70,31 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
     }
   }
 
-  object SudokuWebSocketActorFactory {
+
+
+  object MenschWebSocketActorFactory {
     def create(out: ActorRef) = {
-      Props(new SudokuWebSocketActor(out))
+      Props(new MenschWebSocketActor(out))
     }
   }
 
-  class SudokuWebSocketActor(out: ActorRef) extends Actor with Reactor{
+  class MenschWebSocketActor(out: ActorRef) extends Actor with Reactor{
     listenTo(gameController)
     def receive = {
       case msg: String =>
-        out ! (gameController.players.toJson.toString)
-        println(gameController.players.toJson.toString)
+        out ! (gameController.toJson.toString)
+        println(gameController.toJson.toString)
         println("Sent Json to Client "+ msg)
     }
     reactions += {
       case event: PlayersChanged => {
-        println("actiiiiiiion")
+        sendJsonToClient
       }
     }
 
     def sendJsonToClient = {
       println("Received event from Controller")
-      println(gameController.players.toJson.toString)
+
       out ! (gameController.players.toJson.toString)
     }
   }
