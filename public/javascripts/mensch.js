@@ -111,7 +111,7 @@ function updatePage(data) {
         if(json.current === 0){
             document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
             for(i = 0; i < json.players[0].token.length; i++){
-                if(json.players[1].token[i].count > 0){
+                if(json.players[0].token[i].count > 0){
                     count = json.players[0].token[i].count
                 }
             }
@@ -139,7 +139,7 @@ function updatePage(data) {
             document.getElementById("dicing").className = "btn btn-success btn-lg btn-block"
             count = 0
             for(i = 0; i < json.players[2].token.length; i++){
-                if(json.players[1].token[i].count > 0){
+                if(json.players[3].token[i].count > 0){
                     count = json.players[2].token[i].count
                 }
             }
@@ -153,7 +153,7 @@ function updatePage(data) {
             document.getElementById("dicing").className = "btn btn-warning btn-lg btn-block"
             count = 0
             for(i = 0; i < json.players[3].token.length; i++){
-                if(json.players[1].token[i].count > 0){
+                if(json.players[3].token[i].count > 0){
                     count = json.players[3].token[i].count
                 }
             }

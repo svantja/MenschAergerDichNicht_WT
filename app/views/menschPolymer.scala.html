@@ -1,0 +1,22 @@
+@()
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+        <title>MenschAergerDichNicht</title>
+        <meta name="description" content="MenschAergerDichNicht for HTWG lecture Webtechnologies">
+
+            <!-- See https://goo.gl/OOhYW5 -->
+        <link rel="manifest" href="@routes.Assets.versioned("manifest.json")">
+
+        <script src="@routes.Assets.versioned("bower_components/webcomponentsjs/webcomponents-loader.js")"></script>
+
+        <link rel="import" href="@routes.Assets.versioned("/src/mensch-app.html")">
+    </head>
+    <body>
+        <my-app></my-app>
+    </body>
+</html>
