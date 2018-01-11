@@ -1,0 +1,180 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../bower_components/app-route/app-location.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/iron-selector/iron-selector.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="icons.html">
+
+<link rel="lazy-import" href="my-view1.html">
+<link rel="lazy-import" href="my-view2.html">
+<link rel="lazy-import" href="my-view3.html">
+<link rel="lazy-import" href="my-view404.html">
+
+<dom-module id="mensch-app">
+    <template>
+        <style>
+            :host {
+                --app-primary-color: #c0392b;
+                --app-secondary-color: black;
+                --app-third-color: #ffc107;
+
+                display: block;
+            }
+
+            app-header {
+                color: #fff;
+                background-color: var(--app-primary-color);
+            }
+
+            app-header paper-icon-button {
+                --paper-icon-button-ink-color: white;
+            }
+
+            .drawer-list {
+                margin: 0 20px;
+            }
+
+            .drawer-list a {
+                display: block;
+
+                padding: 0 16px;
+
+                text-decoration: none;
+
+                color: var(--app-secondary-color);
+
+                line-height: 40px;
+            }
+
+            .drawer-list a.iron-selected {
+                color: black;
+
+                font-weight: bold;
+            }
+        </style>
+
+        <app-location route="{{route}}"></app-location>
+
+        <app-route
+                route="{{route}}"
+                pattern="[[rootPath]]:page"
+                data="{{routeData}}"
+                tail="{{subroute}}">
+        </app-route>
+
+        <app-drawer-layout fullbleed responsive-width="1000px">
+            <!-- Drawer content -->
+            <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
+                <app-toolbar>Menu</app-toolbar>
+                <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
+                    <a name="view-home" href="[[rootPath]]view1">Home</a>
+                    <a name="view-game" href="[[rootPath]]view2">Spiel</a>
+                    <a name="view-about" href="[[rootPath]]view3">About</a>
+                </iron-selector>
+            </app-drawer>
+
+            <!-- Main content -->
+            <app-header-layout has-scrolling-region>
+
+                <app-header condenses reveals effects="waterfall">
+                    <app-toolbar>
+                        <paper-icon-button icon="my-icons:menu" drawer-toggle></paper-icon-button>
+                        <div main-title>Mensch Ärger Dich Nicht</div>
+                    </app-toolbar>
+                </app-header>
+
+                <!-- Views-->
+                <iron-pages
+                        selected="[[page]]"
+                        attr-for-selected="name"
+                        fallback-selection="view404"
+                        role="main">
+                    <my-view1 name="view-home" id="view-home"></my-view1>
+                    <my-view2 name="view-game" id="view-game"></my-view2>
+                    <my-view3 name="view-about" id="view-about"></my-view3>
+                    <my-view404 name="view404"></my-view404>
+                </iron-pages>
+            </app-header-layout>
+        </app-drawer-layout>
+
+
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'mensch-app',
+
+            properties: {
+                page: {
+                    type: String,
+                    reflectToAttribute: true,
+                    observer: '_pageChanged'
+                },
+                user: {
+                    type: Object,
+                    notify: true
+                },
+                gamedata: {
+                    type: Object,
+                    notify: true
+                }
+            },
+
+            observers: [
+                '_routePageChanged(routeData.page)'
+            ],
+
+            listeners: {
+                'open-modal': '_openModal',
+                'socket-send': '_handleSocketSend'
+            },
+
+            _routePageChanged: function (page) {
+                this.page = page || 'view-home';
+            },
+
+            _pageChanged: function (page) {
+                // Load page import on demand. Show 404 page if fails
+                var resolvedPageUrl = this.resolveUrl(page + '.html');
+                this.importHref(resolvedPageUrl, null, this._showPage404, true);
+            },
+
+            _showPage404: function () {
+                this.page = 'view404';
+            },
+
+            _openModal: function () {
+                this.$.modal.open();
+            },
+
+            _handleWebSocketSend: function (event) {
+                // came from modal, hand down
+                this.$.data.sendToWebSocket(event);
+            },
+
+            _handleSocketSend: function (event) {
+                this.$.data.sendToWebSocket(event);
+            }
+
+        });
+    </script>
+</dom-module>
