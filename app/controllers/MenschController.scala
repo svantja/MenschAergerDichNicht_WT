@@ -48,8 +48,7 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
   }
 
   def newGame = Action {
-    gameController.players = new Players
-    gameController.gameState = PREPARE
+    gameController.newGame("bla")
     Ok(views.html.mensch(gameController))
   }
 
@@ -58,28 +57,28 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
   }
 
   def playersToJson = Action {
-    Ok(gameController.players.toJson)
+    Ok(gameController.toJson)
   }
 
   def socket = WebSocket.accept[String, String] { request =>
     ActorFlow.actorRef { out =>
       println("Connect received")
-      SudokuWebSocketActorFactory.create(out)
+      MenschWebSocketActorFactory.create(out)
     }
   }
 
-  object SudokuWebSocketActorFactory {
+  object MenschWebSocketActorFactory {
     def create(out: ActorRef) = {
-      Props(new SudokuWebSocketActor(out))
+      Props(new MenschWebSocketActor(out))
     }
   }
 
-  class SudokuWebSocketActor(out: ActorRef) extends Actor with Reactor{
+  class MenschWebSocketActor(out: ActorRef) extends Actor with Reactor{
     listenTo(gameController)
     def receive = {
       case msg: String =>
-        out ! (gameController.players.toJson.toString)
-        println(gameController.players.toJson.toString)
+        out ! (gameController.toJson.toString)
+        println(gameController.toJson.toString)
         println("Sent Json to Client "+ msg)
     }
     reactions += {
@@ -91,8 +90,8 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
 
     def sendJsonToClient = {
       println("Received event from Controller")
-      println(gameController.players.toJson.toString)
-      out ! (gameController.players.toJson.toString)
+      println(gameController.toJson.toString)
+      out ! (gameController.toJson.toString)
     }
   }
 }
