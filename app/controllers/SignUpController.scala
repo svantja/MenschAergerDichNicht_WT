@@ -9,7 +9,6 @@ import com.mohiva.play.silhouette.api.services.AvatarService
 import com.mohiva.play.silhouette.api.util.PasswordHasherRegistry
 import com.mohiva.play.silhouette.impl.providers._
 import forms.SignUpForm
-import forms.SignUpForm.Data
 import models.User
 import models.services.{AuthTokenService, UserService}
 import org.webjars.play.WebJarsUtil
@@ -57,7 +56,6 @@ class SignUpController @Inject() (
     * @return The result to display.
     */
   def view = silhouette.UnsecuredAction.async { implicit request: Request[AnyContent] =>
-    println("-------------------------------------------------------------------",SignUpForm.form.data)
     Future.successful(Ok(views.html.signUp(SignUpForm.form)))
   }
 
@@ -95,7 +93,6 @@ class SignUpController @Inject() (
               email = Some(data.email),
               avatarURL = None,
               activated = false
-              //activated = true // TODO delete this line and uncomment the one above after signup is fully configured
             )
             for {
               avatar <- avatarService.retrieveURL(data.email)

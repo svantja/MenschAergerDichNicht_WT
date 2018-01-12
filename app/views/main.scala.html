@@ -64,7 +64,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right" style="padding-top: 2%; height: auto; width: auto">
                         @user.map { u =>
-                            <li><a href="@controllers.routes.ApplicationController.index">@u.name</a></li>
+                            <li><a href="@controllers.routes.MenschController.homesecure()">@u.name</a></li>
                             @if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID) {
                                 <li><a href="@controllers.routes.ChangePasswordController.view">@messages("change.password")</a></li>
                             }

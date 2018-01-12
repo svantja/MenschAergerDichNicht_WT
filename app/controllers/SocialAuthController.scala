@@ -7,11 +7,13 @@ import com.mohiva.play.silhouette.api.exceptions.ProviderException
 import com.mohiva.play.silhouette.api.repositories.AuthInfoRepository
 import com.mohiva.play.silhouette.impl.providers._
 import models.services.UserService
-import play.api.i18n.{ I18nSupport, Messages }
-import play.api.mvc.{ AbstractController, AnyContent, ControllerComponents, Request }
+import org.webjars.play.WebJarAssets
+import play.api.i18n.{I18nSupport, Messages, MessagesApi}
+import play.api.mvc._
 import utils.auth.DefaultEnv
+import scala.concurrent.ExecutionContext.Implicits.global
 
-import scala.concurrent.{ ExecutionContext, Future }
+import scala.concurrent.{ExecutionContext, Future}
 
 /**
  * The social auth controller.
@@ -24,15 +26,14 @@ import scala.concurrent.{ ExecutionContext, Future }
  * @param ex                     The execution context.
  */
 class SocialAuthController @Inject() (
-  components: ControllerComponents,
-  silhouette: Silhouette[DefaultEnv],
-  userService: UserService,
-  authInfoRepository: AuthInfoRepository,
-  socialProviderRegistry: SocialProviderRegistry
-)(
-  implicit
-  ex: ExecutionContext
-) extends AbstractController(components) with I18nSupport with Logger {
+                                       val messagesApi: MessagesApi,
+                                       silhouette: Silhouette[DefaultEnv],
+                                       userService: UserService,
+                                       authInfoRepository: AuthInfoRepository,
+                                       socialProviderRegistry: SocialProviderRegistry,
+                                       implicit val webJarAssets: WebJarAssets)
+  extends Controller with I18nSupport with Logger {
+
 
   /**
    * Authenticates a user against a social provider.

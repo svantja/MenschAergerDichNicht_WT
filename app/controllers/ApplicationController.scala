@@ -8,6 +8,7 @@ import org.webjars.play.WebJarsUtil
 import play.api.i18n.I18nSupport
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents, Request}
 import utils.auth.DefaultEnv
+import scala.concurrent.ExecutionContext.Implicits.global
 
 import scala.concurrent.Future
 
@@ -33,7 +34,7 @@ class ApplicationController @Inject() (
    *
    * @return The result to display.
    */
-  def index = silhouette.UnsecuredAction.async { implicit request: Request[ AnyContent] =>
+  def index = silhouette.UnsecuredAction.async { implicit request =>
     Future.successful(Ok(views.html.home("Home Mensch Ärger Dich Nicht")))
   }
 
