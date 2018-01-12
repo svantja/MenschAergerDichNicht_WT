@@ -1,1 +1,1 @@
-web: target\universal\stage\bin\play-getting-started -Dhttp.port=%PORT%
+web: target/universal/stage/bin/play-silhouette-seed -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApplyDowns=true
