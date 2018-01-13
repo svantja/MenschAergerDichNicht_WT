@@ -11,7 +11,7 @@ import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.GameState
 import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.PlayersChanged
 import de.htwg.se.menschaergerdichnicht.model.playerComponent.playerBaseImpl.Players
 import org.webjars.play.WebJarsUtil
-import play.api.i18n.{ I18nSupport, MessageApi}
+import play.api.i18n.I18nSupport
 import play.api.libs.streams.ActorFlow
 import utils.auth.DefaultEnv
 import play.api.mvc.Controller
