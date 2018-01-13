@@ -4,59 +4,84 @@ import javax.inject._
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.stream.Materializer
+import com.mohiva.play.silhouette.api.{HandlerResult, Silhouette}
 import play.api.mvc._
 import de.htwg.se.menschaergerdichnicht.Game
 import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.GameState._
 import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.PlayersChanged
 import de.htwg.se.menschaergerdichnicht.model.playerComponent.playerBaseImpl.Players
-import de.htwg.se.sudoku.controller.controllerComponent.GridSizeChanged
+import org.webjars.play.WebJarsUtil
+import play.api.i18n.I18nSupport
 import play.api.libs.streams.ActorFlow
+import utils.auth.DefaultEnv
 
+import scala.concurrent.Future
 import scala.swing.Reactor
 
-
 @Singleton
-class MenschController @Inject() (cc: ControllerComponents) (implicit system: ActorSystem, mat: Materializer) extends AbstractController(cc) {
+class MenschController @Inject() (
+                                   components: ControllerComponents,
+                                   silhouette: Silhouette[DefaultEnv]
+                                 )(
+                                   implicit
+                                   webJarsUtil: WebJarsUtil,
+                                   assets: AssetsFinder,
+                                   system: ActorSystem,
+                                   mat: Materializer
+                                 ) extends AbstractController(components) with I18nSupport {
 
   var game = Game
   var gameController = game.controller
+
   def tui = gameController.tui
 
-  def mensch = Action {
-    Ok(views.html.mensch(gameController))
+
+  def mensch = silhouette.SecuredAction { implicit request =>
+    Ok(views.html.mensch(gameController ,request.identity))
   }
 
-  def newPlayer(index: Int) = Action {
+  def newPlayer(index:Int) = silhouette.SecuredAction { implicit request =>
     gameController.addPlayer(index.toString)
-    Ok(views.html.mensch(gameController))
+    Ok(views.html.mensch(gameController ,request.identity))
   }
 
-  def start = Action {
+  def start = silhouette.SecuredAction{implicit request =>
     gameController.startGame()
     gameController.gameState = ONGOING
-    Ok(views.html.mensch(gameController))
+    Ok(views.html.mensch(gameController ,request.identity))
   }
 
-  def dicing = Action {
+
+  def dicing= silhouette.SecuredAction{implicit request =>
     gameController.startGame()
-    Ok(views.html.mensch(gameController))
+    Ok(views.html.mensch(gameController ,request.identity))
   }
 
-  def move(id: Int) = Action {
+  def move(id: Int)= silhouette.SecuredAction{implicit request =>
     gameController.chooseToken(id)
-    Ok(views.html.mensch(gameController))
+    Ok(views.html.mensch(gameController ,request.identity))
   }
 
-  def newGame = Action {
+  def newGame= silhouette.SecuredAction{implicit request =>
     gameController.newGame()
-    Ok(views.html.mensch(gameController))
+    Ok(views.html.mensch(gameController ,request.identity))
   }
 
-  def about = Action {
-    Ok(views.html.index())
+  def about= silhouette.UnsecuredAction{implicit request =>
+    gameController.newGame()
+    Ok(views.html.about("About Mensch Ärger Dich Nicht"))
   }
 
-  def playersToJson = Action {
+  def aboutsecure= silhouette.SecuredAction{implicit request =>
+    gameController.newGame()
+    Ok(views.html.aboutsecure("About Mensch Ärger Dich Nicht", request.identity))
+  }
+
+  def homesecure = silhouette.SecuredAction.async { implicit request =>
+    Future.successful(Ok(views.html.homesecure("Home Mensch Ärger Dich Nicht", request.identity)))
+  }
+
+  def playersToJson= silhouette.SecuredAction{implicit request =>
     Ok(gameController.toJson)
   }
 
@@ -73,13 +98,13 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
     }
   }
 
-  class MenschWebSocketActor(out: ActorRef) extends Actor with Reactor{
+  class MenschWebSocketActor(out: ActorRef) extends Actor with Reactor {
     listenTo(gameController)
     def receive = {
       case msg: String =>
         out ! (gameController.toJson.toString)
         println(gameController.toJson.toString)
-        println("Sent Json to Client "+ msg)
+        println("Sent Json to Client " + msg)
     }
     reactions += {
       case event: PlayersChanged => {

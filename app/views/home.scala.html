@@ -1,0 +1,16 @@
+@import play.api.i18n.Messages
+@import play.api.mvc.RequestHeader
+@import org.webjars.play.WebJarsUtil
+@import controllers.AssetsFinder
+
+@(title: String)(implicit request: RequestHeader, messages: Messages, webJarsUtil: WebJarsUtil, assets: AssetsFinder)
+
+@main(title, None) {
+<link rel="stylesheet" href='@routes.Assets.versioned("styles/mensch.css")' />
+
+    <!--div class="container"-->
+    <p>Willkommen zu mensch Ärger dich nicht, dem besten Spiel der WELT!!!!</p>
+    <a href="/about">ABOUT</a>
+}
+
+
