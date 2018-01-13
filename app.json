@@ -5,6 +5,7 @@
     "Play",
     "Silhouette"
   ],
+  "addons": [ "heroku-postgresql" ],
   "website": "https://github.com/mohiva/play-silhouette-seed",
   "repository": "https://github.com/mohiva/play-silhouette-seed",
   "success_url": "/",
