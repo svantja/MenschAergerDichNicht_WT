@@ -6,8 +6,8 @@
     "Play",
     "Silhouette"
   ],
-  "website": "https://github.com/mohiva/play-silhouette-seed",
-  "repository": "https://github.com/mohiva/play-silhouette-seed",
+  "website": "https://github.com/svantja/MenschAergerDichNicht_WT",
+  "repository": "https://github.com/svantja/MenschAergerDichNicht_WT",
   "success_url": "/",
   "env": {
     "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-scala.git",
