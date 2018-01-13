@@ -93,7 +93,7 @@ function updatePage(data) {
             setPosition(json.players[i].token[j].count, json.players[i].token[j].position, json.players[i].token[j].tokenId);
         }
     }
-    if(json.state.toString() === "None" || json.state.toString() === "PREPARE"){
+    if(json.state.toString() === "NONE" || json.state.toString() === "PREPARE"){
         console.log("preparing")
         document.getElementById("prepare").style.visibility = "visible"
         document.getElementById("dicing").style.visibility = "hidden"
