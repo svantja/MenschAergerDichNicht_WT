@@ -48,7 +48,7 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
   }
 
   def newGame = Action {
-    gameController.newGame("bla")
+    gameController.newGame()
     Ok(views.html.mensch(gameController))
   }
 
