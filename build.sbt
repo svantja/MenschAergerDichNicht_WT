@@ -6,6 +6,8 @@ version := "5.0.0"
 
 scalaVersion := "2.12.3"
 
+libraryDependencies += guice
+
 resolvers += Resolver.jcenterRepo
 
 resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
