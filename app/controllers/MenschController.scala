@@ -21,7 +21,6 @@ import scala.swing.Reactor
 
 @Singleton
 class MenschController @Inject() (
-                                   val messageApi: MessagesApi,
 				   components: ControllerComponents,
 				   silhouette: Silhouette[DefaultEnv])(implicit webJarsUtil: WebJarsUtil, assets: AssetsFinder, system: ActorSystem, mat:Materializer)extends AbstractController(components) with I18nSupport {
 
