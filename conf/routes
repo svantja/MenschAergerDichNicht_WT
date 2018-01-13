@@ -1,6 +1,8 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
+GET      /                                controllers.ApplicationController.index
+
 GET		/mensch       				 controllers.MenschController.mensch
 
 GET     /newplayer/:index            controllers.MenschController.newPlayer(index: Int)
@@ -23,7 +25,7 @@ GET     /json                       controllers.MenschController.playersToJson
 
 GET     /websocket                  controllers.MenschController.socket
 # Home page
-GET         /                                controllers.ApplicationController.index
+
 GET         /signOut                         controllers.ApplicationController.signOut
 GET         /authenticate/:provider          controllers.SocialAuthController.authenticate(provider)
 
