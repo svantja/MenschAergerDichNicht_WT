@@ -1,26 +1,17 @@
-.container{
-    margin: 0 auto;
-    position: absolute;
-    border: 3px solid #73AD21;
-    width: 90%;
-    background: grey;
-    padding-top: 90%;
-}
-
 .background {
     margin: 0 auto;
     position: relative;
-    border: 3px solid #73AD21;
-    width: 50%;
-    background: grey;
+    float: left;
+    width: 40%;
+    background: rosybrown;
 }
+
 
 .background:before{
     content: "";
     display: block;
     padding-top: 100%;
 }
-
 
 
 .circle{
@@ -30,13 +21,14 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 70%;
+    z-index: 100;
 }
 
 .tokens {
     position: absolute;
     left:20%;
+    z-index: 101;
 }
-
 
 
 img {
@@ -56,20 +48,20 @@ img {
 
 #red.circle{
     position: absolute;
-    background: red;
+    background: palevioletred;
 }
 
 
 #blue.circle{
 
     position: absolute;
-    background: blue;
+    background: darkslateblue;
 }
 
 
 #green.circle{
     position: absolute;
-    background: green;
+    background: seagreen;
 }
 
 
@@ -77,3 +69,11 @@ img {
     position: absolute;
     background: yellow;
 }
+
+.btn-responsive {
+    white-space: normal !important;
+    word-wrap: break-word;
+    font-size: 4vw;
+}
+
+

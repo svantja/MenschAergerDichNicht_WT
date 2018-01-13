@@ -3,6 +3,8 @@
   @output = @{tui.printingTui()}
   @gui = @{game.gui}
   @players = @{game.players.getAllPlayer}
+  @dicing = {toDice}
+  @gamestate = @{game.gameState.toString}
 
   @player1 = @{players(0)}
   @tokens1 = @{player1.getTokens()}
@@ -53,24 +55,42 @@
   @main("Welcome to MeschAergerDichNicht") {
 
     <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/mensch.css")' />
-    <meta http-equiv="refresh" content="5" >
-      <!--code> @Html(tui.printingTui()) </code-->
+
     <!--div class="container"-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="@routes.Assets.versioned("images/tokens/brand.png")" width="140" height="60" class="d-inline-block align-top" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/newgame">Neues Spiel</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row clearfix">
 
-      <div class="background">
-
+        <div class="background">
 
         @for(index <- 0 until playingfield.size){
             @if(index == 0){
-                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkred ">
+                <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:indianred ">
 
                 </div>
             }else{
                 @if(index == 10){
-                    <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkblue "> </div>
+                    <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:cadetblue "> </div>
                 }else{
                     @if(index == 20){
-                        <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkgreen "> </div>
+                        <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:darkolivegreen "> </div>
                     }else{
                         @if(index == 30){
                             <div id="playingfiel" class="circle" style="left:@{getLeft(index)}%; top:@{getTop(index)}%; background:orange "> </div>
@@ -83,150 +103,107 @@
                 }
             }
         }
+    <a href="move/1">
+        <img id="1" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/2">
+        <img id="2" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/3">
+        <img id="3" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/4">
+        <img id="4" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/5">
+        <img id="5" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/6">
+        <img id="6" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/7">
+        <img id="7" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/8">
+        <img id="8" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/9">
+        <img id="9" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/10">
+        <img id="10" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/11">
+        <img id="11" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/12">
+        <img id="12" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/13">
+        <img id="13" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/14">
+        <img id="14" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/15">
+        <img id="15" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
+    <a href="move/16">
+        <img id="16" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+    </a>
 
-    @for(player <- players){
-        @for(token <- player.getTokens()){
-            @if(token.counter > 0 && token.counter < 41){
-
-                @if(token.getColor() == "red"){
-                        <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.4}%; top:@{getTop(token.getPosition()._2)+1.4}%;width:5%; height:5%">
-                        <div class="tokens">
-                            <img src="@routes.Assets.versioned("images/tokens/red.png")" />
-                        </div>
-                        </div>
-                }else{
-                    @if(token.getColor() == "blue"){
-                        @{getLeft(token.getPosition()._2)}
-                        @token.getPosition()._2
-                        @{getTop(token.getPosition()._2)}
-                        <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.4}%; top:@{getTop(token.getPosition()._2)+1.4}%;width:5%; height:5%">
-                        <div class="tokens">
-                            <img src="@routes.Assets.versioned("images/tokens/blue.png")" />
-                        </div>
-                        </div>
-
-                    }else{
-                        @if(token.getColor() == "green"){
-                            @{getLeft(token.getPosition()._2)}
-                            @token.getPosition()._2
-                            @{getTop(token.getPosition()._2)}
-                            <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.3}%; top:@{getTop(token.getPosition()._2)+1.3}%;width:5%; height:5%">
-                            <div class="tokens">
-                                <img src="@routes.Assets.versioned("images/tokens/green.png")" />
-                            </div>
-                            </div>
-
-                        }else{
-                            @if(token.getColor() == "yellow"){
-                                @{getLeft(token.getPosition()._2)}
-                                @token.getPosition()._2
-                                @{getTop(token.getPosition()._2)}
-                                <div id="playingfiel" class="circle" style="left:@{getLeft(token.getPosition()._2)+1.3}%; top:@{getTop(token.getPosition()._2)+1.3}%;width:5%; height:5%">
-                                <div class="tokens">
-                                    <img src="@routes.Assets.versioned("images/tokens/yellow.png")" />
-                                </div>
-                                </div>
-
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-    }
         <!--adding tokens, if token.count != 0, token.getPosition> </-->
         @for(index <- 0 until home1.size){
-            <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; ">
-            @if(players.nonEmpty){
-                @if(tokens1(index).counter == 0) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/red.png")" />
-                    </div>
-                }
-            }
-            </div>
+            <div id="red" class="circle" style="left:@{getHomeLeft(index)}%; top:@{getHomeTop(index)}%; " ></div>
         }
         @for(index <- 0 until finish1.size){
-            <div id="red" class="circle" style="left:@{getFinishLeft(index)}%; top:@{getFinishTop(index)}%; ">
-            @if(players.nonEmpty){
-                @if(tokens1(index).counter == 40) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/red.png")" />
-                    </div>
-                }
-            }</div>
+            <div id="red" class="circle" style="left:@{getFinishLeft(index)}%; top:@{getFinishTop(index)}%; "></div>
         }
 
         @for(index <- 0 until home2.size){
-            <div id="blue" class="circle" style="left:@{getHome2Left(index)}%; top:@{getHome2Top(index)}%; ">
-            @if(1 < players.size){
-                @if(tokens2(index).counter == 0) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/blue.png")" />
-                    </div>
-                }
-            }
-            </div>
+            <div id="blue" class="circle" style="left:@{getHome2Left(index)}%; top:@{getHome2Top(index)}%; "></div>
         }
 
         @for(index <- 0 until finish2.size){
-            <div id="blue" class="circle" style="left:@{getFinishLeft2(index)}%; top:@{getFinishTop2(index)}%; ">
-            @if(1 < players.size){
-                @if(tokens2(index).counter == 40) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/blue.png")" />
-                    </div>
-                }
-            }</div>
+            <div id="blue" class="circle" style="left:@{getFinishLeft2(index)}%; top:@{getFinishTop2(index)}%; "></div>
         }
         @for(index <- 0 until home3.size){
-            <div id="green" class="circle" style="left:@{getHome3Left(index)}%; top:@{getHome3Top(index)}%; ">
-            @if(2 < players.size){
-                @if(tokens3(index).counter == 0) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/green.png")" width=8% height=8%/>
-                    </div>
-                }
-            }
-            </div>
+            <div id="green" class="circle" style="left:@{getHome3Left(index)}%; top:@{getHome3Top(index)}%; "></div>
         }
 
         @for(index <- 0 until finish3.size){
-            <div id="green" class="circle" style="left:@{getFinishLeft3(index)}%; top:@{getFinishTop3(index)}%; ">
-            @if(2 < players.size){
-                @if(tokens3(index).counter == 40) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/green.png")" />
-                    </div>
-                }
-            }</div>
+            <div id="green" class="circle" style="left:@{getFinishLeft3(index)}%; top:@{getFinishTop3(index)}%; "></div>
         }
 
         @for(index <- 0 until home4.size){
-            <div id="yellow" class="circle" style="left:@{getHome4Left(index)}%; top:@{getHome4Top(index)}%; ">
-            @if(3 < players.size){
-                @if(tokens4(index).counter == 0) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" width=8% height=8%/>
-                    </div>
-                }
-            }
-            </div>
+            <div id="yellow" class="circle" style="left:@{getHome4Left(index)}%; top:@{getHome4Top(index)}%; "></div>
         }
         @for(index <- 0 until finish4.size){
-            <div id="yellow" class="circle" style="left:@{getFinishLeft4(index)}%; top:@{getFinishTop4(index)}%; ">
-            @if(3 < players.size){
-                @if(tokens4(index).counter == 40) {
-                    <div class="tokens">
-                        <img src="@routes.Assets.versioned("images/tokens/yellow.png")" />
-                    </div>
-                }
-            }</div>
+            <div id="yellow" class="circle" style="left:@{getFinishLeft4(index)}%; top:@{getFinishTop4(index)}%; "></div>
         }
 
 
 
+    @if(gamestate == "ONGOING" || gamestate == "DICED"){
+
+        <a id="dicing" href="/dicing" class="btn btn-danger btn-lg btn-block" style="position: absolute;border-radius: 0; font-size: 1.5vw;">Würfeln</a>
+
+    }
+
+    @if(gamestate == "NONE" || gamestate == "PREPARE"){
+        <div id="prepare" class="btn-group" role="group"  style="width: 100%; position: absolute">
+            <a href="/newplayer/@game.players.getAllPlayer.size" class="btn btn-info" id="add" style="background: lightpink;width: 100%;border-radius:0;font-size: 1.5vw;">Spieler hinzugfügen</a>
+
+            <a href="/start" class="btn btn-info" id="start" style="background: lightpink;width: 100%;border-radius:0;font-size: 1.5vw;">Spiel starten</a>
+        </div>
+
+    }
+
       </div>
+
+    </div>
+
       <!--/div-->
+
   }
+
