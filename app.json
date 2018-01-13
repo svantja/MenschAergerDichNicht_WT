@@ -6,7 +6,7 @@
     "Play",
     "Silhouette"
   ],
-  "website": "https://github.com/svantja/MenschAergerDichNicht_WT",
+  "logo": "https://mensch-aerger-dich-nicht.herokuapp.com/node.png",
   "repository": "https://github.com/svantja/MenschAergerDichNicht_WT",
   "success_url": "/",
   "env": {
