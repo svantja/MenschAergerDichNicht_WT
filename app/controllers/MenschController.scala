@@ -11,27 +11,20 @@ import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.GameState
 import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.PlayersChanged
 import de.htwg.se.menschaergerdichnicht.model.playerComponent.playerBaseImpl.Players
 import org.webjars.play.WebJarsUtil
-import play.api.i18n.I18nSupport
+import play.api.i18n.{ I18nSupport, MessageApi}
 import play.api.libs.streams.ActorFlow
 import utils.auth.DefaultEnv
+import play.api.mvc.Controller
 
 import scala.concurrent.Future
 import scala.swing.Reactor
 
 @Singleton
 class MenschController @Inject() (
-                                   components: ControllerComponents,
-                                   silhouette: Silhouette[DefaultEnv]
-                                 )(
-                                   implicit
-                                   webJarsUtil: WebJarsUtil,
-                                   assets: AssetsFinder,
-                                   system: ActorSystem,
-                                   mat: Materializer
-                                 ) extends AbstractController(components) with I18nSupport {
+                                   val messageApi: MessagesApi,
+				   silhouette: Silhouette[DefaultEnv])extends AbstractController(components) with I18nSupport {
 
-  var game = Game
-  var gameController = game.controller
+  val gameController = Game.controller
 
   def tui = gameController.tui
 
