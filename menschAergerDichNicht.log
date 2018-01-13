@@ -1,0 +1,144 @@
+19:14:44.936 [main] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/Svant/Documents/HTWG/6.Semester/WebTech/heroku/mm/mensch-aerger-dich-nicht/lib/com.typesafe.play.play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+19:14:44.936 [main] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+19:14:44.983 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+19:14:44.983 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+19:14:45.045 [main] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/Svant/Documents/HTWG/6.Semester/WebTech/heroku/mm/mensch-aerger-dich-nicht/lib/com.typesafe.play.play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+19:14:45.045 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+19:14:45.092 [main] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+19:14:45.608 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+19:14:45.608 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+19:14:45.608 [main] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+19:14:46.951 [application-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:14:47.123 [main] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+19:14:49.702 [main] INFO  d.h.s.m.aview.tui.Tui - 
+19:14:52.764 [main] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+19:14:52.780 [main] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
+19:14:52.780 [main] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
+19:14:52.905 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+19:14:52.921 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+19:14:52.921 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+19:14:52.921 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+19:14:52.921 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
+19:14:52.936 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+19:14:52.936 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.ClassNotFoundException: jdk.internal.misc.Unsafe
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:290)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:283)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.getSystemClassLoader(PlatformDependent.java:637)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.isAndroid0(PlatformDependent.java:661)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:65)
+	at play.shaded.ahc.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:155)
+	at play.shaded.ahc.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:200)
+	at play.shaded.ahc.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at play.shaded.ahc.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:89)
+	at play.shaded.ahc.org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:91)
+	at play.shaded.ahc.org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:83)
+	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get$lzycompute(AhcWSModule.scala:48)
+	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get(AhcWSModule.scala:45)
+	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get(AhcWSModule.scala:39)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:194)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:61)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
+	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
+	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
+	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1019)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1015)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1054)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:409)
+	at play.api.inject.ContextClassLoaderInjector.$anonfun$instanceOf$3(Injector.scala:118)
+	at play.api.inject.ContextClassLoaderInjector.withContext(Injector.scala:126)
+	at play.api.inject.ContextClassLoaderInjector.instanceOf(Injector.scala:118)
+	at play.api.inject.RoutesProvider.$anonfun$get$2(BuiltinModule.scala:104)
+	at scala.Option.fold(Option.scala:158)
+	at play.api.inject.RoutesProvider.get$lzycompute(BuiltinModule.scala:104)
+	at play.api.inject.RoutesProvider.get(BuiltinModule.scala:100)
+	at play.api.inject.RoutesProvider.get(BuiltinModule.scala:99)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:194)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
+	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1085)
+	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:99)
+	at com.google.inject.Guice.createInjector(Guice.java:84)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:185)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:137)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.ProdServerStart$.start(ProdServerStart.scala:51)
+	at play.core.server.ProdServerStart$.main(ProdServerStart.scala:25)
+	at play.core.server.ProdServerStart.main(ProdServerStart.scala)
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - Java version: 8
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\Svant\AppData\Local\Temp (java.io.tmpdir)
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 935854080 bytes
+19:14:52.952 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+19:14:52.967 [main] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+19:14:52.967 [main] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@1e7ab390
+19:14:53.030 [main] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+19:14:53.641 [application-akka.actor.default-dispatcher-2] INFO  akka.actor.CoordinatedShutdown - Starting coordinated shutdown from JVM shutdown hook
+19:14:53.647 [main] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+19:14:53.756 [main] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+19:14:53.756 [main] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
