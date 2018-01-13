@@ -27,10 +27,6 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
     Ok(views.html.mensch(gameController))
   }
 
-  def menschPolymer = Action {
-    Ok(views.html.menschPolymer())
-  }
-
   def newPlayer(index: Int) = Action {
     gameController.addPlayer(index.toString)
     Ok(views.html.mensch(gameController))

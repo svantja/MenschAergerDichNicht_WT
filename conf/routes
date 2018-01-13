@@ -5,8 +5,6 @@
 # Controller for MenschAergerDichNicht
 GET		/       					 controllers.MenschController.mensch
 
-GET     /menschPolymer              controllers.MenschController.menschPolymer
-
 GET     /newplayer/:index            controllers.MenschController.newPlayer(index: Int)
 
 GET     /start                       controllers.MenschController.start
