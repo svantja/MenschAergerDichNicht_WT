@@ -1,0 +1,18 @@
+{
+  "entrypoint": "mensch-app.html",
+  "shell": "src/mensch-app.html",
+  "fragments": [
+    "src/view-game.html",
+    "src/view-about.html",
+    "src/view-404.html"
+  ],
+  "sourceGlobs": [
+    "src/**/*",
+    "images/**/*",
+    "bower.json"
+  ],
+  "includeDependencies": [
+    "manifest.json",
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js"
+  ]
+}

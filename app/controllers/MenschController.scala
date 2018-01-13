@@ -27,6 +27,10 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
     Ok(views.html.mensch(gameController))
   }
 
+  def menschPolymer = Action {
+    Ok(views.html.menschPolymer())
+  }
+
   def newPlayer(index: Int) = Action {
     gameController.addPlayer(index.toString)
     Ok(views.html.mensch(gameController))
@@ -49,7 +53,7 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
   }
 
   def newGame = Action {
-    gameController.newGame("bla")
+    gameController.newGame()
     Ok(views.html.mensch(gameController))
   }
 
@@ -66,7 +70,7 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
   def socket = WebSocket.accept[String, String] { request =>
     ActorFlow.actorRef { out =>
       println("Connect received")
-      SudokuWebSocketActorFactory.create(out)
+      MenschWebSocketActorFactory.create(out)
     }
   }
 
@@ -95,7 +99,7 @@ class MenschController @Inject() (cc: ControllerComponents) (implicit system: Ac
     def sendJsonToClient = {
       println("Received event from Controller")
 
-      out ! (gameController.players.toJson.toString)
+      out ! (gameController.toJson.toString)
     }
   }
 
