@@ -7,7 +7,7 @@
 @(title: String, user: Option[models.User] = None)(content: Html)(implicit request: RequestHeader, messages: Messages, assets: AssetsFinder, webJarsUtil: WebJarsUtil)
 
 <!DOCTYPE html>
-<html lang="en" background="@routes.Assets.versioned("images/tokens/hin.png")">
+<html lang="en">
     <head >
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +16,8 @@
         <title>@title</title>
         <link href="//fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600" rel="stylesheet">
         <link href="//cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
-        @Html(webJarsUtil.css("bootstrap.min.css"))
         @Html(webJarsUtil.css("bootstrap-theme.min.css"))
+        @Html(webJarsUtil.css("bootstrap.min.css"))
         <link rel="stylesheet" href="@assets.path("styles/main.css")">
 
             <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,10 +25,11 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
             <![endif]-->
-        <script src="@routes.Assets.versioned("javascripts/jquery-3.2.1.min.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/popper.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/bootstrap-3.3.7-1.min.js")" ></script>
-
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
         <script src="@assets.path("javascripts/mensch.js")" ></script>
     </head>
     <body>
@@ -102,6 +103,7 @@
             </div>
         </main>
         @Html(webJarsUtil.script("jquery.min.js"))
+        @Html(webJarsUtil.script("bootstrap.min.js"))
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
         <script src="@assets.path("javascripts/zxcvbnShim.js")"></script>
     </body>
