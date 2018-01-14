@@ -1,20 +1,19 @@
-18:08:34.176 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
-18:08:34.329 [application-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-18:08:34.334 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-18:08:34.337 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-18:08:34.337 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-18:08:34.339 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-18:08:34.340 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-18:08:34.341 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-18:08:34.341 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-18:08:34.342 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-18:08:34.343 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-18:08:34.344 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-18:08:34.344 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-18:08:34.351 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-18:08:34.352 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-18:08:34.353 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-18:08:34.354 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+12:41:15.503 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+12:41:15.505 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+12:41:15.518 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+12:41:15.518 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+12:41:15.529 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+12:41:15.531 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+12:41:15.540 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+12:41:15.580 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+12:41:15.581 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+12:41:15.581 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+12:41:15.636 [application-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+12:41:15.641 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+12:41:15.696 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:41:15.697 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+12:41:15.700 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+12:41:15.702 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -22,14 +21,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-18:08:34.355 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-18:08:34.356 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-18:08:34.358 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-18:08:34.359 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-18:08:34.374 [application-akka.actor.default-dispatcher-6] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@43d522ea'
-18:08:34.378 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-18:08:34.386 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  application - ApplicationTimer demo: Starting application at 2018-01-13T17:08:34.378Z.
-18:08:34.446 [scala-execution-context-global-289] INFO  jobs.AuthTokenCleaner - 
+12:41:15.702 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+12:41:15.702 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+12:41:15.704 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+12:41:15.704 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+12:41:15.734 [application-akka.actor.default-dispatcher-8] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@20eb2c45'
+12:41:15.742 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+12:41:15.744 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T11:41:15.742Z.
+12:41:15.884 [scala-execution-context-global-80] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -37,89 +36,206 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-18:08:34.758 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  play.api.Play - Application started (Dev)
-18:08:34.776 [play-dev-mode-akka.actor.default-dispatcher-12] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-18:08:34.782 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+12:41:16.315 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  d.h.s.m.aview.tui.Tui - 
+12:41:16.740 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+12:41:16.743 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
+12:41:16.744 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
+12:41:16.756 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+12:41:16.757 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+12:41:16.758 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+12:41:16.759 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+12:41:16.759 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
+12:41:16.760 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+12:41:16.763 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.ClassNotFoundException: jdk.internal.misc.Unsafe
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:290)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:283)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.getSystemClassLoader(PlatformDependent.java:637)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.isAndroid0(PlatformDependent.java:661)
+	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:65)
+	at play.shaded.ahc.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:155)
+	at play.shaded.ahc.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:200)
+	at play.shaded.ahc.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at play.shaded.ahc.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:89)
+	at play.shaded.ahc.org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:91)
+	at play.shaded.ahc.org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:83)
+	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get$lzycompute(AhcWSModule.scala:48)
+	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get(AhcWSModule.scala:45)
+	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get(AhcWSModule.scala:39)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:194)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:61)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
+	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
+	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
+	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1019)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1015)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1054)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:409)
+	at play.api.inject.ContextClassLoaderInjector.$anonfun$instanceOf$3(Injector.scala:118)
+	at play.api.inject.ContextClassLoaderInjector.withContext(Injector.scala:126)
+	at play.api.inject.ContextClassLoaderInjector.instanceOf(Injector.scala:118)
+	at play.api.inject.RoutesProvider.$anonfun$get$2(BuiltinModule.scala:104)
+	at scala.Option.fold(Option.scala:158)
+	at play.api.inject.RoutesProvider.get$lzycompute(BuiltinModule.scala:104)
+	at play.api.inject.RoutesProvider.get(BuiltinModule.scala:100)
+	at play.api.inject.RoutesProvider.get(BuiltinModule.scala:99)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
+	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
+	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:194)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
+	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1019)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1085)
+	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1015)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1054)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:409)
+	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:404)
+	at play.api.inject.ContextClassLoaderInjector.$anonfun$instanceOf$2(Injector.scala:117)
+	at play.api.inject.ContextClassLoaderInjector.withContext(Injector.scala:126)
+	at play.api.inject.ContextClassLoaderInjector.instanceOf(Injector.scala:117)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:137)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:174)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:171)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:124)
+	at play.core.server.AkkaHttpServer.modelConversion(AkkaHttpServer.scala:183)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:189)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$3(AkkaHttpServer.scala:106)
+	at akka.stream.impl.fusing.MapAsync$$anon$23.onPush(Ops.scala:1172)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:499)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:462)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:368)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:571)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:457)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:546)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:725)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:740)
+	at akka.actor.Actor.aroundReceive(Actor.scala:514)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:512)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:650)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:527)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:496)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+12:41:16.766 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+12:41:16.766 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
+12:41:16.767 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - Java version: 8
+12:41:16.767 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+12:41:16.768 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\svloeger\AppData\Local\Temp (java.io.tmpdir)
+12:41:16.769 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+12:41:16.770 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+12:41:16.770 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
+12:41:16.771 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+12:41:16.772 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+12:41:16.772 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@4bd986f2
+12:41:16.774 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+12:41:16.805 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+12:41:16.813 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+12:41:16.814 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+12:41:16.843 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+12:41:16.843 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+12:41:16.844 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+12:41:17.041 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  play.api.Play - Application started (Dev)
+12:41:17.438 [play-dev-mode-akka.actor.default-dispatcher-4] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.440 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
 This usually indicates the browser has a leftover cookie from another Play application,
 so clearing cookies may resolve this error message.
-18:08:34.880 [play-dev-mode-akka.actor.default-dispatcher-79] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-18:08:34.880 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+12:41:17.717 [play-dev-mode-akka.actor.default-dispatcher-4] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.718 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
 This usually indicates the browser has a leftover cookie from another Play application,
 so clearing cookies may resolve this error message.
-18:08:47.963 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0xf353d58f, L:/141.37.160.137:58166 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/3c34a4a38325d665876eb44ae06dd9ce?d=404'
-18:08:47.964 [AsyncHttpClient-4-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0xf353d58f, L:/141.37.160.137:58166 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-18:08:47.974 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-GET /avatar/3c34a4a38325d665876eb44ae06dd9ce?d=404 HTTP/1.1
-Host: secure.gravatar.com
-Accept: */*
-User-Agent: AHC/2.0
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 404 Not Found
-Server: nginx
-Date: Sat, 13 Jan 2018 17:08:47 GMT
-Content-Type: text/html; charset=utf-8
-Content-Length: 13
-Connection: keep-alive
-Last-Modified: Wed, 11 Jan 1984 08:00:00 GMT
-Link: <https://www.gravatar.com/avatar/3c34a4a38325d665876eb44ae06dd9ce?d=404>; rel="canonical"
-Access-Control-Allow-Origin: *
-X-nc: HIT fra 3
-Source-Age: 217
-
-18:08:47.975 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0xf353d58f, L:/141.37.160.137:58166 - R:secure.gravatar.com/192.0.73.2:443]
-18:08:47.976 [scala-execution-context-global-289] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
-18:08:47.999 [application-akka.actor.default-dispatcher-3] INFO  play.mailer - mock implementation, send email
-18:08:47.999 [application-akka.actor.default-dispatcher-3] INFO  play.mailer - subject: Welcome
-18:08:47.999 [application-akka.actor.default-dispatcher-3] INFO  play.mailer - from: Silhouette <noreply@mohiva.com>
-18:08:48.000 [application-akka.actor.default-dispatcher-3] INFO  play.mailer - bodyText: 
-Hello bb bb,
-
-Please follow the link to confirm and activate your new account: http://localhost:9000/account/activate/f41fcfcd-0cea-42ec-a5cb-a318edcde983
-
-18:08:48.000 [application-akka.actor.default-dispatcher-3] INFO  play.mailer - bodyHtml: 
-
-<html>
-    <body>
-        <p>Hello bb bb,</p>
-        <p>Please follow <a href="http://localhost:9000/account/activate/f41fcfcd-0cea-42ec-a5cb-a318edcde983">this link</a> to confirm and activate your new account.</p>
-    </body>
-</html>
-
-18:08:48.000 [application-akka.actor.default-dispatcher-3] INFO  play.mailer - to: bb@bb.de
-18:08:48.984 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:50.086 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:51.184 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:52.289 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:53.393 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:54.479 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:55.586 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:56.684 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:57.783 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:58.261 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-18:08:58.888 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:08:59.975 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:01.085 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:02.184 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:03.283 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:04.384 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:05.485 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:06.583 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:07.683 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:08.784 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:09.883 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:10.984 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:12.093 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:13.186 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:14.291 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:15.382 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:16.491 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:17.586 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:17.968 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - Channel Closed: [id: 0xf353d58f, L:/141.37.160.137:58166 ! R:secure.gravatar.com/192.0.73.2:443] with attribute INSTANCE
-18:09:18.680 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-18:09:18.680 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Adding Candidate expired Channel [id: 0xf353d58f, L:/141.37.160.137:58166 ! R:secure.gravatar.com/192.0.73.2:443] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
-18:09:18.680 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closing Idle Channel [id: 0xf353d58f, L:/141.37.160.137:58166 ! R:secure.gravatar.com/192.0.73.2:443]
-18:09:18.680 [pool-20-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closed 1 connections out of 1 in 0 ms
-18:09:23.415 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+12:41:17.723 [play-dev-mode-akka.actor.default-dispatcher-12] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.725 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+12:41:17.725 [play-dev-mode-akka.actor.default-dispatcher-13] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.725 [play-dev-mode-akka.actor.default-dispatcher-13] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+12:41:17.724 [play-dev-mode-akka.actor.default-dispatcher-11] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.724 [play-dev-mode-akka.actor.default-dispatcher-9] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.725 [play-dev-mode-akka.actor.default-dispatcher-14] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.727 [play-dev-mode-akka.actor.default-dispatcher-11] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+12:41:17.727 [play-dev-mode-akka.actor.default-dispatcher-9] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+12:41:17.727 [play-dev-mode-akka.actor.default-dispatcher-14] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+12:41:17.821 [play-dev-mode-akka.actor.default-dispatcher-13] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.821 [play-dev-mode-akka.actor.default-dispatcher-13] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+12:41:17.822 [play-dev-mode-akka.actor.default-dispatcher-4] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.823 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+12:41:17.877 [play-dev-mode-akka.actor.default-dispatcher-2] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.877 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+12:41:17.901 [play-dev-mode-akka.actor.default-dispatcher-2] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+12:41:17.902 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
