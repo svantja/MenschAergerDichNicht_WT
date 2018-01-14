@@ -139,7 +139,7 @@ function updatePage(data) {
             document.getElementById("dicing").className = "btn btn-success btn-lg btn-block"
             count = 0
             for(i = 0; i < json.players[2].token.length; i++){
-                if(json.players[3].token[i].count > 0){
+                if(json.players[2].token[i].count > 0){
                     count = json.players[2].token[i].count
                 }
             }

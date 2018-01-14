@@ -10,7 +10,6 @@ import de.htwg.se.menschaergerdichnicht.Game
 import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.GameState._
 import de.htwg.se.menschaergerdichnicht.controller.controllerComponent.PlayersChanged
 import de.htwg.se.menschaergerdichnicht.model.playerComponent.playerBaseImpl.Players
-import de.htwg.se.sudoku.controller.controllerComponent.GridSizeChanged
 import play.api.libs.streams.ActorFlow
 
 import scala.swing.Reactor
