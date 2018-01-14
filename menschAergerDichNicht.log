@@ -1,19 +1,19 @@
-15:49:50.141 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-15:49:50.141 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-15:49:50.142 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-15:49:50.143 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-15:49:50.145 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-15:49:50.146 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-15:49:50.146 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-15:49:50.147 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-15:49:50.148 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-15:49:50.148 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-15:49:50.187 [application-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-15:49:50.193 [play-dev-mode-akka.actor.default-dispatcher-36] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-15:49:50.196 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-15:49:50.197 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-15:49:50.197 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-15:49:50.197 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+16:52:15.859 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+16:52:15.860 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+16:52:15.861 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+16:52:15.861 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+16:52:15.862 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+16:52:15.863 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+16:52:15.863 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+16:52:15.865 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+16:52:15.865 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+16:52:15.866 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+16:52:15.890 [application-akka.actor.default-dispatcher-7] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+16:52:15.893 [play-dev-mode-akka.actor.default-dispatcher-79] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+16:52:15.896 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:52:15.896 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+16:52:15.897 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+16:52:15.897 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -21,14 +21,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-15:49:50.198 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-15:49:50.198 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-15:49:50.198 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-15:49:50.198 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-15:49:50.211 [application-akka.actor.default-dispatcher-5] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@6cc91c0b'
-15:49:50.211 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-15:49:50.215 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T14:49:50.212Z.
-15:49:50.227 [scala-execution-context-global-260] INFO  jobs.AuthTokenCleaner - 
+16:52:15.897 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+16:52:15.898 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+16:52:15.898 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+16:52:15.899 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+16:52:15.903 [application-akka.actor.default-dispatcher-7] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@42a0dc3f'
+16:52:15.904 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+16:52:15.915 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T15:52:15.911Z.
+16:52:15.928 [scala-execution-context-global-614] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -36,20 +36,8 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-15:49:50.377 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
-15:49:50.491 [play-dev-mode-akka.actor.default-dispatcher-36] INFO  play.api.Play - Application started (Dev)
-15:49:50.503 [scala-execution-context-global-260] INFO  d.h.s.m.aview.tui.Tui - 
-oo  OOO  oo
-oo  OoO  oo
-    OoO    
-    OoO    
-OOOOO OOOOO
-Ooooo ooooO
-OOOOOoOOOOO
-    OoO    
-    OoO    
-oo  OoO  oo
-oo  OOO  oo
-
-15:50:18.599 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-15:50:47.314 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+16:52:16.045 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+16:52:16.190 [play-dev-mode-akka.actor.default-dispatcher-79] INFO  play.api.Play - Application started (Dev)
+16:52:42.826 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+16:53:10.587 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+16:53:35.289 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
