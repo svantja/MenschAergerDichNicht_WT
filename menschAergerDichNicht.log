@@ -1,19 +1,19 @@
-18:19:10.886 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-18:19:10.887 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-18:19:10.897 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-18:19:10.898 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-18:19:10.907 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-18:19:10.909 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-18:19:10.916 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-18:19:10.958 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-18:19:10.959 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-18:19:10.959 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-18:19:11.007 [application-akka.actor.default-dispatcher-6] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-18:19:11.012 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-18:19:11.068 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-18:19:11.069 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-18:19:11.072 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-18:19:11.074 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+19:03:03.900 [application-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:03:03.905 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+19:03:03.918 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+19:03:03.919 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+19:03:03.941 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+19:03:03.942 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+19:03:03.952 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+19:03:03.954 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+19:03:03.962 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+19:03:04.004 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+19:03:04.004 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+19:03:04.005 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+19:03:04.066 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:03:04.066 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+19:03:04.069 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+19:03:04.071 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -21,14 +21,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-18:19:11.075 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-18:19:11.075 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-18:19:11.076 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-18:19:11.076 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-18:19:11.095 [application-akka.actor.default-dispatcher-5] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@66d3d09f'
-18:19:11.108 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T17:19:11.107Z.
-18:19:11.108 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-18:19:11.227 [scala-execution-context-global-85] INFO  jobs.AuthTokenCleaner - 
+19:03:04.071 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+19:03:04.072 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+19:03:04.073 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+19:03:04.073 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:03:04.089 [application-akka.actor.default-dispatcher-5] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@7e177aa4'
+19:03:04.098 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:03:04.100 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T18:03:04.098Z.
+19:03:04.287 [scala-execution-context-global-81] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -36,36 +36,89 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-18:19:11.715 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  d.h.s.m.aview.tui.Tui - 
-18:19:11.754 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
-18:19:11.758 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
-18:19:11.759 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
-18:19:11.774 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
-18:19:11.776 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
-18:19:11.777 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - Java version: 8
-18:19:11.778 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-18:19:11.778 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-18:19:11.779 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
-18:19:11.780 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
-18:19:11.781 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-18:19:11.781 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-18:19:11.781 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
-18:19:11.782 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
-18:19:11.783 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\anhauser\AppData\Local\Temp (java.io.tmpdir)
-18:19:11.783 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-18:19:11.784 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
-18:19:11.784 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
-18:19:11.785 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-18:19:11.786 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
-18:19:11.786 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@7e667aa6
-18:19:11.793 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-18:19:11.822 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
-18:19:11.830 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
-18:19:11.830 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-18:19:11.849 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-18:19:11.849 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-18:19:11.860 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
-18:19:11.860 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
-18:19:11.861 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-18:19:12.014 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  play.api.Play - Application started (Dev)
-18:19:40.424 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:03:04.855 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  d.h.s.m.aview.tui.Tui - 
+19:03:04.904 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+19:03:04.907 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
+19:03:04.907 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
+19:03:04.932 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
+19:03:04.934 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+19:03:04.935 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - Java version: 8
+19:03:04.936 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+19:03:04.937 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+19:03:04.937 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+19:03:04.938 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
+19:03:04.939 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+19:03:04.939 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+19:03:04.939 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+19:03:04.940 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+19:03:04.941 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\anhauser\AppData\Local\Temp (java.io.tmpdir)
+19:03:04.941 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+19:03:04.942 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+19:03:04.943 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
+19:03:04.943 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+19:03:04.944 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+19:03:04.945 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@7619bca7
+19:03:04.953 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+19:03:04.983 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+19:03:04.991 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+19:03:04.992 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+19:03:05.011 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+19:03:05.011 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+19:03:05.021 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+19:03:05.022 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+19:03:05.022 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+19:03:05.227 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  play.api.Play - Application started (Dev)
+19:03:28.656 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:03:54.141 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:04:22.563 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:04:51.960 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:05:15.784 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:05:43.281 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:06:10.649 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:06:38.000 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:07:03.660 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:07:30.016 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:07:57.750 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:08:21.508 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:08:49.231 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:09:16.586 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:09:40.112 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:10:07.688 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:10:33.961 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:11:00.505 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:11:28.539 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:11:57.377 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:12:21.487 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:12:48.737 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:13:17.970 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:13:47.463 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:14:11.673 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:14:37.064 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:15:03.284 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:15:28.317 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:15:53.798 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:16:19.615 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:16:45.784 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:17:10.274 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:17:35.910 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:18:01.269 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:18:28.722 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:18:57.502 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:19:21.253 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:19:44.436 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:20:11.676 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:20:38.602 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:21:08.177 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:21:36.212 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:22:04.288 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:22:29.302 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:22:53.365 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:23:21.384 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:23:49.084 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:24:17.656 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:24:47.412 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:25:12.075 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:25:41.664 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:26:10.991 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:26:37.476 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+19:27:04.116 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
