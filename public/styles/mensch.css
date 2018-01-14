@@ -1,34 +1,8 @@
-@media (min-width: 480px) {
-    .pagecontainer {
-        z-index: 100;
-        width: 29em;
-        margin: auto;
-        margin-top: 1em;
-        display: block;
-    }
-
-    .gamecontainer {
-        z-index: 100;
-        height: 100%;
-        width: 100%;
-        display: inline-flex;
-        margin: 0em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        font-size:30px;
-        line-height: 33px;
-        font-family: "Verdana",Geneva, sans-serif;
-        font-weight: bold;
-        color:black;
-    }
-}
-
 .background {
     margin: 0 auto;
-    display: block;
     position: relative;
     float: left;
-    width: 70%;
+    width: 40%;
     background: rosybrown;
 }
 
@@ -42,8 +16,8 @@
 
 .circle{
     border: 6px;
-    width: 8%;
-    height: 8%;
+    width: 7%;
+    height: 7%;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 70%;
