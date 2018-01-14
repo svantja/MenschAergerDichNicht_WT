@@ -1,19 +1,19 @@
-16:43:30.463 [application-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-16:43:30.467 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-16:43:30.479 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-16:43:30.481 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-16:43:30.503 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-16:43:30.503 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-16:43:30.518 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-16:43:30.520 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-16:43:30.547 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-16:43:30.599 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-16:43:30.599 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-16:43:30.599 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-16:43:30.669 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-16:43:30.670 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-16:43:30.674 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-16:43:30.677 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+18:19:10.886 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+18:19:10.887 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+18:19:10.897 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+18:19:10.898 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+18:19:10.907 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+18:19:10.909 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+18:19:10.916 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+18:19:10.958 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+18:19:10.959 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+18:19:10.959 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+18:19:11.007 [application-akka.actor.default-dispatcher-6] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+18:19:11.012 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+18:19:11.068 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+18:19:11.069 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+18:19:11.072 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+18:19:11.074 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -21,14 +21,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-16:43:30.677 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-16:43:30.678 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-16:43:30.680 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-16:43:30.685 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-16:43:30.704 [application-akka.actor.default-dispatcher-5] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@57bda1ba'
-16:43:30.717 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-16:43:30.719 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T15:43:30.717Z.
-16:43:30.830 [scala-execution-context-global-186] INFO  jobs.AuthTokenCleaner - 
+18:19:11.075 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+18:19:11.075 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+18:19:11.076 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+18:19:11.076 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:19:11.095 [application-akka.actor.default-dispatcher-5] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@66d3d09f'
+18:19:11.108 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T17:19:11.107Z.
+18:19:11.108 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:19:11.227 [scala-execution-context-global-85] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -36,48 +36,36 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-16:43:31.355 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  d.h.s.m.aview.tui.Tui - 
-16:43:31.403 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
-16:43:31.406 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
-16:43:31.407 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
-16:43:31.425 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
-16:43:31.427 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
-16:43:31.428 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - Java version: 8
-16:43:31.429 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-16:43:31.430 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-16:43:31.431 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
-16:43:31.431 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
-16:43:31.432 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-16:43:31.433 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-16:43:31.433 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
-16:43:31.433 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
-16:43:31.435 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\anhauser\AppData\Local\Temp (java.io.tmpdir)
-16:43:31.435 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-16:43:31.436 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
-16:43:31.436 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
-16:43:31.437 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-16:43:31.437 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
-16:43:31.438 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@2f9afcf2
-16:43:31.446 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-16:43:31.477 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
-16:43:31.486 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
-16:43:31.486 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-16:43:31.509 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-16:43:31.510 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-16:43:31.558 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
-16:43:31.559 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
-16:43:31.559 [play-dev-mode-akka.actor.default-dispatcher-25] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-16:43:31.760 [play-dev-mode-akka.actor.default-dispatcher-25] INFO  play.api.Play - Application started (Dev)
-16:43:31.850 [play-dev-mode-akka.actor.default-dispatcher-25] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.190 [play-dev-mode-akka.actor.default-dispatcher-27] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.192 [play-dev-mode-akka.actor.default-dispatcher-31] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.190 [play-dev-mode-akka.actor.default-dispatcher-24] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.190 [play-dev-mode-akka.actor.default-dispatcher-23] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.190 [play-dev-mode-akka.actor.default-dispatcher-29] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.191 [play-dev-mode-akka.actor.default-dispatcher-28] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.366 [play-dev-mode-akka.actor.default-dispatcher-23] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.388 [play-dev-mode-akka.actor.default-dispatcher-27] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.541 [play-dev-mode-akka.actor.default-dispatcher-17] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.598 [play-dev-mode-akka.actor.default-dispatcher-27] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:32.644 [play-dev-mode-akka.actor.default-dispatcher-17] WARN  p.a.m.DefaultUrlEncodedCookieDataCodec - Cookie failed message authentication check
-16:43:55.244 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:19:11.715 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  d.h.s.m.aview.tui.Tui - 
+18:19:11.754 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+18:19:11.758 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
+18:19:11.759 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
+18:19:11.774 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
+18:19:11.776 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+18:19:11.777 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - Java version: 8
+18:19:11.778 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+18:19:11.778 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+18:19:11.779 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+18:19:11.780 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
+18:19:11.781 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+18:19:11.781 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+18:19:11.781 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+18:19:11.782 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+18:19:11.783 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\anhauser\AppData\Local\Temp (java.io.tmpdir)
+18:19:11.783 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+18:19:11.784 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+18:19:11.784 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
+18:19:11.785 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+18:19:11.786 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+18:19:11.786 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@7e667aa6
+18:19:11.793 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+18:19:11.822 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+18:19:11.830 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+18:19:11.830 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+18:19:11.849 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+18:19:11.849 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+18:19:11.860 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+18:19:11.860 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+18:19:11.861 [play-dev-mode-akka.actor.default-dispatcher-12] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+18:19:12.014 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  play.api.Play - Application started (Dev)
+18:19:40.424 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
