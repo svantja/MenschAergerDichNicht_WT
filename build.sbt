@@ -22,6 +22,8 @@ libraryDependencies += "org.scala-lang.modules" % "scala-swing_2.12" % "2.0.1"
 
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
 
+libraryDependencies += "com.typesafe.play" %% "play-ahc-ws-standalone" % "1.1.3"
+
 
 
 libraryDependencies ++= Seq(
