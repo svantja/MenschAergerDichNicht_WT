@@ -1,3 +1,4 @@
+
 @import play.api.i18n.Messages
 @import play.api.mvc.RequestHeader
 @import play.twirl.api.Html
@@ -42,7 +43,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     @user.map { u =>
-                    <a class="navbar-brand" href="@controllers.routes.MenschController.homesecure()" style="padding-top: auto; width: auto; height: auto;"><img src="@routes.Assets.versioned("images/tokens/brand.png")" width="140" height="60" style="position: relative; margin-left: auto; margin-right: auto"></a>
+                        <a class="navbar-brand" href="@controllers.routes.MenschController.homesecure()" style="padding-top: auto; width: auto; height: auto;"><img src="@routes.Assets.versioned("images/tokens/brand.png")" width="140" height="60" style="position: relative; margin-left: auto; margin-right: auto"></a>
                     }.getOrElse {
                         <a class="navbar-brand" href="@controllers.routes.ApplicationController.index()" style="padding-top: auto; width: auto; height: auto;"><img src="@routes.Assets.versioned("images/tokens/brand.png")" width="140" height="60" style="position: relative; margin-left: auto; margin-right: auto"></a>
                     }
@@ -56,24 +57,24 @@
                             <a class="nav-link" href="@controllers.routes.MenschController.newGame()">Neues Spiel</a>
                         </li>
                         <li class="nav-item">
-                        @user.map { u =>
-                        <a class="nav-link" href="@controllers.routes.MenschController.aboutsecure()">About</a>
-                        }.getOrElse{
-                            <a class="nav-link" href="@controllers.routes.MenschController.about()">About</a>
-                        }
+                            @user.map { u =>
+                                <a class="nav-link" href="@controllers.routes.MenschController.aboutsecure()">About</a>
+                            }.getOrElse{
+                                <a class="nav-link" href="@controllers.routes.MenschController.about()">About</a>
+                            }
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right" style="padding-top: 2%; height: auto; width: auto">
-                    @user.map { u =>
-                    <li><a href="@controllers.routes.MenschController.homesecure()">@u.name</a></li>
-                    @if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID) {
-                        <li><a href="@controllers.routes.ChangePasswordController.view">@messages("change.password")</a></li>
-                    }
-                    <li><a href="@controllers.routes.ApplicationController.signOut">@messages("sign.out")</a></li>
-                    }.getOrElse {
-                        <li><a href="@controllers.routes.SignInController.view">@messages("sign.in")</a></li>
-                        <li><a href="@controllers.routes.SignUpController.view">@messages("sign.up")</a></li>
-                    }
+                        @user.map { u =>
+                            <li><a href="@controllers.routes.MenschController.homesecure()">@u.name</a></li>
+                            @if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID) {
+                                <li><a href="@controllers.routes.ChangePasswordController.view">@messages("change.password")</a></li>
+                            }
+                            <li><a href="@controllers.routes.ApplicationController.signOut">@messages("sign.out")</a></li>
+                        }.getOrElse {
+                            <li><a href="@controllers.routes.SignInController.view">@messages("sign.in")</a></li>
+                            <li><a href="@controllers.routes.SignUpController.view">@messages("sign.up")</a></li>
+                        }
                     </ul>
                 </div>
             </div>
