@@ -6,4 +6,5 @@ target
 /.project
 /.settings
 /.env
+/.DS_Store
 /RUNNING_PID
