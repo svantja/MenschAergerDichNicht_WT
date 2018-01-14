@@ -1,39 +1,20 @@
-<<<<<<< HEAD
-19:47:53.769 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
-19:47:53.801 [application-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-19:47:53.805 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-19:47:53.807 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-19:47:53.808 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-19:47:53.809 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-19:47:53.809 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-19:47:53.810 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-19:47:53.811 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-19:47:53.811 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-19:47:53.812 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-19:47:53.812 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-19:47:53.813 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-19:47:53.825 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-19:47:53.826 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-19:47:53.826 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-19:47:53.826 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
-=======
-19:03:03.900 [application-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-19:03:03.905 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-19:03:03.918 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-19:03:03.919 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-19:03:03.941 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-19:03:03.942 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-19:03:03.952 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/anhauser/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-19:03:03.954 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-19:03:03.962 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-19:03:04.004 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-19:03:04.004 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-19:03:04.005 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-19:03:04.066 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-19:03:04.066 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-19:03:04.069 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-19:03:04.071 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
->>>>>>> upstream/master
+21:26:39.087 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+21:26:39.220 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+21:26:39.221 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+21:26:39.223 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+21:26:39.223 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+21:26:39.236 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+21:26:39.237 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+21:26:39.238 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+21:26:39.240 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+21:26:39.240 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+21:26:39.241 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+21:26:39.273 [application-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+21:26:39.275 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+21:26:39.281 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:26:39.282 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+21:26:39.282 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+21:26:39.282 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -41,25 +22,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-<<<<<<< HEAD
-19:47:53.827 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-19:47:53.827 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-19:47:53.827 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-19:47:53.827 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:47:53.831 [application-akka.actor.default-dispatcher-3] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@3817512e'
-19:47:53.831 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:47:53.835 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T18:47:53.834Z.
-19:47:53.850 [scala-execution-context-global-227] INFO  jobs.AuthTokenCleaner - 
-=======
-19:03:04.071 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-19:03:04.072 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-19:03:04.073 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-19:03:04.073 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:03:04.089 [application-akka.actor.default-dispatcher-5] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@7e177aa4'
-19:03:04.098 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:03:04.100 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T18:03:04.098Z.
-19:03:04.287 [scala-execution-context-global-81] INFO  jobs.AuthTokenCleaner - 
->>>>>>> upstream/master
+21:26:39.282 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+21:26:39.283 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+21:26:39.283 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+21:26:39.283 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+21:26:39.287 [application-akka.actor.default-dispatcher-6] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@1b3e723c'
+21:26:39.288 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+21:26:39.291 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T20:26:39.288Z.
+21:26:39.303 [scala-execution-context-global-219] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -67,11 +37,10 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-<<<<<<< HEAD
-19:47:54.176 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  play.api.Play - Application started (Dev)
-19:48:06.308 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0x94abfcd6, L:/141.37.160.137:58829 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/ce65240d5018c2262b80672c3e0321ce?d=404'
-19:48:06.309 [AsyncHttpClient-4-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0x94abfcd6, L:/141.37.160.137:58829 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-19:48:06.319 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
+21:26:39.598 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  play.api.Play - Application started (Dev)
+21:26:39.807 [AsyncHttpClient-5-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0x0835fbb1, L:/141.37.160.137:64117 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/ce65240d5018c2262b80672c3e0321ce?d=404'
+21:26:39.808 [AsyncHttpClient-5-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0x0835fbb1, L:/141.37.160.137:64117 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+21:26:39.817 [AsyncHttpClient-5-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
 
 Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
 GET /avatar/ce65240d5018c2262b80672c3e0321ce?d=404 HTTP/1.1
@@ -82,7 +51,7 @@ User-Agent: AHC/2.0
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
 HTTP/1.1 404 Not Found
 Server: nginx
-Date: Sun, 14 Jan 2018 18:48:06 GMT
+Date: Sun, 14 Jan 2018 20:26:39 GMT
 Content-Type: text/html; charset=utf-8
 Content-Length: 13
 Connection: keep-alive
@@ -90,20 +59,38 @@ Last-Modified: Wed, 11 Jan 1984 08:00:00 GMT
 Link: <https://www.gravatar.com/avatar/ce65240d5018c2262b80672c3e0321ce?d=404>; rel="canonical"
 Access-Control-Allow-Origin: *
 X-nc: HIT fra 1
-Source-Age: 56
+Source-Age: 214
 
-19:48:06.320 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0x94abfcd6, L:/141.37.160.137:58829 - R:secure.gravatar.com/192.0.73.2:443]
-19:48:06.320 [scala-execution-context-global-228] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
-19:48:07.291 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:08.391 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:09.490 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:10.591 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:11.691 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:12.013 [scala-execution-context-global-245] ERROR application - 
+21:26:39.817 [AsyncHttpClient-5-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0x0835fbb1, L:/141.37.160.137:64117 - R:secure.gravatar.com/192.0.73.2:443]
+21:26:39.818 [scala-execution-context-global-220] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
+21:26:40.626 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:41.725 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:42.827 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:43.926 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:45.027 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:46.126 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:47.226 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:48.326 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:49.427 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:50.525 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:51.625 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:52.726 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:53.826 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:54.927 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:56.026 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:57.126 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:58.227 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:26:59.325 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:00.426 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:01.526 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:02.626 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:03.726 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:04.825 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:05.369 [scala-execution-context-global-237] ERROR application - 
 
-! @76j8nnjo9 - Internal server error, for (POST) [/signUp] ->
+! @76j9an928 - Internal server error, for (POST) [/signUp] ->
  
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[EmailException: Sending the email to the following server failed : localhost:25]]
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[EmailException: Sending the email to the following server failed : smtp.sendgrid.net:582]]
 	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
 	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
 	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
@@ -129,7 +116,7 @@ play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[EmailExce
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1058)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : localhost:25
+Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.sendgrid.net:582
 	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469)
 	at org.apache.commons.mail.Email.send(Email.java:1496)
 	at play.api.libs.mailer.SMTPMailer$$anon$1.send(SMTPMailer.scala:14)
@@ -154,17 +141,17 @@ Caused by: org.apache.commons.mail.EmailException: Sending the email to the foll
 	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout 60000
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sendgrid.net, 582; timeout 60000
 	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
 	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
-	at javax.mail.Service.connect(Service.java:366)
+	at javax.mail.Service.connect(Service.java:388)
 	at javax.mail.Service.connect(Service.java:246)
 	at javax.mail.Service.connect(Service.java:195)
 	at javax.mail.Transport.send0(Transport.java:254)
 	at javax.mail.Transport.send(Transport.java:124)
 	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459)
 	... 23 common frames omitted
-Caused by: java.net.ConnectException: Connection refused: connect
+Caused by: java.net.ConnectException: Connection timed out: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -177,178 +164,15 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
 	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
 	... 30 common frames omitted
-19:48:12.798 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:13.888 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:14.985 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:16.091 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:17.190 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:18.290 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:19.217 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:48:19.389 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:20.505 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:21.594 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:22.690 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:23.790 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:24.892 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:26.000 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:27.090 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:28.186 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:29.293 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:30.387 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:31.497 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:32.594 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:33.699 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:34.793 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:35.891 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:36.320 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - Channel Closed: [id: 0x94abfcd6, L:/141.37.160.137:58829 ! R:secure.gravatar.com/192.0.73.2:443] with attribute INSTANCE
-19:48:36.996 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-19:48:36.996 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Adding Candidate expired Channel [id: 0x94abfcd6, L:/141.37.160.137:58829 ! R:secure.gravatar.com/192.0.73.2:443] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
-19:48:36.996 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closing Idle Channel [id: 0x94abfcd6, L:/141.37.160.137:58829 ! R:secure.gravatar.com/192.0.73.2:443]
-19:48:36.996 [pool-25-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closed 1 connections out of 1 in 0 ms
-19:48:44.004 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:49:10.844 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:49:38.049 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:50:05.333 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:50:35.238 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:50:59.456 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:51:22.953 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:51:52.160 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:52:18.324 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:52:43.131 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:53:13.027 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:53:39.822 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:54:03.164 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:54:29.583 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:54:53.250 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:55:21.837 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:55:49.041 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:56:12.322 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:56:40.686 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:57:05.869 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:57:33.292 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:57:57.459 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:58:25.137 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:58:51.315 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:59:20.211 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:59:46.471 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
-20:00:00.003 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'DEFAULT.AuthTokenCleaner_Job', class=com.typesafe.akka.extension.quartz.SimpleActorMessageJob
-20:00:00.014 [AKKA_QRTZ_-1] DEBUG org.quartz.core.JobRunShell - Calling execute on job DEFAULT.AuthTokenCleaner_Job
-20:00:00.015 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:00:00.020 [scala-execution-context-global-248] INFO  jobs.AuthTokenCleaner - 
-=================================
-Start to cleanup auth tokens
-=================================
-Total of 1 auth tokens(s) were deleted in 0 seconds
-=================================
-=================================
-
-20:00:29.399 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:00:53.872 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:01:21.858 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:01:45.022 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:02:12.290 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:02:36.165 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:02:59.421 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:03:24.215 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:03:52.125 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:04:18.466 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:04:45.509 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:05:10.792 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:05:35.110 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:06:02.482 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:06:28.510 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:06:54.474 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:07:22.138 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:07:50.299 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:08:17.853 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:08:46.715 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:09:13.513 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-20:09:42.907 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-=======
-19:03:04.855 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  d.h.s.m.aview.tui.Tui - 
-19:03:04.904 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
-19:03:04.907 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
-19:03:04.907 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
-19:03:04.932 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
-19:03:04.934 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
-19:03:04.935 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - Java version: 8
-19:03:04.936 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-19:03:04.937 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-19:03:04.937 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
-19:03:04.938 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
-19:03:04.939 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-19:03:04.939 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-19:03:04.939 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
-19:03:04.940 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
-19:03:04.941 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\anhauser\AppData\Local\Temp (java.io.tmpdir)
-19:03:04.941 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-19:03:04.942 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
-19:03:04.943 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
-19:03:04.943 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-19:03:04.944 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
-19:03:04.945 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@7619bca7
-19:03:04.953 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-19:03:04.983 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
-19:03:04.991 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
-19:03:04.992 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-19:03:05.011 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-19:03:05.011 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.a.i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-19:03:05.021 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
-19:03:05.022 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
-19:03:05.022 [play-dev-mode-akka.actor.default-dispatcher-2] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-19:03:05.227 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  play.api.Play - Application started (Dev)
-19:03:28.656 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:03:54.141 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:04:22.563 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:04:51.960 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:05:15.784 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:05:43.281 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:06:10.649 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:06:38.000 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:07:03.660 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:07:30.016 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:07:57.750 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:08:21.508 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:08:49.231 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:09:16.586 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:09:40.112 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:10:07.688 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:10:33.961 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:11:00.505 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:11:28.539 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:11:57.377 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:12:21.487 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:12:48.737 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:13:17.970 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:13:47.463 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:14:11.673 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:14:37.064 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:15:03.284 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:15:28.317 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:15:53.798 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:16:19.615 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:16:45.784 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:17:10.274 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:17:35.910 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:18:01.269 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:18:28.722 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:18:57.502 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:19:21.253 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:19:44.436 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:20:11.676 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:20:38.602 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:21:08.177 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:21:36.212 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:22:04.288 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:22:29.302 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:22:53.365 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:23:21.384 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:23:49.084 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:24:17.656 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:24:47.412 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:25:12.075 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:25:41.664 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:26:10.991 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:26:37.476 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-19:27:04.116 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
->>>>>>> upstream/master
+21:27:05.927 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:07.025 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:08.131 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:08.917 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+21:27:09.234 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:09.808 [AsyncHttpClient-5-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - Channel Closed: [id: 0x0835fbb1, L:/141.37.160.137:64117 ! R:secure.gravatar.com/192.0.73.2:443] with attribute INSTANCE
+21:27:10.334 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+21:27:10.334 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Adding Candidate expired Channel [id: 0x0835fbb1, L:/141.37.160.137:64117 ! R:secure.gravatar.com/192.0.73.2:443] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+21:27:10.334 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closing Idle Channel [id: 0x0835fbb1, L:/141.37.160.137:64117 ! R:secure.gravatar.com/192.0.73.2:443]
+21:27:10.334 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closed 1 connections out of 1 in 0 ms
+21:27:38.801 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+21:28:06.492 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
