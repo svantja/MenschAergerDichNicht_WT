@@ -1,19 +1,19 @@
-12:56:08.632 [application-akka.actor.default-dispatcher-7] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-12:56:08.636 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-12:56:08.648 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-12:56:08.650 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-12:56:08.662 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-12:56:08.662 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-12:56:08.673 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-12:56:08.674 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-12:56:08.706 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-12:56:08.747 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-12:56:08.748 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-12:56:08.748 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-12:56:08.822 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-12:56:08.822 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-12:56:08.826 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-12:56:08.828 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+13:53:07.465 [application-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+13:53:07.468 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+13:53:07.470 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+13:53:07.471 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+13:53:07.472 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+13:53:07.472 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+13:53:07.473 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+13:53:07.473 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+13:53:07.474 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+13:53:07.475 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+13:53:07.476 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+13:53:07.476 [play-dev-mode-akka.actor.default-dispatcher-67] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+13:53:07.488 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+13:53:07.489 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+13:53:07.489 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+13:53:07.489 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -21,14 +21,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-12:56:08.829 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-12:56:08.829 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-12:56:08.833 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-12:56:08.833 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-12:56:08.852 [application-akka.actor.default-dispatcher-3] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@2b3d48d6'
-12:56:08.861 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-12:56:08.863 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T11:56:08.862Z.
-12:56:08.967 [scala-execution-context-global-82] INFO  jobs.AuthTokenCleaner - 
+13:53:07.490 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+13:53:07.490 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+13:53:07.490 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+13:53:07.490 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:53:07.494 [application-akka.actor.default-dispatcher-7] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@2f080de1'
+13:53:07.496 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:53:07.499 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T12:53:07.495Z.
+13:53:07.511 [scala-execution-context-global-1471] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -36,169 +36,127 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-12:56:09.455 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  d.h.s.m.aview.tui.Tui - 
-12:56:09.906 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
-12:56:09.910 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
-12:56:09.910 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
-12:56:09.922 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
-12:56:09.923 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-12:56:09.924 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-12:56:09.924 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
-12:56:09.925 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
-12:56:09.926 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-12:56:09.929 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
-java.lang.ClassNotFoundException: jdk.internal.misc.Unsafe
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at play.shaded.ahc.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:290)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.shaded.ahc.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:283)
-	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.getSystemClassLoader(PlatformDependent.java:637)
-	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.isAndroid0(PlatformDependent.java:661)
-	at play.shaded.ahc.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:65)
-	at play.shaded.ahc.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:155)
-	at play.shaded.ahc.io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:200)
-	at play.shaded.ahc.io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
-	at play.shaded.ahc.io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:89)
-	at play.shaded.ahc.org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:91)
-	at play.shaded.ahc.org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:83)
-	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get$lzycompute(AhcWSModule.scala:48)
-	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get(AhcWSModule.scala:45)
-	at play.api.libs.ws.ahc.AsyncHttpClientProvider.get(AhcWSModule.scala:39)
-	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
-	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
-	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
-	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
-	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
-	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
-	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
-	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
-	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
-	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
-	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
-	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
-	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:194)
-	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
-	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:61)
-	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
-	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
-	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
-	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
-	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
-	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
-	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
-	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
-	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
-	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
-	at com.google.inject.internal.ProviderMethod$Factory.provision(ProviderMethod.java:402)
-	at com.google.inject.internal.ProviderMethod$Factory.get(ProviderMethod.java:376)
-	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
-	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
-	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
-	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
-	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
-	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
-	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
-	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
-	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
-	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
-	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1019)
-	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
-	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1015)
-	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1054)
-	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:409)
-	at play.api.inject.ContextClassLoaderInjector.$anonfun$instanceOf$3(Injector.scala:118)
-	at play.api.inject.ContextClassLoaderInjector.withContext(Injector.scala:126)
-	at play.api.inject.ContextClassLoaderInjector.instanceOf(Injector.scala:118)
-	at play.api.inject.RoutesProvider.$anonfun$get$2(BuiltinModule.scala:104)
-	at scala.Option.fold(Option.scala:158)
-	at play.api.inject.RoutesProvider.get$lzycompute(BuiltinModule.scala:104)
-	at play.api.inject.RoutesProvider.get(BuiltinModule.scala:100)
-	at play.api.inject.RoutesProvider.get(BuiltinModule.scala:99)
-	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
-	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
-	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
-	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
-	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
-	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
-	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
-	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
-	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
-	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
-	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:38)
-	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:62)
-	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:110)
-	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
-	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
-	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
-	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
-	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
-	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:194)
-	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
-	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:56)
-	at com.google.inject.internal.InjectorImpl$2$1.call(InjectorImpl.java:1019)
-	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1085)
-	at com.google.inject.internal.InjectorImpl$2.get(InjectorImpl.java:1015)
-	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1054)
-	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:409)
-	at play.api.inject.guice.GuiceInjector.instanceOf(GuiceInjectorBuilder.scala:404)
-	at play.api.inject.ContextClassLoaderInjector.$anonfun$instanceOf$2(Injector.scala:117)
-	at play.api.inject.ContextClassLoaderInjector.withContext(Injector.scala:126)
-	at play.api.inject.ContextClassLoaderInjector.instanceOf(Injector.scala:117)
-	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:137)
-	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
-	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:174)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:171)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:124)
-	at play.core.server.AkkaHttpServer.modelConversion(AkkaHttpServer.scala:183)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:189)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$3(AkkaHttpServer.scala:106)
-	at akka.stream.impl.fusing.MapAsync$$anon$23.onPush(Ops.scala:1172)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:499)
-	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:462)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:368)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:571)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:457)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:546)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:725)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:740)
-	at akka.actor.Actor.aroundReceive(Actor.scala:514)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:512)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:650)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:527)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:496)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-12:56:09.935 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
-12:56:09.935 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
-12:56:09.936 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - Java version: 8
-12:56:09.936 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
-12:56:09.937 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\svloeger\AppData\Local\Temp (java.io.tmpdir)
-12:56:09.938 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-12:56:09.939 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
-12:56:09.939 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
-12:56:09.939 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-12:56:09.940 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
-12:56:09.941 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@4a22328c
-12:56:09.945 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-12:56:09.982 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
-12:56:09.989 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
-12:56:09.990 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-12:56:10.023 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
-12:56:10.024 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
-12:56:10.024 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-12:56:10.258 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  play.api.Play - Application started (Dev)
-12:56:31.879 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-12:56:37.428 [scala-execution-context-global-107] INFO  d.h.s.m.aview.tui.Tui - 
-oo  OOO  oo
-oo  OoO  oo
+13:53:07.625 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+13:53:07.828 [play-dev-mode-akka.actor.default-dispatcher-67] INFO  play.api.Play - Application started (Dev)
+13:53:19.456 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0xa4cdc45d, L:/141.37.160.137:63637 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/ce65240d5018c2262b80672c3e0321ce?d=404'
+13:53:19.457 [AsyncHttpClient-4-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0xa4cdc45d, L:/141.37.160.137:63637 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+13:53:19.466 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /avatar/ce65240d5018c2262b80672c3e0321ce?d=404 HTTP/1.1
+Host: secure.gravatar.com
+Accept: */*
+User-Agent: AHC/2.0
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Sun, 14 Jan 2018 12:53:19 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 13
+Connection: keep-alive
+Last-Modified: Wed, 11 Jan 1984 08:00:00 GMT
+Link: <https://www.gravatar.com/avatar/ce65240d5018c2262b80672c3e0321ce?d=404>; rel="canonical"
+Access-Control-Allow-Origin: *
+X-nc: HIT fra 1
+Source-Age: 377
+
+13:53:19.467 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0xa4cdc45d, L:/141.37.160.137:63637 - R:secure.gravatar.com/192.0.73.2:443]
+13:53:19.467 [scala-execution-context-global-1482] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
+13:53:19.486 [application-akka.actor.default-dispatcher-2] INFO  play.mailer - mock implementation, send email
+13:53:19.486 [application-akka.actor.default-dispatcher-2] INFO  play.mailer - subject: Welcome
+13:53:19.487 [application-akka.actor.default-dispatcher-2] INFO  play.mailer - from: Silhouette <noreply@mohiva.com>
+13:53:19.487 [application-akka.actor.default-dispatcher-2] INFO  play.mailer - bodyText: 
+Hello ss ss,
+
+Please follow the link to confirm and activate your new account: http://localhost:9000/account/activate/816a0552-2ea2-4a24-b135-2ca4cf964ddf
+
+13:53:19.487 [application-akka.actor.default-dispatcher-2] INFO  play.mailer - bodyHtml: 
+
+<html>
+    <body>
+        <p>Hello ss ss,</p>
+        <p>Please follow <a href="http://localhost:9000/account/activate/816a0552-2ea2-4a24-b135-2ca4cf964ddf">this link</a> to confirm and activate your new account.</p>
+    </body>
+</html>
+
+13:53:19.488 [application-akka.actor.default-dispatcher-2] INFO  play.mailer - to: svloeger@htwg-konstanz.de
+13:53:19.831 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:20.933 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:22.039 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:23.132 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:24.232 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:25.332 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:26.431 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:27.531 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:28.632 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:29.731 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:30.832 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:31.931 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:32.810 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:53:33.033 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:34.133 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:35.231 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:36.328 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:37.427 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:38.535 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:39.627 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:40.737 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:41.833 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:42.939 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:44.031 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:45.131 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:46.233 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:47.335 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:48.431 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:49.466 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - Channel Closed: [id: 0xa4cdc45d, L:/141.37.160.137:63637 ! R:secure.gravatar.com/192.0.73.2:443] with attribute INSTANCE
+13:53:49.547 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+13:53:49.547 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Adding Candidate expired Channel [id: 0xa4cdc45d, L:/141.37.160.137:63637 ! R:secure.gravatar.com/192.0.73.2:443] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+13:53:49.547 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closing Idle Channel [id: 0xa4cdc45d, L:/141.37.160.137:63637 ! R:secure.gravatar.com/192.0.73.2:443]
+13:53:49.547 [pool-359-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closed 1 connections out of 1 in 0 ms
+13:53:56.715 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:54:20.120 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:54:47.421 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:55:15.705 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:55:39.891 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:56:06.176 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:56:33.041 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:56:58.938 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:57:24.953 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:57:50.905 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:58:18.008 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:58:42.984 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:59:12.109 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+13:59:37.007 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+14:00:00.001 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'DEFAULT.AuthTokenCleaner_Job', class=com.typesafe.akka.extension.quartz.SimpleActorMessageJob
+14:00:00.001 [AKKA_QRTZ_-1] DEBUG org.quartz.core.JobRunShell - Calling execute on job DEFAULT.AuthTokenCleaner_Job
+14:00:00.001 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:00:00.016 [scala-execution-context-global-1688] INFO  jobs.AuthTokenCleaner - 
+=================================
+Start to cleanup auth tokens
+=================================
+Total of 1 auth tokens(s) were deleted in 0 seconds
+=================================
+=================================
+
+14:00:24.430 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:00:53.040 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:01:19.607 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:01:47.464 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:02:14.839 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:02:41.185 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:03:08.995 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:03:32.766 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:04:01.588 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:04:31.466 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:05:00.960 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:05:29.784 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:05:57.768 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:06:24.160 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:06:49.095 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+14:07:01.314 [scala-execution-context-global-1807] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+rr  OoO  bb
     OoO    
     OoO    
 OOOOO OOOOO
@@ -209,3 +167,103 @@ OOOOOoOOOOO
 oo  OoO  oo
 oo  OOO  oo
 
+14:07:02.526 [scala-execution-context-global-1810] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+rr  OoO  bb
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  gg
+oo  OOO  gg
+
+14:07:03.424 [scala-execution-context-global-1808] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+rr  OoO  bb
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  gg
+oo  OOO  gg
+
+14:07:04.672 [scala-execution-context-global-1807] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+rr  OoO  bb
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  gg
+oo  OOO  gg
+
+current: 2
+14:07:05.419 [scala-execution-context-global-1807] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+rr  OoO  bb
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  gg
+oo  OOO  gg
+
+current: 0
+14:07:06.219 [scala-execution-context-global-1808] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+rr  OoO  bb
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  gg
+oo  OOO  gg
+
+current: 1
+14:07:06.995 [scala-execution-context-global-1807] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+rr  OoO  bb
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  gg
+oo  OOO  gg
+
+current: 2
+14:07:07.835 [scala-execution-context-global-1808] INFO  d.h.s.m.aview.tui.Tui - 
+14:07:09.670 [scala-execution-context-global-1810] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+rr  OoO  bb
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOg
+    OoO    
+    OoO    
+oo  OoO  og
+oo  OOO  gg
+
+current: 2
+14:07:10.506 [scala-execution-context-global-1807] INFO  d.h.s.m.aview.tui.Tui - 
+14:07:11.210 [scala-execution-context-global-1810] INFO  d.h.s.m.aview.tui.Tui - 
+14:07:12.114 [scala-execution-context-global-1809] INFO  d.h.s.m.aview.tui.Tui - 
