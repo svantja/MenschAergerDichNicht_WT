@@ -67,8 +67,8 @@ function drawPlayingField(){
         }else if(i === 30){
             div.style.background = "orange"
         }
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
         console.log("jaay")
     }
@@ -80,8 +80,8 @@ function drawHouseOne(){
         var div = document.createElement("div");
         div.setAttribute("id", "red");
         div.className = "circle";
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
     }
     for(i = 0; i < FINISH_ONE.length; i++){
@@ -89,8 +89,8 @@ function drawHouseOne(){
         var div = document.createElement("div");
         div.setAttribute("id", "red");
         div.className = "circle";
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
     }
 }
@@ -101,8 +101,8 @@ function drawHouseTwo(){
         var div = document.createElement("div");
         div.setAttribute("id", "blue");
         div.className = "circle";
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
     }
     for(i = 0; i < FINISH_TWO.length; i++){
@@ -110,8 +110,8 @@ function drawHouseTwo(){
         var div = document.createElement("div");
         div.setAttribute("id", "blue");
         div.className = "circle";
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
     }
 }
@@ -122,8 +122,8 @@ function drawHouseThree(){
         var div = document.createElement("div");
         div.setAttribute("id", "green");
         div.className = "circle";
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
     }
     for(i = 0; i < FINISH_THREE.length; i++){
@@ -131,8 +131,8 @@ function drawHouseThree(){
         var div = document.createElement("div");
         div.setAttribute("id", "green");
         div.className = "circle";
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
     }
 }
@@ -143,8 +143,8 @@ function drawHouseFour(){
         var div = document.createElement("div");
         div.setAttribute("id", "yellow");
         div.className = "circle";
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
     }
     for(i = 0; i < FINISH_FOUR.length; i++){
@@ -152,8 +152,8 @@ function drawHouseFour(){
         var div = document.createElement("div");
         div.setAttribute("id", "yellow");
         div.className = "circle";
-        div.style.left =  pos[0]*100/660 + "%";
-        div.style.top =  pos[1]*100/660 + "%";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
         document.getElementById("back").appendChild(div)
         console.log("home :(")
     }
