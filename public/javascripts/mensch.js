@@ -299,8 +299,18 @@ function updatePage(data) {
 }
 
 function connectWebSocket() {
-        console.log("Connecting to Websocket");
-        var websocket = new WebSocket("ws://localhost:9000/websocket");
+    console.log("Connecting to Websocket");
+    //var websocket = new WebSocket("ws://localhost:9000/websocket");
+
+    var loc = window.location;
+    var ws_uri = "ws:";
+    if(loc.protocol === "https:") {
+        ws_uri = "wss:";
+    }
+
+    ws_uri += "//" + loc.host + "/websocket";
+
+    var websocket = new WebSocket(ws_uri);
 
         console.log("Connected to Websocket");
 
