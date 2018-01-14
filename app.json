@@ -1,12 +1,12 @@
 
 {
-  "name": "mensch-aerger-dich-nicht",
+  "name": "mensch-aerger-dich",
   "description": "Seed project to show how Silhouette can be implemented into a Play Framework application.",
   "keywords": [
     "Play",
     "Silhouette"
   ],
-  "logo": "https://mensch-aerger-dich-nicht.herokuapp.com/node.png",
+  "logo": "https://mensch-aerger-dich.herokuapp.com/node.png",
   "repository": "https://github.com/svantja/MenschAergerDichNicht_WT",
   "success_url": "/",
   "env": {

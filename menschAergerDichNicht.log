@@ -40,3 +40,15 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 18:06:57.508 [play-dev-mode-akka.actor.default-dispatcher-44] INFO  play.api.Play - Application started (Dev)
 18:07:23.738 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
 18:07:51.589 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:08:15.018 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:08:43.620 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:09:08.063 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:09:32.334 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:10:02.316 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:10:26.161 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:10:52.904 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:11:19.419 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:11:46.879 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:12:14.061 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:12:40.857 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+18:13:08.903 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers

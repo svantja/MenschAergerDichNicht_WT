@@ -299,34 +299,43 @@ function updatePage(data) {
 }
 
 function connectWebSocket() {
-        console.log("Connecting to Websocket");
-        var websocket = new WebSocket("ws://localhost:9000/websocket");
+    console.log("Connecting to Websocket");
+    //var websocket = new WebSocket("ws://localhost:9000/websocket");
 
-        console.log("Connected to Websocket");
-
-            websocket.onopen = function(event) {
-                console.log("Trying to connect to Server");
-                websocket.send("Trying to connect to Server");
-            };
-
-        websocket.onclose = function () {
-                setTimeout(connectWebSocket, 1000);
-                console.log('Connection Closed!');
-            };
-
-            websocket.onerror = function (error) {
-                console.log('Error Occured: ' + error);
-            };
-
-            websocket.onmessage = function (e) {
-                if (typeof e.data === "string") {
-                        console.log('String message received: ' + e.data);
-                        updatePage(e.data)
-                        //updatePage()
-                    }
-
-            };
+    var loc = window.location;
+    var ws_uri = "ws:";
+    if(loc.protocol === "https:") {
+        ws_uri = "wss:";
     }
+
+    ws_uri += "//" + loc.host + "/websocket";
+
+    var websocket = new WebSocket(ws_uri);
+
+    console.log("Connected to Websocket");
+
+    websocket.onopen = function(event) {
+        console.log("Trying to connect to Server");
+        websocket.send("Trying to connect to Server");
+    };
+
+    websocket.onclose = function () {
+        setTimeout(connectWebSocket, 1000);
+        console.log('Connection Closed!');
+    };
+
+    websocket.onerror = function (error) {
+        console.log('Error Occured: ' + error);
+    };
+
+    websocket.onmessage = function (e) {
+        if (typeof e.data === "string") {
+            console.log('String message received: ' + e.data);
+            updatePage(e.data)
+            //updatePage()
+        }
+    };
+}
 
 $( document ).ready(function() {
     console.log( "Document is ready, position Tokens" );
