@@ -9,7 +9,7 @@ var playingField = [[30, 230], [80, 230], [130, 230],[180, 230], [230, 230], // 
     [280, 530], [230, 530], // 9.Reihe
     [230, 480], [230, 430], [230, 380], [230, 330],
     [180, 330], [130, 330], [80, 330], [30, 330], [30, 280]];
-var playingFieldTop = [230,230,230,230,230];
+
 
 var FINISH_ONE =   [[80, 280 ], [130, 280], [180, 280], [230, 280]];
 var FINISH_TWO =   [[280, 80 ], [280, 130], [280,180 ], [280,230 ]];
@@ -52,6 +52,122 @@ function getFinish(index, id) {
     return pos;
 }
 
+function drawPlayingField(){
+    for(i = 0; i < playingField.length; i++){
+        pos = getField(i);
+        var div = document.createElement("div");
+        div.setAttribute("id", "playingfiel");
+        div.className = "circle";
+        if(i === 0){
+            div.style.background = "indianred";
+        } else if(i === 10){
+            div.style.background = "cadetblue"
+        }else if(i === 20){
+            div.style.background = "darkolivegreen";
+        }else if(i === 30){
+            div.style.background = "orange"
+        }
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+        console.log("jaay")
+    }
+}
+
+function drawHouseOne(){
+    for(i = 0; i < HOMEFIELDPLAYERONE.length; i++){
+        pos = getHome(i, 1);
+        var div = document.createElement("div");
+        div.setAttribute("id", "red");
+        div.className = "circle";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+    }
+    for(i = 0; i < FINISH_ONE.length; i++){
+        pos = getFinish(i, 1);
+        var div = document.createElement("div");
+        div.setAttribute("id", "red");
+        div.className = "circle";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+    }
+}
+
+function drawHouseTwo(){
+    for(i = 0; i < HOMEFIELDPLAYERTWO.length; i++){
+        pos = getHome(i, 5);
+        var div = document.createElement("div");
+        div.setAttribute("id", "blue");
+        div.className = "circle";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+    }
+    for(i = 0; i < FINISH_TWO.length; i++){
+        pos = getFinish(i, 5);
+        var div = document.createElement("div");
+        div.setAttribute("id", "blue");
+        div.className = "circle";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+    }
+}
+
+function drawHouseThree(){
+    for(i = 0; i < HOMEFIELDPLAYERTHREE.length; i++){
+        pos = getHome(i, 9);
+        var div = document.createElement("div");
+        div.setAttribute("id", "green");
+        div.className = "circle";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+    }
+    for(i = 0; i < FINISH_THREE.length; i++){
+        pos = getFinish(i, 9);
+        var div = document.createElement("div");
+        div.setAttribute("id", "green");
+        div.className = "circle";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+    }
+}
+
+function drawHouseFour(){
+    for(i = 0; i < HOMEFIELDPLAYERFOUR.length; i++){
+        pos = getHome(i, 13);
+        var div = document.createElement("div");
+        div.setAttribute("id", "yellow");
+        div.className = "circle";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+    }
+    for(i = 0; i < FINISH_FOUR.length; i++){
+        pos = getFinish(i, 13);
+        var div = document.createElement("div");
+        div.setAttribute("id", "yellow");
+        div.className = "circle";
+        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
+        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
+        document.getElementById("back").appendChild(div)
+        console.log("home :(")
+    }
+}
+
+function drawHouses(){
+    drawPlayingField();
+    drawHouseOne();
+    drawHouseTwo();
+    drawHouseThree();
+    drawHouseFour();
+}
+
+
 function getPosition(counter, position, id){
     if(counter > 0 && counter < 41){
         pos = getField(position)
@@ -83,6 +199,7 @@ function setPosition(counter, position, id) {
     pos = getPosition(counter, position, id);
     document.getElementById(id).style.left = pos[0]*100/660 + "%";
     document.getElementById(id).style.top = pos[1]*100/660 + "%";
+    document.getElementById(id).style.zIndex = 110;
     document.getElementById(id).style.visibility = "visible"
 }
 
@@ -213,6 +330,9 @@ function connectWebSocket() {
 
 $( document ).ready(function() {
     console.log( "Document is ready, position Tokens" );
+    drawHouses();
     loadJson();
     connectWebSocket()
 });
+
+
