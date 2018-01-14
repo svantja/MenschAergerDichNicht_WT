@@ -1,19 +1,19 @@
-12:41:15.503 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-12:41:15.505 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-12:41:15.518 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-12:41:15.518 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-12:41:15.529 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-12:41:15.531 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-12:41:15.540 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-12:41:15.580 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-12:41:15.581 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-12:41:15.581 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-12:41:15.636 [application-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-12:41:15.641 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-12:41:15.696 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-12:41:15.697 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-12:41:15.700 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-12:41:15.702 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+12:56:08.632 [application-akka.actor.default-dispatcher-7] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+12:56:08.636 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+12:56:08.648 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+12:56:08.650 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+12:56:08.662 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+12:56:08.662 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+12:56:08.673 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+12:56:08.674 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+12:56:08.706 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+12:56:08.747 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+12:56:08.748 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+12:56:08.748 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+12:56:08.822 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:56:08.822 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+12:56:08.826 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+12:56:08.828 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -21,14 +21,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-12:41:15.702 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-12:41:15.702 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-12:41:15.704 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-12:41:15.704 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-12:41:15.734 [application-akka.actor.default-dispatcher-8] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@20eb2c45'
-12:41:15.742 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-12:41:15.744 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T11:41:15.742Z.
-12:41:15.884 [scala-execution-context-global-80] INFO  jobs.AuthTokenCleaner - 
+12:56:08.829 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+12:56:08.829 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+12:56:08.833 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+12:56:08.833 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+12:56:08.852 [application-akka.actor.default-dispatcher-3] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@2b3d48d6'
+12:56:08.861 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+12:56:08.863 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T11:56:08.862Z.
+12:56:08.967 [scala-execution-context-global-82] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -36,17 +36,17 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-12:41:16.315 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  d.h.s.m.aview.tui.Tui - 
-12:41:16.740 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
-12:41:16.743 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
-12:41:16.744 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
-12:41:16.756 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
-12:41:16.757 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-12:41:16.758 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-12:41:16.759 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
-12:41:16.759 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
-12:41:16.760 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-12:41:16.763 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+12:56:09.455 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  d.h.s.m.aview.tui.Tui - 
+12:56:09.906 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+12:56:09.910 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.level: simple
+12:56:09.910 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.util.ResourceLeakDetector - -Dplay.shaded.ahc.io.netty.leakDetection.maxRecords: 4
+12:56:09.922 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+12:56:09.923 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+12:56:09.924 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+12:56:09.924 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+12:56:09.925 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - direct buffer constructor: available
+12:56:09.926 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+12:56:09.929 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.ClassNotFoundException: jdk.internal.misc.Unsafe
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
@@ -176,66 +176,36 @@ java.lang.ClassNotFoundException: jdk.internal.misc.Unsafe
 	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-12:41:16.766 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
-12:41:16.766 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
-12:41:16.767 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - Java version: 8
-12:41:16.767 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
-12:41:16.768 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\svloeger\AppData\Local\Temp (java.io.tmpdir)
-12:41:16.769 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-12:41:16.770 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
-12:41:16.770 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
-12:41:16.771 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-12:41:16.772 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
-12:41:16.772 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@4bd986f2
-12:41:16.774 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-12:41:16.805 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
-12:41:16.813 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
-12:41:16.814 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-12:41:16.843 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
-12:41:16.843 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
-12:41:16.844 [play-dev-mode-akka.actor.default-dispatcher-4] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-12:41:17.041 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  play.api.Play - Application started (Dev)
-12:41:17.438 [play-dev-mode-akka.actor.default-dispatcher-4] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.440 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.717 [play-dev-mode-akka.actor.default-dispatcher-4] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.718 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.723 [play-dev-mode-akka.actor.default-dispatcher-12] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.725 [play-dev-mode-akka.actor.default-dispatcher-12] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.725 [play-dev-mode-akka.actor.default-dispatcher-13] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.725 [play-dev-mode-akka.actor.default-dispatcher-13] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.724 [play-dev-mode-akka.actor.default-dispatcher-11] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.724 [play-dev-mode-akka.actor.default-dispatcher-9] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.725 [play-dev-mode-akka.actor.default-dispatcher-14] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.727 [play-dev-mode-akka.actor.default-dispatcher-11] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.727 [play-dev-mode-akka.actor.default-dispatcher-9] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.727 [play-dev-mode-akka.actor.default-dispatcher-14] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.821 [play-dev-mode-akka.actor.default-dispatcher-13] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.821 [play-dev-mode-akka.actor.default-dispatcher-13] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.822 [play-dev-mode-akka.actor.default-dispatcher-4] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.823 [play-dev-mode-akka.actor.default-dispatcher-4] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.877 [play-dev-mode-akka.actor.default-dispatcher-2] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.877 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-12:41:17.901 [play-dev-mode-akka.actor.default-dispatcher-2] WARN  p.api.mvc.DefaultJWTCookieDataCodec - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-12:41:17.902 [play-dev-mode-akka.actor.default-dispatcher-2] INFO  p.api.mvc.DefaultJWTCookieDataCodec - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
+12:56:09.935 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+12:56:09.935 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - Platform: Windows
+12:56:09.936 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - Java version: 8
+12:56:09.936 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+12:56:09.937 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: C:\Users\svloeger\AppData\Local\Temp (java.io.tmpdir)
+12:56:09.938 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+12:56:09.939 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+12:56:09.939 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 954728448 bytes
+12:56:09.939 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+12:56:09.940 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+12:56:09.941 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@4a22328c
+12:56:09.945 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+12:56:09.982 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+12:56:09.989 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+12:56:09.990 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.a.i.n.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+12:56:10.023 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: unpooled
+12:56:10.024 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+12:56:10.024 [play-dev-mode-akka.actor.default-dispatcher-5] DEBUG p.s.ahc.io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+12:56:10.258 [play-dev-mode-akka.actor.default-dispatcher-5] INFO  play.api.Play - Application started (Dev)
+12:56:31.879 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+12:56:37.428 [scala-execution-context-global-107] INFO  d.h.s.m.aview.tui.Tui - 
+oo  OOO  oo
+oo  OoO  oo
+    OoO    
+    OoO    
+OOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  oo
+oo  OOO  oo
+
