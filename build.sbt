@@ -45,6 +45,8 @@ libraryDependencies ++= Seq(
   filters
 )
 
+libraryDependencies += "org.webjars" % "bootstrap" % "3.3.4"
+
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 routesGenerator := InjectedRoutesGenerator
