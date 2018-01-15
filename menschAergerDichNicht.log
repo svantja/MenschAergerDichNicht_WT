@@ -1,20 +1,19 @@
-21:26:39.087 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
-21:26:39.220 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-21:26:39.221 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-21:26:39.223 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-21:26:39.223 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-21:26:39.236 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-21:26:39.237 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-21:26:39.238 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-21:26:39.240 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-21:26:39.240 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-21:26:39.241 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-21:26:39.273 [application-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-21:26:39.275 [play-dev-mode-akka.actor.default-dispatcher-3] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-21:26:39.281 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-21:26:39.282 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-21:26:39.282 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-21:26:39.282 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+15:18:22.678 [application-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+15:18:22.680 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+15:18:22.683 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+15:18:22.683 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+15:18:22.684 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+15:18:22.685 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+15:18:22.686 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+15:18:22.686 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+15:18:22.687 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+15:18:22.688 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+15:18:22.688 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+15:18:22.688 [play-dev-mode-akka.actor.default-dispatcher-60] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+15:18:22.697 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:18:22.698 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+15:18:22.698 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:18:22.698 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -22,14 +21,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-21:26:39.282 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-21:26:39.283 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-21:26:39.283 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-21:26:39.283 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:26:39.287 [application-akka.actor.default-dispatcher-6] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@1b3e723c'
-21:26:39.288 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:26:39.291 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  application - ApplicationTimer demo: Starting application at 2018-01-14T20:26:39.288Z.
-21:26:39.303 [scala-execution-context-global-219] INFO  jobs.AuthTokenCleaner - 
+15:18:22.698 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+15:18:22.699 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+15:18:22.699 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+15:18:22.699 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+15:18:22.707 [application-akka.actor.default-dispatcher-3] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@27bd6de4'
+15:18:22.707 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+15:18:22.710 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  application - ApplicationTimer demo: Starting application at 2018-01-15T14:18:22.710Z.
+15:18:22.723 [scala-execution-context-global-587] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -37,13 +36,14 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-21:26:39.598 [play-dev-mode-akka.actor.default-dispatcher-3] INFO  play.api.Play - Application started (Dev)
-21:26:39.807 [AsyncHttpClient-5-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0x0835fbb1, L:/141.37.160.137:64117 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/ce65240d5018c2262b80672c3e0321ce?d=404'
-21:26:39.808 [AsyncHttpClient-5-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0x0835fbb1, L:/141.37.160.137:64117 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-21:26:39.817 [AsyncHttpClient-5-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
+15:18:22.819 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+15:18:22.977 [play-dev-mode-akka.actor.default-dispatcher-60] INFO  play.api.Play - Application started (Dev)
+15:18:30.203 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0x4d408452, L:/141.37.160.134:59632 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/14553a0ab49d981969ac2d64a47f9643?d=404'
+15:18:30.204 [AsyncHttpClient-4-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0x4d408452, L:/141.37.160.134:59632 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+15:18:30.340 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
 
 Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-GET /avatar/ce65240d5018c2262b80672c3e0321ce?d=404 HTTP/1.1
+GET /avatar/14553a0ab49d981969ac2d64a47f9643?d=404 HTTP/1.1
 Host: secure.gravatar.com
 Accept: */*
 User-Agent: AHC/2.0
@@ -51,220 +51,102 @@ User-Agent: AHC/2.0
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
 HTTP/1.1 404 Not Found
 Server: nginx
-Date: Sun, 14 Jan 2018 20:26:39 GMT
+Date: Mon, 15 Jan 2018 14:18:30 GMT
 Content-Type: text/html; charset=utf-8
 Content-Length: 13
 Connection: keep-alive
 Last-Modified: Wed, 11 Jan 1984 08:00:00 GMT
-Link: <https://www.gravatar.com/avatar/ce65240d5018c2262b80672c3e0321ce?d=404>; rel="canonical"
+Link: <https://www.gravatar.com/avatar/14553a0ab49d981969ac2d64a47f9643?d=404>; rel="canonical"
 Access-Control-Allow-Origin: *
-X-nc: HIT fra 1
-Source-Age: 214
+X-nc: MISS fra 1
+Source-Age: 0
 
-21:26:39.817 [AsyncHttpClient-5-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0x0835fbb1, L:/141.37.160.137:64117 - R:secure.gravatar.com/192.0.73.2:443]
-21:26:39.818 [scala-execution-context-global-220] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
-21:26:40.626 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:41.725 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:42.827 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:43.926 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:45.027 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:46.126 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:47.226 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:48.326 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:49.427 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:50.525 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:51.625 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:52.726 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:53.826 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:54.927 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:56.026 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:57.126 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:58.227 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:26:59.325 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:00.426 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:01.526 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:02.626 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:03.726 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:04.825 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:05.369 [scala-execution-context-global-237] ERROR application - 
+15:18:30.341 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0x4d408452, L:/141.37.160.134:59632 - R:secure.gravatar.com/192.0.73.2:443]
+15:18:30.342 [scala-execution-context-global-587] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
+15:18:30.404 [application-akka.actor.default-dispatcher-6] INFO  play.mailer - mock implementation, send email
+15:18:30.405 [application-akka.actor.default-dispatcher-6] INFO  play.mailer - subject: Welcome
+15:18:30.405 [application-akka.actor.default-dispatcher-6] INFO  play.mailer - from: MADN <noreply@menschaergerdichnicht-htwg.herokuapp.com>
+15:18:30.405 [application-akka.actor.default-dispatcher-6] INFO  play.mailer - bodyText: 
+Hello dd dd,
 
-! @76j9an928 - Internal server error, for (POST) [/signUp] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[EmailException: Sending the email to the following server failed : smtp.sendgrid.net:582]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
-	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
-	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:250)
-	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
-	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
-	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
-	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
-	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
-	at scala.concurrent.Promise.complete(Promise.scala:49)
-	at scala.concurrent.Promise.complete$(Promise.scala:48)
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:183)
-	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:38)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1021)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(ForkJoinPool.java:1046)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1058)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.sendgrid.net:582
-	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469)
-	at org.apache.commons.mail.Email.send(Email.java:1496)
-	at play.api.libs.mailer.SMTPMailer$$anon$1.send(SMTPMailer.scala:14)
-	at play.api.libs.mailer.CommonsMailer.send(CommonsMailer.scala:21)
-	at play.api.libs.mailer.SMTPMailer.send(SMTPMailer.scala:24)
-	at play.api.libs.mailer.SMTPDynamicMailer.send(SMTPDynamicMailer.scala:8)
-	at controllers.SignUpController.$anonfun$submit$8(SignUpController.scala:104)
-	at scala.util.Success.$anonfun$map$1(Try.scala:251)
-	at scala.util.Success.map(Try.scala:209)
-	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
-	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
-	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sendgrid.net, 582; timeout 60000
-	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
-	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
-	at javax.mail.Service.connect(Service.java:388)
-	at javax.mail.Service.connect(Service.java:246)
-	at javax.mail.Service.connect(Service.java:195)
-	at javax.mail.Transport.send0(Transport.java:254)
-	at javax.mail.Transport.send(Transport.java:124)
-	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459)
-	... 23 common frames omitted
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:329)
-	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
-	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
-	... 30 common frames omitted
-21:27:05.927 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:07.025 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:08.131 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:08.917 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:27:09.234 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:09.808 [AsyncHttpClient-5-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - Channel Closed: [id: 0x0835fbb1, L:/141.37.160.137:64117 ! R:secure.gravatar.com/192.0.73.2:443] with attribute INSTANCE
-21:27:10.334 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-21:27:10.334 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Adding Candidate expired Channel [id: 0x0835fbb1, L:/141.37.160.137:64117 ! R:secure.gravatar.com/192.0.73.2:443] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
-21:27:10.334 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closing Idle Channel [id: 0x0835fbb1, L:/141.37.160.137:64117 ! R:secure.gravatar.com/192.0.73.2:443]
-21:27:10.334 [pool-21-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closed 1 connections out of 1 in 0 ms
-21:27:38.801 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:28:06.492 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:28:33.804 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:28:58.055 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:29:27.703 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:29:51.059 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:30:17.232 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:30:45.293 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:31:14.862 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:31:25.833 [scala-execution-context-global-256] ERROR application - 
+Please follow the link to confirm and activate your new account: http://localhost:9000/account/activate/a25743d8-f5b1-4147-9c4f-b91ba46cc996
 
-! @76j9bc4a5 - Internal server error, for (POST) [/signUp] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[EmailException: Sending the email to the following server failed : smtp.sendgrid.net:582]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:255)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:182)
-	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:251)
-	at play.core.server.AkkaHttpServer$$anonfun$$nestedInanonfun$executeHandler$1$1.applyOrElse(AkkaHttpServer.scala:250)
-	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
-	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
-	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
-	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284)
-	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284)
-	at scala.concurrent.Promise.complete(Promise.scala:49)
-	at scala.concurrent.Promise.complete$(Promise.scala:48)
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:183)
-	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:38)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1021)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(ForkJoinPool.java:1046)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1058)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-Caused by: org.apache.commons.mail.EmailException: Sending the email to the following server failed : smtp.sendgrid.net:582
-	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1469)
-	at org.apache.commons.mail.Email.send(Email.java:1496)
-	at play.api.libs.mailer.SMTPMailer$$anon$1.send(SMTPMailer.scala:14)
-	at play.api.libs.mailer.CommonsMailer.send(CommonsMailer.scala:21)
-	at play.api.libs.mailer.SMTPMailer.send(SMTPMailer.scala:24)
-	at play.api.libs.mailer.SMTPDynamicMailer.send(SMTPDynamicMailer.scala:8)
-	at controllers.SignUpController.$anonfun$submit$4(SignUpController.scala:76)
-	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
-	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sendgrid.net, 582; timeout 60000
-	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2118)
-	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:712)
-	at javax.mail.Service.connect(Service.java:388)
-	at javax.mail.Service.connect(Service.java:246)
-	at javax.mail.Service.connect(Service.java:195)
-	at javax.mail.Transport.send0(Transport.java:254)
-	at javax.mail.Transport.send(Transport.java:124)
-	at org.apache.commons.mail.Email.sendMimeMessage(Email.java:1459)
-	... 20 common frames omitted
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:329)
-	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:238)
-	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2084)
-	... 27 common frames omitted
-21:31:40.912 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-21:31:47.805 [pool-5-thread-5] INFO  play.core.server.AkkaHttpServer - Stopping server...
-21:31:47.821 [pool-5-thread-5] DEBUG p.a.l.Files$DefaultTemporaryFileCreator - deletePath: deleting = C:\Users\svloeger\AppData\Local\Temp\playtemp342258733110149784
-21:31:47.821 [pool-5-thread-5] INFO  application - ApplicationTimer demo: Stopping application at 2018-01-14T20:31:47.821Z after 308s.
-21:31:47.821 [pool-5-thread-5] DEBUG p.a.l.concurrent.ActorSystemProvider - Shutdown application default Akka system: application
-21:31:47.821 [application-akka.actor.default-dispatcher-9] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application shutting down.
-21:31:47.821 [application-akka.actor.default-dispatcher-9] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application paused.
-21:31:47.821 [application-akka.actor.default-dispatcher-9] DEBUG org.quartz.simpl.SimpleThreadPool - Shutting down threadpool...
-21:31:47.821 [application-akka.actor.default-dispatcher-9] DEBUG org.quartz.simpl.SimpleThreadPool - Shutdown of threadpool complete.
-21:31:47.821 [application-akka.actor.default-dispatcher-9] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application shutdown complete.
+15:18:30.406 [application-akka.actor.default-dispatcher-6] INFO  play.mailer - bodyHtml: 
+
+<html>
+    <body>
+        <p>Hello dd dd,</p>
+        <p>Please follow <a href="http://localhost:9000/account/activate/a25743d8-f5b1-4147-9c4f-b91ba46cc996">this link</a> to confirm and activate your new account.</p>
+    </body>
+</html>
+
+15:18:30.406 [application-akka.actor.default-dispatcher-6] INFO  play.mailer - to: dd@dd.de
+15:18:30.615 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:31.715 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:32.815 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:33.914 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:35.015 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:36.129 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:37.215 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:38.315 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:38.734 [scala-execution-context-global-609] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+or  OoO  bb
+    OoO    
+    OoO    
+rOOOO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  oo
+oo  OOO  oo
+
+current: 0
+15:18:39.415 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:40.514 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:40.694 [scala-execution-context-global-609] INFO  d.h.s.m.aview.tui.Tui - 
+15:18:41.616 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:42.349 [scala-execution-context-global-599] INFO  d.h.s.m.aview.tui.Tui - 
+rr  OOO  bb
+or  OoO  bb
+    OoO    
+    OoO    
+OOOrO OOOOO
+Ooooo ooooO
+OOOOOoOOOOO
+    OoO    
+    OoO    
+oo  OoO  oo
+oo  OOO  oo
+
+current: 1
+15:18:42.715 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:43.820 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:44.917 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:46.015 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:46.026 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+15:18:47.117 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:48.215 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:49.310 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:50.418 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:51.516 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:52.610 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:53.719 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:54.824 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:55.918 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:57.015 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:58.114 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:18:59.214 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:19:00.311 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:19:00.326 [AsyncHttpClient-4-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - Channel Closed: [id: 0x4d408452, L:/141.37.160.134:59632 ! R:secure.gravatar.com/192.0.73.2:443] with attribute INSTANCE
+15:19:01.415 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+15:19:01.415 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Adding Candidate expired Channel [id: 0x4d408452, L:/141.37.160.134:59632 ! R:secure.gravatar.com/192.0.73.2:443] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+15:19:01.416 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closing Idle Channel [id: 0x4d408452, L:/141.37.160.134:59632 ! R:secure.gravatar.com/192.0.73.2:443]
+15:19:01.416 [pool-35-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closed 1 connections out of 1 in 1 ms
+15:19:13.365 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+15:19:42.637 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+15:20:11.615 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+15:20:38.053 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+15:21:04.706 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+15:21:28.847 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
