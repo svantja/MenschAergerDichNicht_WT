@@ -9,10 +9,12 @@
 @main("Welcome to MeschAergerDichNicht", Some(user)) {
 
     <link rel="stylesheet" href='@routes.Assets.versioned("styles/mensch.css")' />
+    <script src="@routes.Assets.versioned("javascripts/vue.js")" ></script>
+    <script src="@routes.Assets.versioned("javascripts/menschVue.js")" ></script>
 
     <div class="gamecontainer" >
 
-        <div id="back" class="background" >
+        <div id="mensch-back" class="background" >
             @for(index <- 1 to 4){
                 <a href="move/@index">
                     <img id="@index" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
@@ -34,7 +36,7 @@
                 </a>
             }
 
-            <a id="dicing" href="/dicing" class="btn btn-danger btn-lg btn-block" style="visibility:hidden; position: absolute;border-radius: 0; font-size: 1.5vw;">Würfeln</a>
+            <a id="mensch-button" href="/dicing" class="btn btn-danger btn-lg btn-block" style="visibility:hidden; position: absolute;border-radius: 0; font-size: 1.5vw;">Würfeln</a>
 
             <div id="prepare" class="btn-group" role="group"  style="visibility:hidden; width: 100%; position: absolute">
                 <a href="/newplayer/@game.players.getAllPlayer.size" class="btn btn-info" id="add" style="background: lightpink;width: 50%;border-radius:0;font-size: 1.5vw;">Spieler hinzufügen</a>
