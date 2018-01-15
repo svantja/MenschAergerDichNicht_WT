@@ -69,7 +69,7 @@ function drawPlayingField(){
         }
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("back").appendChild(div);
         console.log("jaay")
     }
 }
@@ -192,7 +192,6 @@ function loadJson() {
             console.log(player);
         }
     });
-
 }
 
 
@@ -301,7 +300,6 @@ function updatePage(data) {
 
 function connectWebSocket() {
     console.log("Connecting to Websocket");
-    //var websocket = new WebSocket("ws://localhost:9000/websocket");
 
     var loc = window.location;
     var ws_uri = "ws:";
