@@ -339,6 +339,7 @@ function connectWebSocket() {
 
 $( document ).ready(function() {
     console.log( "Document is ready, position Tokens" );
+    $('html, body').animate({ scrollTop: ($(document.getElementById("game")).offset().top)}, 'slow');
     drawHouses();
     loadJson();
     connectWebSocket()
