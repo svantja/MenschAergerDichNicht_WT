@@ -1,5 +1,45 @@
-Silhouette Seed Template
+Mensch Ärger Dich Nicht - Web Technologien
 =====================================
+
+- [Präsentation](https://prezi.com/view/xmgZydWBJXCoDYWFiN6M/)
+- [WebSockets](#websockets)
+- [Authentication](#authentication)
+- [Deployed](#deployed)
+
+## WebSockets
+
+- [Websockets in MenschController.scala](https://github.com/svantja/MenschAergerDichNicht_WT/blob/39b8456572e20c872ae38608614ee727adf11d45/app/controllers/MenschController.scala#L88)
+  - Im Controller ``MenschController.scala`` wird ein WebSocket erstellt, welcher auf ein Event des Controllers(``PlayersChanged``) reagiert und dem Client eine Json Datei(umgewandelt in einen String) sendet.
+  
+- [WebSockets in mensch.js](https://github.com/svantja/MenschAergerDichNicht_WT/blob/39b8456572e20c872ae38608614ee727adf11d45/public/javascripts/mensch.js#L301)
+  - In der Javascript Datei ``mensch.js`` wird die Verbindung hergestellt um die Json Datei zu empfangen, und so das Spielfeld zu aktualisieren.
+
+
+## Authentication
+
+Die Authentifizierung wurde mit dem [Silhouette Seed Template](#silhouette-seed-template) erstellt.
+Die ``about`` und ``home`` Pages der Website sind auch ohne Authentifizierung erreichbar. Die restlichen Seiten können nur von angemeldeten Nutzern eingesehen werden.
+
+Authentifizierungsvorgang:
+  * Sign up
+    * ``First name``: Test
+    * ``Last name``: User
+    * ``Email``: testuser@test.com
+    * ``Password``: password
+    * Button `Sign up` klicken
+      * Weiterleitung zu Sign in
+  * Sign in
+    * Info Dialog: `Info! You've successfully signed up. Enjoy the game!`
+    * ``Email``: testuser@test.com
+    * ``Password``: password
+    * Button `Sign in` klicken
+
+## Deployed
+Das Spiel wurde mit [Heroku deployed](#example).
+
+Link zum Spiel: https://mensch-aerger-dich-nicht.herokuapp.com/
+
+## Silhouette Seed Template
 
 The Silhouette Seed project is an Activator template which shows how [Silhouette](https://github.com/mohiva/play-silhouette) can be implemented in a Play Framework application. It's a starting point which can be extended to fit your needs.
 
