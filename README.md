@@ -26,6 +26,12 @@ Authentifizierungsvorgang:
     * ``Last name``: User
     * ``Email``: testuser@test.com
     * ``Password``: password
+    * Button `Sign up` klicken
+      * Weiterleitung zu Sign in
+  * Sign in
+    * Info Dialog: `Info! You've successfully signed up. Enjoy the game!`
+    * ``Email``: testuser@test.com
+    * ``Password``: password
 
 ## Deployed
 Das Spiel wurde mit [Heroku deployed](#example).
