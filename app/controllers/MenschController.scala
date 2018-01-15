@@ -103,19 +103,16 @@ class MenschController @Inject() (
     def receive = {
       case msg: String =>
         out ! (gameController.toJson.toString)
-        println(gameController.toJson.toString)
         println("Sent Json to Client " + msg)
     }
     reactions += {
       case event: PlayersChanged => {
         sendJsonToClient
-        println("actiiiiiiion")
       }
     }
 
     def sendJsonToClient = {
       println("Received event from Controller")
-      println(gameController.toJson.toString)
       out ! (gameController.toJson.toString)
     }
   }
