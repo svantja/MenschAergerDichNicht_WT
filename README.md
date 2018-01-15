@@ -1,5 +1,12 @@
-Silhouette Seed Template
+Mensch Ärger Dich Nicht - Web Technologien
 =====================================
+
+- [Silhouette Seed Template](#silhouette-seed-template)
+
+
+
+
+## Silhouette Seed Template
 
 The Silhouette Seed project is an Activator template which shows how [Silhouette](https://github.com/mohiva/play-silhouette) can be implemented in a Play Framework application. It's a starting point which can be extended to fit your needs.
 
