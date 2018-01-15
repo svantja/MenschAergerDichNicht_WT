@@ -1,10 +1,15 @@
 Mensch Ärger Dich Nicht - Web Technologien
 =====================================
 
+- [Präsentation](https://prezi.com/view/xmgZydWBJXCoDYWFiN6M/)
+- [WebSockets](#websockets)
 - [Silhouette Seed Template](#silhouette-seed-template)
+- [Deploy to Heroku](#example)
 
+## WebSockets
 
-
+- [WebSockets in mensch.js](https://github.com/svantja/MenschAergerDichNicht_WT/blob/39b8456572e20c872ae38608614ee727adf11d45/public/javascripts/mensch.js#L301)
+- [Websockets in MenschController.scala](https://github.com/svantja/MenschAergerDichNicht_WT/blob/39b8456572e20c872ae38608614ee727adf11d45/app/controllers/MenschController.scala#L88)
 
 ## Silhouette Seed Template
 
