@@ -217,17 +217,16 @@ function updatePage(data) {
     if(json.state.toString() === "ONGOING"){
         document.getElementById("prepare").style.visibility = "hidden"
         console.log("ongoing")
-        document.getElementById("dicing").style.visibility = "visible"
+        document.getElementById("mensch-button").style.visibility = "visible"
         if(json.current === 0){
-            document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
+            document.getElementById("mensch-button").className = "btn btn-danger btn-lg btn-block"
         }else if(json.current === 1){
-            document.getElementById("dicing").className = "btn btn-primary btn-lg btn-block"
+            document.getElementById("mensch-button").className = "btn btn-primary btn-lg btn-block"
         }else if(json.current === 2){
-            document.getElementById("dicing").className = "btn btn-success btn-lg btn-block"
+            document.getElementById("mensch-button").className = "btn btn-success btn-lg btn-block"
         }else{
-            document.getElementById("dicing").className = "btn btn-warning btn-lg btn-block"
+            document.getElementById("mensch-button").className = "btn btn-warning btn-lg btn-block"
         }
-        document.getElementById("dicing").innerHTML = "Würfeln"
     }
     if(json.state.toString() === "DICED"){
         document.getElementById("prepare").style.visibility = "hidden"

@@ -1,19 +1,20 @@
-23:39:38.134 [application-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-23:39:38.138 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
-23:39:38.142 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-23:39:38.145 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
-23:39:38.148 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
-23:39:38.149 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-23:39:38.150 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
-23:39:38.151 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
-23:39:38.153 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
-23:39:38.154 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
-23:39:38.160 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
-23:39:38.161 [play-dev-mode-akka.actor.default-dispatcher-10] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
-23:39:38.169 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-23:39:38.170 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
-23:39:38.170 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-23:39:38.171 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
+23:44:45.723 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
+23:44:45.838 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+23:44:45.839 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+23:44:45.841 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+23:44:45.842 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+23:44:45.842 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with config URL: jar:file:/C:/Users/svloeger/.ivy2/cache/com.typesafe.play/play-ehcache_2.12/jars/play-ehcache_2.12-2.6.6.jar!/ehcache-default.xml
+23:44:45.843 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+23:44:45.843 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+23:44:45.844 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+23:44:45.845 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+23:44:45.845 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+23:44:45.869 [application-akka.actor.default-dispatcher-8] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+23:44:45.872 [play-dev-mode-akka.actor.default-dispatcher-16] DEBUG p.a.l.concurrent.ActorSystemProvider - Starting application default Akka system: application
+23:44:45.876 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+23:44:45.877 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.3 created.
+23:44:45.877 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+23:44:45.878 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'QuartzScheduler~application' with instanceId 'application'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -21,14 +22,14 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-23:39:38.172 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
-23:39:38.173 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
-23:39:38.173 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
-23:39:38.173 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-23:39:38.190 [application-akka.actor.default-dispatcher-8] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@3d585d35'
-23:39:38.192 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-23:39:38.196 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  application - ApplicationTimer demo: Starting application at 2018-01-15T22:39:38.196Z.
-23:39:38.214 [scala-execution-context-global-124] INFO  jobs.AuthTokenCleaner - 
+23:44:45.879 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler 'QuartzScheduler~application
+23:44:45.881 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  o.quartz.impl.DirectSchedulerFactory - Quartz scheduler version: 2.2.3
+23:44:45.882 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  org.quartz.core.QuartzScheduler - Scheduler QuartzScheduler~application_$_application started.
+23:44:45.882 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+23:44:45.890 [application-akka.actor.default-dispatcher-5] INFO  c.t.a.e.q.QuartzSchedulerExtension - Setting up scheduled job 'AuthTokenCleaner', with 'com.typesafe.akka.extension.quartz.QuartzCronSchedule@7847000e'
+23:44:45.890 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+23:44:45.894 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  application - ApplicationTimer demo: Starting application at 2018-01-15T22:44:45.890Z.
+23:44:45.908 [scala-execution-context-global-362] INFO  jobs.AuthTokenCleaner - 
 =================================
 Start to cleanup auth tokens
 =================================
@@ -36,17 +37,10 @@ Total of 0 auth tokens(s) were deleted in 0 seconds
 =================================
 =================================
 
-23:39:38.223 [AKKA_QRTZ_-1] DEBUG org.quartz.simpl.SimpleThreadPool - WorkerThread is shut down.
-23:39:38.799 [play-dev-mode-akka.actor.default-dispatcher-10] INFO  play.api.Play - Application started (Dev)
-23:39:45.618 [AsyncHttpClient-3-1] DEBUG p.s.a.i.netty.buffer.AbstractByteBuf - -Dplay.shaded.ahc.io.netty.buffer.bytebuf.checkAccessible: true
-23:39:45.619 [AsyncHttpClient-3-1] DEBUG p.s.a.i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: play.shaded.ahc.io.netty.util.ResourceLeakDetector@3c1cd741
-23:39:45.761 [AsyncHttpClient-3-1] DEBUG p.shaded.ahc.io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity.default: 32768
-23:39:45.761 [AsyncHttpClient-3-1] DEBUG p.shaded.ahc.io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
-23:39:45.762 [AsyncHttpClient-3-1] DEBUG p.shaded.ahc.io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
-23:39:45.763 [AsyncHttpClient-3-1] DEBUG p.shaded.ahc.io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
-23:39:45.881 [AsyncHttpClient-3-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0x9f1873ac, L:/141.37.160.134:61565 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/14553a0ab49d981969ac2d64a47f9643?d=404'
-23:39:45.886 [AsyncHttpClient-3-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0x9f1873ac, L:/141.37.160.134:61565 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-23:39:45.895 [AsyncHttpClient-3-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
+23:44:46.146 [play-dev-mode-akka.actor.default-dispatcher-16] INFO  play.api.Play - Application started (Dev)
+23:44:52.621 [AsyncHttpClient-6-1] DEBUG p.s.a.o.a.n.c.NettyConnectListener - Using new Channel '[id: 0x6655cbde, L:/141.37.160.134:58728 - R:secure.gravatar.com/192.0.73.2:443]' for 'GET' to '/avatar/14553a0ab49d981969ac2d64a47f9643?d=404'
+23:44:52.622 [AsyncHttpClient-6-1] DEBUG p.s.a.i.netty.handler.ssl.SslHandler - [id: 0x6655cbde, L:/141.37.160.134:58728 - R:secure.gravatar.com/192.0.73.2:443] HANDSHAKEN: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+23:44:52.631 [AsyncHttpClient-6-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - 
 
 Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
 GET /avatar/14553a0ab49d981969ac2d64a47f9643?d=404 HTTP/1.1
@@ -57,7 +51,7 @@ User-Agent: AHC/2.0
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
 HTTP/1.1 404 Not Found
 Server: nginx
-Date: Mon, 15 Jan 2018 22:39:45 GMT
+Date: Mon, 15 Jan 2018 22:44:52 GMT
 Content-Type: text/html; charset=utf-8
 Content-Length: 13
 Connection: keep-alive
@@ -65,61 +59,40 @@ Last-Modified: Wed, 11 Jan 1984 08:00:00 GMT
 Link: <https://www.gravatar.com/avatar/14553a0ab49d981969ac2d64a47f9643?d=404>; rel="canonical"
 Access-Control-Allow-Origin: *
 X-nc: HIT fra 1
-Source-Age: 1178
+Source-Age: 1485
 
-23:39:45.899 [AsyncHttpClient-3-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0x9f1873ac, L:/141.37.160.134:61565 - R:secure.gravatar.com/192.0.73.2:443]
-23:39:45.904 [scala-execution-context-global-124] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
-23:39:45.932 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - mock implementation, send email
-23:39:45.933 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - subject: Welcome
-23:39:45.934 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - from: MADN <noreply@menschaergerdichnicht-htwg.herokuapp.com>
-23:39:45.935 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - bodyText: 
+23:44:52.632 [AsyncHttpClient-6-1] DEBUG p.s.a.o.a.n.channel.ChannelManager - Adding key: https://secure.gravatar.com:443 for channel [id: 0x6655cbde, L:/141.37.160.134:58728 - R:secure.gravatar.com/192.0.73.2:443]
+23:44:52.633 [scala-execution-context-global-375] INFO  c.m.p.s.i.services.GravatarService - [Silhouette] Gravatar API returns status code: 404
+23:44:52.647 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - mock implementation, send email
+23:44:52.648 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - subject: Welcome
+23:44:52.649 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - from: MADN <noreply@menschaergerdichnicht-htwg.herokuapp.com>
+23:44:52.649 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - bodyText: 
 Hello dd dd,
 
-Please follow the link to confirm and activate your new account: http://localhost:9000/account/activate/32414a7c-6c03-4029-981e-10c0bfed0741
+Please follow the link to confirm and activate your new account: http://localhost:9000/account/activate/3a776aed-ae7e-4715-b136-62b91852591e
 
-23:39:45.936 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - bodyHtml: 
+23:44:52.650 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - bodyHtml: 
 
 <html>
     <body>
         <p>Hello dd dd,</p>
-        <p>Please follow <a href="http://localhost:9000/account/activate/32414a7c-6c03-4029-981e-10c0bfed0741">this link</a> to confirm and activate your new account.</p>
+        <p>Please follow <a href="http://localhost:9000/account/activate/3a776aed-ae7e-4715-b136-62b91852591e">this link</a> to confirm and activate your new account.</p>
     </body>
 </html>
 
-23:39:45.936 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - to: dd@dd.de
-23:39:46.160 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:47.262 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:48.362 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:49.461 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:50.560 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:51.662 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:52.761 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:53.861 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:54.960 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:56.068 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:57.161 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:58.262 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:39:59.363 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:00.463 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:01.561 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:02.661 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:03.410 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-23:40:03.761 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:04.862 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:05.961 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:07.060 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:08.161 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:09.261 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:10.361 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:11.461 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:12.560 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:13.662 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:14.770 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:15.867 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:15.883 [AsyncHttpClient-3-1] DEBUG p.s.a.o.a.netty.handler.HttpHandler - Channel Closed: [id: 0x9f1873ac, L:/141.37.160.134:61565 ! R:secure.gravatar.com/192.0.73.2:443] with attribute INSTANCE
-23:40:16.968 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
-23:40:16.968 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Adding Candidate expired Channel [id: 0x9f1873ac, L:/141.37.160.134:61565 ! R:secure.gravatar.com/192.0.73.2:443] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
-23:40:16.968 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closing Idle Channel [id: 0x9f1873ac, L:/141.37.160.134:61565 ! R:secure.gravatar.com/192.0.73.2:443]
-23:40:16.968 [pool-13-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Closed 1 connections out of 1 in 0 ms
-23:40:27.485 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
-23:40:54.779 [QuartzScheduler~application_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+23:44:52.651 [application-akka.actor.default-dispatcher-8] INFO  play.mailer - to: dd@dd.de
+23:44:52.699 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:44:53.790 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:44:54.895 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:44:55.990 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:44:57.088 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:44:58.189 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:44:59.289 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:45:00.398 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:45:01.497 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:45:02.596 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:45:03.690 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:45:04.798 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:45:05.889 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:45:06.993 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
+23:45:08.086 [pool-28-thread-1] DEBUG p.s.a.o.a.n.c.DefaultChannelPool - Entry count for : https://secure.gravatar.com:443 : 1
