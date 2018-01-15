@@ -33,7 +33,7 @@ function getHome(index, id) {
         pos = HOMEFIELDPLAYERTWO[index];
     } else if(id > 8 && id <= 12){
         pos = HOMEFIELDPLAYERTHREE[index];
-    }else if(id > 12 && id <= 16){
+    }else{
         pos = HOMEFIELDPLAYERFOUR[index];
     }
     return pos;
@@ -69,7 +69,7 @@ function drawPlayingField(){
         }
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div);
+        document.getElementById("back").appendChild(div)
         console.log("jaay")
     }
 }
@@ -192,8 +192,8 @@ function loadJson() {
             console.log(player);
         }
     });
-}
 
+}
 
 function setPosition(counter, position, id) {
     pos = getPosition(counter, position, id);
@@ -203,11 +203,10 @@ function setPosition(counter, position, id) {
 }
 
 function updatePage(data) {
-    var json = JSON.parse(data);
+    var json = JSON.parse(data)
     for(i=0; i < json.players.length; i++){
         for(j=0; j < json.players[i].token.length; j++){
             setPosition(json.players[i].token[j].count, json.players[i].token[j].position, json.players[i].token[j].tokenId);
-            console.log("token id: ", json.players[i].token[j].tokenId, "position: ", json.players[i].token[j].position);
         }
     }
     if(json.state.toString() === "NONE" || json.state.toString() === "PREPARE"){
@@ -235,7 +234,7 @@ function updatePage(data) {
         console.log("diced")
         document.getElementById("dicing").style.visibility = "visible"
         if(json.current === 0){
-            document.getElementById("dicing").style.background = "darkred"
+            document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
             document.getElementById("dicing").style.visibility = "visible"
             count = 0
             for(i = 0; i < json.players[0].token.length; i++){
@@ -338,7 +337,6 @@ function connectWebSocket() {
 
 $( document ).ready(function() {
     console.log( "Document is ready, position Tokens" );
-    $('html, body').animate({ scrollTop: ($(document.getElementById("game")).offset().top)}, 'slow');
     drawHouses();
     loadJson();
     connectWebSocket()
