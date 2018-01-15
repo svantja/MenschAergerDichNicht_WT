@@ -1,6 +1,5 @@
 
 
-
 name := "play-silhouette-seed"
 
 version := "5.0.0"
@@ -53,5 +52,4 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 routesGenerator := InjectedRoutesGenerator
 
 routesImport += "utils.route.Binders._"
-
 
