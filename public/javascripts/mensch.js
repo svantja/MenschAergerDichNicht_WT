@@ -21,10 +21,6 @@ var HOMEFIELDPLAYERTWO = [[480, 30], [530, 30], [530, 80], [480, 80]];
 var HOMEFIELDPLAYERTHREE = [[480, 480], [530, 480], [530, 530], [480, 530]];
 var HOMEFIELDPLAYERFOUR = [[30, 480], [80, 480], [30, 530], [80, 530]];
 
-var saved = [[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11]];
-
-var test = 100;
-
 function getField(index){
     pos = playingField[index];
     return pos;
@@ -37,7 +33,7 @@ function getHome(index, id) {
         pos = HOMEFIELDPLAYERTWO[index];
     } else if(id > 8 && id <= 12){
         pos = HOMEFIELDPLAYERTHREE[index];
-    }else{
+    }else if(id > 12 && id <= 16){
         pos = HOMEFIELDPLAYERFOUR[index];
     }
     return pos;
@@ -164,7 +160,6 @@ function drawHouseFour(){
 }
 
 function drawHouses(){
-    console.log("draw houses");
     drawPlayingField();
     drawHouseOne();
     drawHouseTwo();
@@ -200,28 +195,12 @@ function loadJson() {
 
 }
 
-function savePosition(counter, pos, id){
-    pos = getPosition(counter, pos, id);
-    saved[0] = [4,5];
-    saved[id-1] = pos;
-}
 
 function setPosition(counter, position, id) {
     pos = getPosition(counter, position, id);
-    console.log("saved:",saved[id-1], "---", pos);
-    if(pos[0] === saved[id-1][0] && pos[1] === saved[id-1][1]){
-        console.log("war schon da");
-    }else{
-        var t = document.getElementById(id);
-        var left = window.getComputedStyle ? getComputedStyle(t, null) : t.currentStyle;
-        var top = document.getElementById(id).style.top;
-        document.getElementById(id).style.left = pos[0]*100/660 + "%";
-        document.getElementById(id).style.top = pos[1]*100/660 + "%";
-        document.getElementById(id).style.zIndex = 110;
-        document.getElementById(id).style.visibility = "visible"
-        savePosition(counter, position, id);
-        console.log(test);
-    }
+    document.getElementById(id).style.left = pos[0]*100/660 + "%";
+    document.getElementById(id).style.top = pos[1]*100/660 + "%";
+    document.getElementById(id).style.visibility = "visible"
 }
 
 function updatePage(data) {
@@ -229,6 +208,7 @@ function updatePage(data) {
     for(i=0; i < json.players.length; i++){
         for(j=0; j < json.players[i].token.length; j++){
             setPosition(json.players[i].token[j].count, json.players[i].token[j].position, json.players[i].token[j].tokenId);
+            console.log("token id: ", json.players[i].token[j].tokenId, "position: ", json.players[i].token[j].position);
         }
     }
     if(json.state.toString() === "NONE" || json.state.toString() === "PREPARE"){
@@ -239,6 +219,7 @@ function updatePage(data) {
     if(json.state.toString() === "ONGOING"){
         document.getElementById("prepare").style.visibility = "hidden"
         console.log("ongoing")
+        document.getElementById("dicing").style.visibility = "visible"
         if(json.current === 0){
             document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
         }else if(json.current === 1){

@@ -2,27 +2,16 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 GET      /                                controllers.ApplicationController.index
-
 GET		/mensch       				 controllers.MenschController.mensch
-
 GET     /newplayer/:index            controllers.MenschController.newPlayer(index: Int)
-
 GET     /start                       controllers.MenschController.start
-
 GET     /dicing                      controllers.MenschController.dicing
-
 GET     /move/:id                    controllers.MenschController.move(id: Int)
-
 GET     /newgame                     controllers.MenschController.newGame
-
 GET     /about                       controllers.MenschController.about
-
 GET     /aboutsecure                 controllers.MenschController.aboutsecure
-
 GET     /home                       controllers.MenschController.homesecure
-
 GET     /json                       controllers.MenschController.playersToJson
-
 GET     /websocket                  controllers.MenschController.socket
 # Home page
 
