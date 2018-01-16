@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 });
 
-Vue.component('mensch-field', {
+Vue.component('playing-field', {
     template:`
             <div>
                <span v-for="field in fields"> 
