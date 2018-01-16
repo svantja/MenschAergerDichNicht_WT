@@ -4,7 +4,6 @@
 @import controllers.AssetsFinder
 
 @(game: de.htwg.se.menschaergerdichnicht.controller.controllerComponent.ControllerInterface, user: models.User)(implicit request: RequestHeader, messages: Messages, webJarsUtil: WebJarsUtil, assets: AssetsFinder)
-@players = @{game.players.getAllPlayer}
 
 @main("Welcome to MeschAergerDichNicht", Some(user)) {
 
@@ -15,7 +14,6 @@
     <div class="gamecontainer" >
 
         <div id="mensch-game" class="background" >
-
             <playing-field></playing-field>
             <home-1></home-1>
             <home-2></home-2>
@@ -23,33 +21,34 @@
             <home-4></home-4>
 
             @for(index <- 1 to 4){
-                <a href="move/@index">
-                    <img id="@index" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+                <a href="#">
+                    <img onclick="moveToken(@index)" id="@index" src="@routes.Assets.versioned("images/tokens/red.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
                 </a>
             }
             @for(index <- 5 to 8){
-                <a href="move/@index">
-                    <img id="@index" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+                <a href="#">
+                    <img  onclick="moveToken(@index)" id="@index" src="@routes.Assets.versioned("images/tokens/blue.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
                 </a>
             }
             @for(index <- 9 to 12){
-                <a href="move/@index">
-                    <img id="@index" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+                <a href="#">
+                    <img onclick="moveToken(@index)" id="@index" src="@routes.Assets.versioned("images/tokens/green.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
                 </a>
             }
             @for(index <- 13 to 16){
-                <a href="move/@index">
-                    <img id="@index" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
+                <a href="#">
+                    <img onclick="moveToken(@index)" id="@index" src="@routes.Assets.versioned("images/tokens/yellow.png")" style="visibility:hidden; position:absolute; z-index:101;width:6%; height:6%" />
                 </a>
             }
 
-            <a id="mensch-button" href="/dicing" class="btn btn-danger btn-lg btn-block" style="visibility:hidden; position: absolute;border-radius: 0; font-size: 1.5vw;">{{message}}</a>
+            <a id="mensch-button" href="#" onclick="dicing()" class="btn btn-danger btn-lg btn-block" style="visibility:hidden; position: absolute;border-radius: 0; font-size: 1.5vw;">{{message}}</a>
 
             <div id="prepare" class="btn-group" role="group"  style="visibility:hidden; width: 100%; position: absolute">
-                <a href="/newplayer/@game.players.getAllPlayer.size" class="btn btn-info" id="add" style="background: lightpink;width: 50%;border-radius:0;font-size: 1.5vw;">{{messagetwo}}</a>
-                <a href="/start" class="btn btn-info" id="start" style="background: lightpink;width: 50%;border-radius:0;font-size: 1.5vw;">{{messagethree}}</a>
+                <a href="#" onclick="addPlayer(@game.players.getAllPlayer.size)" class="btn btn-info" id="add" style="background: lightpink;width: 50%;border-radius:0;font-size: 1.5vw;">{{messagetwo}}</a>
+                <a href="#" onclick="startGame()" class="btn btn-info" id="start" style="background: lightpink;width: 50%;border-radius:0;font-size: 1.5vw;">{{messagethree}}</a>
             </div>
         </div>
     </div>
 }
+
 

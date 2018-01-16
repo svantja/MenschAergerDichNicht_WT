@@ -87,21 +87,26 @@ function setPosition(counter, position, id) {
 }
 
 function updatePage(data) {
-    var json = JSON.parse(data)
-    for(i=0; i < json.players.length; i++){
-        for(j=0; j < json.players[i].token.length; j++){
+    let json = JSON.parse(data);
+    for(let i=0; i < json.players.length; i++){
+        for(let j=0; j < json.players[i].token.length; j++){
             setPosition(json.players[i].token[j].count, json.players[i].token[j].position, json.players[i].token[j].tokenId);
         }
     }
     if(json.state.toString() === "NONE" || json.state.toString() === "PREPARE"){
-        console.log("preparing")
-        document.getElementById("prepare").style.visibility = "visible"
+        if(json.players.length === 0){
+            for(i = 1; i <= 16; i++){
+                document.getElementById(i).style.visibility = "hidden"
+            }
+        }
+        console.log("preparing");
+        document.getElementById("prepare").style.visibility = "visible";
         document.getElementById("mensch-button").style.visibility = "hidden"
     }
     if(json.state.toString() === "ONGOING"){
-        document.getElementById("prepare").style.visibility = "hidden"
-        console.log("ongoing")
-        document.getElementById("mensch-button").style.visibility = "visible"
+        document.getElementById("prepare").style.visibility = "hidden";
+        console.log("ongoing");
+        document.getElementById("mensch-button").style.visibility = "visible";
         if(json.current === 0){
             document.getElementById("mensch-button").className = "btn btn-danger btn-lg btn-block"
         }else if(json.current === 1){
@@ -111,14 +116,15 @@ function updatePage(data) {
         }else{
             document.getElementById("mensch-button").className = "btn btn-warning btn-lg btn-block"
         }
+        document.getElementById("mensch-button").innerHTML = "Würfeln"
     }
     if(json.state.toString() === "DICED"){
-        document.getElementById("prepare").style.visibility = "hidden"
-        console.log("diced")
-        document.getElementById("mensch-button").style.visibility = "visible"
+        document.getElementById("prepare").style.visibility = "hidden";
+        console.log("diced");
+        document.getElementById("mensch-button").style.visibility = "visible";
         if(json.current === 0){
-            document.getElementById("mensch-button").className = "btn btn-danger btn-lg btn-block disabled"
-            count = 0
+            document.getElementById("mensch-button").className = "btn btn-danger btn-lg btn-block disabled";
+            count = 0;
             for(i = 0; i < json.players[0].token.length; i++){
                 if(json.players[0].token[i].count > 0){
                     count = json.players[0].token[i].count
@@ -131,8 +137,8 @@ function updatePage(data) {
             }
 
             }else if(json.current === 1){
-                document.getElementById("mensch-button").className = "btn btn-primary btn-lg btn-block disabled"
-                count = 0
+                document.getElementById("mensch-button").className = "btn btn-primary btn-lg btn-block disabled";
+                count = 0;
                 for(i = 0; i < json.players[1].token.length; i++){
                     if(json.players[1].token[i].count > 0){
                         count = json.players[1].token[i].count
@@ -145,8 +151,8 @@ function updatePage(data) {
                 }
 
             }else if(json.current === 2){
-                document.getElementById("mensch-button").className = "btn btn-success btn-lg btn-block disabled"
-                count = 0
+                document.getElementById("mensch-button").className = "btn btn-success btn-lg btn-block disabled";
+                count = 0;
                 for(i = 0; i < json.players[2].token.length; i++){
                     if(json.players[2].token[i].count > 0){
                         count = json.players[2].token[i].count
@@ -160,8 +166,8 @@ function updatePage(data) {
                 }
 
             }else{
-                document.getElementById("mensch-button").className = "btn btn-warning btn-lg btn-block disabled"
-                count = 0
+                document.getElementById("mensch-button").className = "btn btn-warning btn-lg btn-block disabled";
+                count = 0;
                 for(i = 0; i < json.players[3].token.length; i++){
                     if(json.players[3].token[i].count > 0){
                         count = json.players[3].token[i].count
@@ -213,9 +219,68 @@ function connectWebSocket() {
         if (typeof e.data === "string") {
             console.log('String message received: ' + e.data);
             updatePage(e.data)
-            //updatePage()
         }
     };
+}
+
+function addPlayer(playerId){
+    $.ajax({
+        method: "GET",
+        url: "/newplayer/" + playerId,
+        dataType: "json",
+
+        success: function (result) {
+            console.log('Yey: ', result);
+        }
+    });
+}
+
+function startGame(){
+    $.ajax({
+        method: "GET",
+        url: "/start",
+        dataType: "json",
+
+        success: function (result) {
+            console.log('Yey: ', result);
+        }
+    });
+}
+
+function newGame(){
+    $.ajax({
+        method: "GET",
+        url: "/newgame",
+        dataType: "json",
+
+        success: function (result) {
+            console.log('Yey: ', result);
+        }
+    });
+}
+
+function dicing(){
+    $.ajax({
+        method: "GET",
+        url: "/dicing",
+        dataType: "json",
+
+        success: function (result) {
+            console.log('Yey: ', result);
+        }
+    });
+}
+
+function moveToken(tokenId){
+    $.ajax({
+        method: "GET",
+        url: "/move/" + tokenId,
+        dataType: "json",
+
+        success: function (result) {
+            console.log('Yey: ', result);
+        }
+    });
 }
 
 $( document ).ready(function() {
