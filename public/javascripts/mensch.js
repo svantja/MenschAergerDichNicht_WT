@@ -21,8 +21,6 @@ let HOMEFIELDPLAYERTWO = [[480, 30], [530, 30], [530, 80], [480, 80]];
 let HOMEFIELDPLAYERTHREE = [[480, 480], [530, 480], [530, 530], [480, 530]];
 let HOMEFIELDPLAYERFOUR = [[30, 480], [80, 480], [30, 530], [80, 530]];
 
-mystorage = localStorage
-
 function getField(index){
     pos = playingField[index];
     return pos;
@@ -54,98 +52,6 @@ function getFinish(index, id) {
     return pos;
 }
 
-function drawHouseOne(){
-    for(i = 0; i < HOMEFIELDPLAYERONE.length; i++){
-        pos = getHome(i, 1);
-        var div = document.createElement("div");
-        div.setAttribute("id", "red");
-        div.className = "circle";
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("mensch-game").appendChild(div)
-    }
-    for(i = 0; i < FINISH_ONE.length; i++){
-        pos = getFinish(i, 1);
-        var div = document.createElement("div");
-        div.setAttribute("id", "red");
-        div.className = "circle";
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("mensch-game").appendChild(div)
-    }
-}
-
-function drawHouseTwo(){
-    for(i = 0; i < HOMEFIELDPLAYERTWO.length; i++){
-        pos = getHome(i, 5);
-        var div = document.createElement("div");
-        div.setAttribute("id", "blue");
-        div.className = "circle";
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("mensch-game").appendChild(div)
-    }
-    for(i = 0; i < FINISH_TWO.length; i++){
-        pos = getFinish(i, 5);
-        var div = document.createElement("div");
-        div.setAttribute("id", "blue");
-        div.className = "circle";
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("mensch-game").appendChild(div)
-    }
-}
-
-function drawHouseThree(){
-    for(i = 0; i < HOMEFIELDPLAYERTHREE.length; i++){
-        pos = getHome(i, 9);
-        var div = document.createElement("div");
-        div.setAttribute("id", "green");
-        div.className = "circle";
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("mensch-game").appendChild(div)
-    }
-    for(i = 0; i < FINISH_THREE.length; i++){
-        pos = getFinish(i, 9);
-        var div = document.createElement("div");
-        div.setAttribute("id", "green");
-        div.className = "circle";
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("mensch-game").appendChild(div)
-    }
-}
-
-function drawHouseFour(){
-    for(i = 0; i < HOMEFIELDPLAYERFOUR.length; i++){
-        pos = getHome(i, 13);
-        var div = document.createElement("div");
-        div.setAttribute("id", "yellow");
-        div.className = "circle";
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("mensch-game").appendChild(div)
-    }
-    for(i = 0; i < FINISH_FOUR.length; i++){
-        pos = getFinish(i, 13);
-        var div = document.createElement("div");
-        div.setAttribute("id", "yellow");
-        div.className = "circle";
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("mensch-game").appendChild(div)
-        console.log("home :(")
-    }
-}
-
-function drawHouses(){
-    drawHouseOne();
-    drawHouseTwo();
-    drawHouseThree();
-    drawHouseFour();
-}
-
 
 function getPosition(counter, position, id){
     if(counter > 0 && counter < 41){
@@ -171,7 +77,6 @@ function loadJson() {
             console.log(player);
         }
     });
-
 }
 
 function setPosition(counter, position, id) {
@@ -315,7 +220,6 @@ function connectWebSocket() {
 
 $( document ).ready(function() {
     console.log( "Document is ready, position Tokens" );
-    drawHouses();
     loadJson();
     connectWebSocket()
 });
