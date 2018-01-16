@@ -48,6 +48,7 @@ class MenschController @Inject() (
   def start = silhouette.SecuredAction{implicit request =>
     gameController.startGame()
     gameController.gameState = ONGOING
+    println("startiiiiing")
     Ok(views.html.mensch(gameController ,request.identity))
   }
 
