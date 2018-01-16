@@ -1,4 +1,4 @@
-var playingField = [[30, 230], [80, 230], [130, 230],[180, 230], [230, 230], // 1.Reihe
+let playingField = [[30, 230], [80, 230], [130, 230],[180, 230], [230, 230], // 1.Reihe
     [230, 180], [230, 130], [230, 80], //2.Reihe
     [230, 30 ], [280, 30 ], [330, 30 ],
     [330, 80 ], [330, 130], [330, 180], [330, 230],
@@ -11,15 +11,17 @@ var playingField = [[30, 230], [80, 230], [130, 230],[180, 230], [230, 230], // 
     [180, 330], [130, 330], [80, 330], [30, 330], [30, 280]];
 
 
-var FINISH_ONE =   [[80, 280 ], [130, 280], [180, 280], [230, 280]];
-var FINISH_TWO =   [[280, 80 ], [280, 130], [280,180 ], [280,230 ]];
-var FINISH_THREE = [[480, 280], [430, 280], [380, 280], [330, 280]];
-var FINISH_FOUR =  [[280, 480], [280, 430], [280, 380], [280, 330]];
+let FINISH_ONE =   [[80, 280 ], [130, 280], [180, 280], [230, 280]];
+let FINISH_TWO =   [[280, 80 ], [280, 130], [280,180 ], [280,230 ]];
+let FINISH_THREE = [[480, 280], [430, 280], [380, 280], [330, 280]];
+let FINISH_FOUR =  [[280, 480], [280, 430], [280, 380], [280, 330]];
 
-var HOMEFIELDPLAYERONE = [[30, 30], [80, 30], [30, 80], [80, 80]];
-var HOMEFIELDPLAYERTWO = [[480, 30], [530, 30], [530, 80], [480, 80]];
-var HOMEFIELDPLAYERTHREE = [[480, 480], [530, 480], [530, 530], [480, 530]];
-var HOMEFIELDPLAYERFOUR = [[30, 480], [80, 480], [30, 530], [80, 530]];
+let HOMEFIELDPLAYERONE = [[30, 30], [80, 30], [30, 80], [80, 80]];
+let HOMEFIELDPLAYERTWO = [[480, 30], [530, 30], [530, 80], [480, 80]];
+let HOMEFIELDPLAYERTHREE = [[480, 480], [530, 480], [530, 530], [480, 530]];
+let HOMEFIELDPLAYERFOUR = [[30, 480], [80, 480], [30, 530], [80, 530]];
+
+mystorage = localStorage
 
 function getField(index){
     pos = playingField[index];
@@ -52,28 +54,6 @@ function getFinish(index, id) {
     return pos;
 }
 
-function drawPlayingField(){
-    for(i = 0; i < playingField.length; i++){
-        pos = getField(i);
-        var div = document.createElement("div");
-        div.setAttribute("id", "playingfiel");
-        div.className = "circle";
-        if(i === 0){
-            div.style.background = "indianred";
-        } else if(i === 10){
-            div.style.background = "cadetblue"
-        }else if(i === 20){
-            div.style.background = "darkolivegreen";
-        }else if(i === 30){
-            div.style.background = "orange"
-        }
-        div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
-        div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
-        console.log("jaay")
-    }
-}
-
 function drawHouseOne(){
     for(i = 0; i < HOMEFIELDPLAYERONE.length; i++){
         pos = getHome(i, 1);
@@ -82,7 +62,7 @@ function drawHouseOne(){
         div.className = "circle";
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("mensch-game").appendChild(div)
     }
     for(i = 0; i < FINISH_ONE.length; i++){
         pos = getFinish(i, 1);
@@ -91,7 +71,7 @@ function drawHouseOne(){
         div.className = "circle";
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("mensch-game").appendChild(div)
     }
 }
 
@@ -103,7 +83,7 @@ function drawHouseTwo(){
         div.className = "circle";
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("mensch-game").appendChild(div)
     }
     for(i = 0; i < FINISH_TWO.length; i++){
         pos = getFinish(i, 5);
@@ -112,7 +92,7 @@ function drawHouseTwo(){
         div.className = "circle";
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("mensch-game").appendChild(div)
     }
 }
 
@@ -124,7 +104,7 @@ function drawHouseThree(){
         div.className = "circle";
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("mensch-game").appendChild(div)
     }
     for(i = 0; i < FINISH_THREE.length; i++){
         pos = getFinish(i, 9);
@@ -133,7 +113,7 @@ function drawHouseThree(){
         div.className = "circle";
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("mensch-game").appendChild(div)
     }
 }
 
@@ -145,7 +125,7 @@ function drawHouseFour(){
         div.className = "circle";
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("mensch-game").appendChild(div)
     }
     for(i = 0; i < FINISH_FOUR.length; i++){
         pos = getFinish(i, 13);
@@ -154,13 +134,12 @@ function drawHouseFour(){
         div.className = "circle";
         div.style.left =  Math.trunc(pos[0]*100/660)  + "%";
         div.style.top =  Math.trunc(pos[1]*100/660) + "%";
-        document.getElementById("back").appendChild(div)
+        document.getElementById("mensch-game").appendChild(div)
         console.log("home :(")
     }
 }
 
 function drawHouses(){
-    drawPlayingField();
     drawHouseOne();
     drawHouseTwo();
     drawHouseThree();
@@ -212,7 +191,7 @@ function updatePage(data) {
     if(json.state.toString() === "NONE" || json.state.toString() === "PREPARE"){
         console.log("preparing")
         document.getElementById("prepare").style.visibility = "visible"
-        document.getElementById("dicing").style.visibility = "hidden"
+        document.getElementById("mensch-button").style.visibility = "hidden"
     }
     if(json.state.toString() === "ONGOING"){
         document.getElementById("prepare").style.visibility = "hidden"
@@ -231,10 +210,9 @@ function updatePage(data) {
     if(json.state.toString() === "DICED"){
         document.getElementById("prepare").style.visibility = "hidden"
         console.log("diced")
-        document.getElementById("dicing").style.visibility = "visible"
+        document.getElementById("mensch-button").style.visibility = "visible"
         if(json.current === 0){
-            document.getElementById("dicing").className = "btn btn-danger btn-lg btn-block"
-            document.getElementById("dicing").style.visibility = "visible"
+            document.getElementById("mensch-button").className = "btn btn-danger btn-lg btn-block disabled"
             count = 0
             for(i = 0; i < json.players[0].token.length; i++){
                 if(json.players[0].token[i].count > 0){
@@ -242,56 +220,57 @@ function updatePage(data) {
                 }
             }
             if(count > 0){
-                document.getElementById("dicing").innerHTML = "Ziehe " + json.players[0].diced + " Felder";
+                document.getElementById("mensch-button").innerHTML = "Ziehe " + json.players[0].diced + " Felder";
             }else{
-                document.getElementById("dicing").innerHTML = "Ziehe zum Start";
+                document.getElementById("mensch-button").innerHTML = "Ziehe zum Start";
             }
 
-        }else if(json.current === 1){
-            document.getElementById("dicing").className = "btn btn-primary btn-lg btn-block"
-            count = 0
-            for(i = 0; i < json.players[1].token.length; i++){
-                if(json.players[1].token[i].count > 0){
-                    count = json.players[1].token[i].count
+            }else if(json.current === 1){
+                document.getElementById("mensch-button").className = "btn btn-primary btn-lg btn-block disabled"
+                count = 0
+                for(i = 0; i < json.players[1].token.length; i++){
+                    if(json.players[1].token[i].count > 0){
+                        count = json.players[1].token[i].count
+                    }
                 }
-            }
-            if(count > 0){
-                document.getElementById("dicing").innerHTML = "Ziehe " + json.players[1].diced + " Felder";
-            }else{
-                document.getElementById("dicing").innerHTML = "Ziehe zum Start";
-            }
-
-        }else if(json.current === 2){
-            document.getElementById("dicing").className = "btn btn-success btn-lg btn-block"
-            count = 0
-            for(i = 0; i < json.players[2].token.length; i++){
-                if(json.players[2].token[i].count > 0){
-                    count = json.players[2].token[i].count
+                if(count > 0){
+                    document.getElementById("mensch-button").innerHTML = "Ziehe " + json.players[1].diced + " Felder";
+                }else{
+                    document.getElementById("mensch-button").innerHTML = "Ziehe zum Start";
                 }
-            }
 
-            if(count > 0){
-                document.getElementById("dicing").innerHTML = "Ziehe " + json.players[2].diced + " Felder";
-            }else{
-                document.getElementById("dicing").innerHTML = "Ziehe zum Start";
-            }
-
-        }else{
-            document.getElementById("dicing").className = "btn btn-warning btn-lg btn-block"
-            count = 0
-            for(i = 0; i < json.players[3].token.length; i++){
-                if(json.players[3].token[i].count > 0){
-                    count = json.players[3].token[i].count
+            }else if(json.current === 2){
+                document.getElementById("mensch-button").className = "btn btn-success btn-lg btn-block disabled"
+                count = 0
+                for(i = 0; i < json.players[2].token.length; i++){
+                    if(json.players[2].token[i].count > 0){
+                        count = json.players[2].token[i].count
+                    }
                 }
-            }
-            if(count > 0){
-                document.getElementById("dicing").innerHTML = "Ziehe " + json.players[3].diced + " Felder";
-            }else{
-                document.getElementById("dicing").innerHTML = "Ziehe zum Start";
-            }
 
+                if(count > 0){
+                    document.getElementById("mensch-button").innerHTML = "Ziehe " + json.players[2].diced + " Felder";
+                }else{
+                    document.getElementById("mensch-button").innerHTML = "Ziehe zum Start";
+                }
+
+            }else{
+                document.getElementById("mensch-button").className = "btn btn-warning btn-lg btn-block disabled"
+                count = 0
+                for(i = 0; i < json.players[3].token.length; i++){
+                    if(json.players[3].token[i].count > 0){
+                        count = json.players[3].token[i].count
+                    }
+                }
+                if(count > 0){
+                    document.getElementById("mensch-button").innerHTML = "Ziehe " + json.players[3].diced + " Felder";
+                }else{
+                    document.getElementById("mensch-button").innerHTML = "Ziehe zum Start";
+                }
+
+            }
         }
-    }
+
     console.log("new positions set")
 
 }
